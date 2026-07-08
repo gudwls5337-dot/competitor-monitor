@@ -325,6 +325,8 @@
 </aside>
 <div class="tip" id="tip"></div>
 
+<script src="data/companies.js"></script>
+<script src="data/events.js"></script>
 <script>
 const COUNTRY_KO = {KR:'대한민국',US:'미국',DE:'독일',CN:'중국',FR:'프랑스',VN:'베트남',IN:'인도',
   ID:'인도네시아',TW:'대만',JP:'일본',GB:'영국',CH:'스위스',SG:'싱가포르',BR:'브라질',TH:'태국',
@@ -383,8 +385,8 @@ async function loadJson(path){
 }
 
 (async function main(){
-  let events=await loadJson('data/events.json');
-  let cdata=await loadJson('data/companies.json');
+  let events=window.__EVENTS__||await loadJson('data/events.json');
+  let cdata=window.__COMPANIES__||await loadJson('data/companies.json');
   let sample=false;
   if(!Array.isArray(events)||events.length===0){ events=SAMPLE_EVENTS; sample=true; }
   if(!cdata||!Array.isArray(cdata.companies)||cdata.companies.length===0){ cdata=SAMPLE_COMPANIES; }

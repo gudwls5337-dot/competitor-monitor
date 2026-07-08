@@ -308,6 +308,11 @@ async function main() {
   events.push(...newEvents);
   events.sort((a, b) => b.d.localeCompare(a.d));
   writeJson(eventsPath, events);
+  // file:// 로 열어도 동작하도록 JS 사본도 생성 (fetch가 CORS로 막히는 환경 대비)
+  fs.writeFileSync(path.join(ROOT, "docs", "data", "events.js"),
+    "window.__EVENTS__=" + JSON.stringify(events) + ";");
+  fs.writeFileSync(path.join(ROOT, "docs", "data", "companies.js"),
+    "window.__COMPANIES__=" + JSON.stringify(companiesFile) + ";");
   fresh.forEach((it) => { seenUrls.add(it.url); seenTitles.add(normTitle(it.title)); });
   writeJson(path.join(ROOT, "data", "seen.json"), { urls: [...seenUrls], titles: [...seenTitles] });
   log("INFO", `events.json 누적 ${events.length}건 저장`);
