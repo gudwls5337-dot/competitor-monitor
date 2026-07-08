@@ -1,0 +1,14 @@
+{
+  "name": "competitor-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "실버스타케미칼 경쟁사 모니터링 — 뉴스 수집 + LLM 분류 + 지도 대시보드 + Slack 리포트",
+  "scripts": {
+    "collect": "node scripts/collect.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0"
+  }
+}

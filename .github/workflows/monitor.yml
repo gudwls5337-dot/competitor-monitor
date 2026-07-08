@@ -1,0 +1,39 @@
+name: weekly-competitor-monitor
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"   # 매주 월요일 00:00 UTC = 09:00 KST
+  workflow_dispatch:        # 수동 실행 버튼
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps
+        run: npm install --no-audit --no-fund
+
+      - name: Collect & classify
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+        run: node scripts/collect.mjs
+
+      - name: Commit results (data + logs 전부 보존)
+        run: |
+          git config user.name "competitor-monitor-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/data data logs
+          git diff --cached --quiet || git commit -m "chore: weekly collect $(date -u +%F)"
+          git push

@@ -1,0 +1,15 @@
+2026-07-08T23:42:06.762Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-08T23:42:06.768Z [INFO] 감시 기업 2곳
+2026-07-08T23:42:06.768Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-08T23:42:07.379Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-08T23:42:08.267Z [INFO] google [bostik] "Bostik adhesive" (en) → 58건
+2026-07-08T23:42:08.856Z [INFO] google [bostik] "Bostik hot melt" (en) → 14건
+2026-07-08T23:42:09.591Z [INFO] google [henkel] "헨켈 접착제" (ko) → 63건
+2026-07-08T23:42:10.502Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-07-08T23:42:11.380Z [INFO] google [henkel] "Henkel Technomelt" (en) → 24건
+2026-07-08T23:42:11.686Z [INFO] 수집 합계 269건
+2026-07-08T23:42:11.687Z [INFO] 기간·중복 필터 후 13건
+2026-07-08T23:42:11.687Z [WARN] ANTHROPIC_API_KEY 없음 — 분류 생략, 전 건 '미분류'로 저장
+2026-07-08T23:42:11.687Z [INFO] 신규 이벤트 13건 (무관 제외 0건)
+2026-07-08T23:42:11.699Z [INFO] events.json 누적 13건 저장
+2026-07-08T23:42:11.699Z [WARN] SLACK_WEBHOOK_URL 없음 — Slack 발송 생략
