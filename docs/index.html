@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>실버스타 경쟁 상황실</title>
+<title>핫멜트 업체 상황실</title>
 <style>
   :root{
     --bg:#0c1322; --bg2:#0e1729; --card:#111b30; --line:#1c2a47;
@@ -116,7 +116,7 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>SILVERSTAR <em>경쟁 상황실</em></h1>
+    <h1>핫멜트 업체 <em>상황실</em></h1>
     <span class="sub" id="meta">불러오는 중…</span>
   </header>
   <div class="banner" id="sampleBanner">⚠ 지금 보이는 것은 <b>샘플 데이터</b>입니다. 수집 파이프라인이 첫 실행되면 실제 데이터로 교체됩니다.</div>
@@ -316,7 +316,7 @@
   <div class="filters" id="filters"></div>
   <div class="grid" id="grid"></div>
 
-  <footer>SILVERSTAR competitor monitor · 뉴스는 각 출처 저작권을 따름 · 중요도 분류: Claude Haiku 4.5</footer>
+  <footer>핫멜트 업체 모니터 · 뉴스는 각 출처 저작권을 따름 · 중요도 분류: Claude Haiku 4.5</footer>
 </div>
 
 <aside class="panel" id="panel" aria-label="국가별 이슈">
@@ -466,12 +466,12 @@ async function loadJson(path){
   /* CORE HEROES */
   const cores=companies.filter(c=>c.tier===1);
   document.getElementById('heroes').innerHTML=cores.map(c=>{
-    const evs=recent.filter(e=>e.co===c.name||e.co===c.name_en).slice(0,3);
+    const evs=recent.filter(e=>e.company_id===c.id||e.co===c.name||e.co===c.name_en).slice(0,3);
     /* 8주 주간 이슈 수 */
     const weeks=[...Array(8)].map((_,i)=>{
       const from=new Date(+now-(8-i)*7*864e5).toISOString().slice(0,10);
       const to=new Date(+now-(7-i)*7*864e5).toISOString().slice(0,10);
-      return events.filter(e=>(e.co===c.name||e.co===c.name_en)&&e.d>from&&e.d<=to).length;
+      return events.filter(e=>(e.company_id===c.id||e.co===c.name||e.co===c.name_en)&&e.d>from&&e.d<=to).length;
     });
     const mx=Math.max(1,...weeks);
     return `<div class="hero">
@@ -492,7 +492,7 @@ async function loadJson(path){
   /* BOARD */
   const cnt={},last={};
   recent.forEach(e=>{
-    const c=companies.find(x=>x.name===e.co||x.name_en===e.co); if(!c)return;
+    const c=companies.find(x=>x.id===e.company_id)||companies.find(x=>x.name===e.co||x.name_en===e.co); if(!c)return;
     cnt[c.id]=(cnt[c.id]||0)+1;
     if(!last[c.id]||e.d>last[c.id].d)last[c.id]=e;
   });

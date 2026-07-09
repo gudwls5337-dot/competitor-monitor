@@ -30,6 +30,13 @@ const CONFIG = {
 };
 const CATEGORIES = ["신제품","투자·증설","M&A","가격","마케팅·유통","전시·행사","실적·공시","온드미디어","인사·조직","기타"];
 
+/* 콘텐츠팜/자동생성 매체 차단 — 신뢰성 확보용 (신규 스팸 매체 발견 시 여기 추가) */
+const BLOCK_SOURCES = [/indexbox/i, /ad[\s-]?hoc[\s-]?news/i, /marketsandmarkets/i, /openpr\.com/i];
+const BLOCK_TITLES = [/market\s+(analysis|forecast|size|report|outlook|share|research)/i, /\bforecast\s+(to\s+)?20\d{2}/i];
+const isBlocked = (it) =>
+  BLOCK_SOURCES.some((p) => p.test(it.source || "") || p.test(it.url || "")) ||
+  BLOCK_TITLES.some((p) => p.test(it.title || ""));
+
 /* ───────── 로그: 전부 남긴다 ───────── */
 const logLines = [];
 function log(level, msg) {
@@ -106,6 +113,26 @@ async function fetchGoogleRss(query, lang) {
   return { raw: xml, items };
 }
 
+/* GDELT — 원문 URL·출처 도메인을 직접 제공 (무료, 키 불필요). Google News보다 우선 수집 */
+async function fetchGdelt(query) {
+  const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${encodeURIComponent(query)}&mode=artlist&maxrecords=30&format=json&timespan=1w`;
+  const r = await fetch(url, { headers: { "User-Agent": "competitor-monitor" } });
+  if (!r.ok) throw new Error(`gdelt ${r.status}`);
+  const text = await r.text();
+  let data;
+  try { data = JSON.parse(text); } catch { throw new Error("gdelt non-json: " + text.slice(0, 60)); }
+  return {
+    raw: data,
+    items: (data.articles || []).map((a) => ({
+      title: stripTags(a.title),
+      url: a.url,
+      date: a.seendate ? `${a.seendate.slice(0, 4)}-${a.seendate.slice(4, 6)}-${a.seendate.slice(6, 8)}` : "",
+      source: a.domain || "GDELT",
+      snippet: "",
+    })),
+  };
+}
+
 const stripTags = (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;|&apos;/g, "'").trim();
 const decodeXml = (s) => String(s || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").trim();
 const normTitle = (s) => stripTags(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
@@ -136,6 +163,7 @@ async function classify(items, companiesById) {
           "당신은 폴리아마이드 핫멜트 접착제 제조사 '실버스타케미칼'(한국, 수출 비중 70%)의 경쟁정보 분석가다.",
           "각 뉴스 항목을 분류하라. 판단 기준:",
           "- relevant: 해당 회사의 접착제/화학 사업과 실제로 관련 있는가 (동명이인·스포츠·무관 기사는 false)",
+          "- 시장조사 리포트(예: 'Market Analysis/Forecast/Size' 류), 애그리게이터 자동생성 기사 등 구체적 사실(발표·수치·제품명·투자·계약)이 없는 글은 relevant=false",
           "- importance 3(높음): 신제품 출시, 공장 증설/신설, M&A, 가격 정책, 한국/동남아 시장 관련, 친환경·바이오 소재",
           "- importance 2(보통): 실적 발표, 전시회, 유통/파트너십, 채용 확대",
           "- importance 1(낮음): 단순 언급, 광고성, 접착제 무관 사업부 소식",
@@ -198,7 +226,7 @@ async function sendSlack(newEvents, stats) {
   const impIcon = { 3: "🔴", 2: "🟡", 1: "⚪" };
   const lines = top.map((e) => `${impIcon[e.imp] || "⚪"} *${e.co}* [${e.cat}] <${e.url}|${e.t}>\n    ↳ ${e.s}`);
   const text = [
-    `📡 *경쟁사 모니터 — 주간 리포트* (${new Date().toISOString().slice(0, 10)})`,
+    `📡 *핫멜트 업체 모니터 — 주간 리포트* (${new Date().toISOString().slice(0, 10)})`,
     `신규 이슈 ${newEvents.length}건 · 높음 ${newEvents.filter((e) => e.imp === 3).length}건 · 수집 ${stats.collected}건 중 관련 ${stats.relevant}건`,
     "",
     ...(lines.length ? lines : ["이번 주 신규 이슈 없음"]),
@@ -247,6 +275,15 @@ async function main() {
           log("INFO", `naver [${c.id}] "${q}" → ${items.length}건`);
         } catch (e) { log("ERROR", `naver [${c.id}] "${q}" 실패: ${e.message}`); }
       }
+      // GDELT (영문 쿼리만 — 원문 URL 확보, Google News보다 먼저 수집해 중복 시 원문 URL이 남게 함)
+      if (lang === "en") {
+        try {
+          const { raw, items } = await fetchGdelt(q);
+          saveRaw("gdelt", `${c.id}-${normTitle(q).slice(0, 20)}`, raw);
+          items.forEach((it) => collected.push({ ...it, companyId: c.id }));
+          log("INFO", `gdelt [${c.id}] "${q}" → ${items.length}건`);
+        } catch (e) { log("ERROR", `gdelt [${c.id}] "${q}" 실패: ${e.message}`); }
+      }
       // Google News RSS
       try {
         const { raw, items } = await fetchGoogleRss(q, lang);
@@ -262,15 +299,22 @@ async function main() {
   /* 2. 기간 필터 + 중복 제거 */
   const fresh = [];
   const batchTitles = new Set();
+  let blocked = 0;
   for (const it of collected) {
     if (!it.url || !it.title) continue;
     if (it.date && it.date < cutoff) continue;
     const tkey = normTitle(it.title);
     if (seenUrls.has(it.url) || seenTitles.has(tkey) || batchTitles.has(tkey)) continue;
+    if (isBlocked(it)) {
+      blocked++;
+      seenUrls.add(it.url); seenTitles.add(tkey); // 다음 주 재평가 방지
+      log("INFO", `차단(콘텐츠팜): [${it.companyId}] ${it.title.slice(0, 80)} — ${it.source}`);
+      continue;
+    }
     batchTitles.add(tkey);
     fresh.push(it);
   }
-  log("INFO", `기간·중복 필터 후 ${fresh.length}건`);
+  log("INFO", `기간·중복 필터 후 ${fresh.length}건 (콘텐츠팜 차단 ${blocked}건)`);
 
   /* 3. LLM 분류 */
   const results = await classify(fresh, companiesById);

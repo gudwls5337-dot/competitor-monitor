@@ -1,0 +1,88 @@
+2026-07-09T04:12:06.480Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-09T04:12:06.491Z [INFO] 감시 기업 18곳
+2026-07-09T04:12:06.491Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-09T04:12:07.230Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-09T04:12:17.853Z [ERROR] gdelt [bostik] "Bostik adhesive" 실패: fetch failed
+2026-07-09T04:12:18.506Z [INFO] google [bostik] "Bostik adhesive" (en) → 58건
+2026-07-09T04:12:29.115Z [ERROR] gdelt [bostik] "Bostik hot melt" 실패: fetch failed
+2026-07-09T04:12:29.730Z [INFO] google [bostik] "Bostik hot melt" (en) → 14건
+2026-07-09T04:12:30.426Z [INFO] google [henkel] "헨켈 접착제" (ko) → 62건
+2026-07-09T04:12:40.991Z [ERROR] gdelt [henkel] "Henkel Adhesive Technologies" 실패: fetch failed
+2026-07-09T04:12:41.802Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-07-09T04:12:52.389Z [ERROR] gdelt [henkel] "Henkel Technomelt" 실패: fetch failed
+2026-07-09T04:12:53.046Z [INFO] google [henkel] "Henkel Technomelt" (en) → 24건
+2026-07-09T04:12:53.696Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 21건
+2026-07-09T04:13:04.298Z [ERROR] gdelt [hbfuller] "H.B. Fuller adhesive" 실패: fetch failed
+2026-07-09T04:13:05.025Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 100건
+2026-07-09T04:13:05.594Z [INFO] google [jowat] "요바트 접착제" (ko) → 0건
+2026-07-09T04:13:16.156Z [ERROR] gdelt [jowat] "Jowat adhesive" 실패: fetch failed
+2026-07-09T04:13:16.651Z [INFO] google [jowat] "Jowat adhesive" (en) → 12건
+2026-07-09T04:13:17.280Z [INFO] google [sika] "시카 접착제" (ko) → 10건
+2026-07-09T04:13:27.855Z [ERROR] gdelt [sika] "Sika adhesive" 실패: fetch failed
+2026-07-09T04:13:28.513Z [INFO] google [sika] "Sika adhesive" (en) → 47건
+2026-07-09T04:13:29.268Z [INFO] google [3m] "3M 접착제" (ko) → 54건
+2026-07-09T04:13:39.843Z [ERROR] gdelt [3m] "3M industrial adhesive" 실패: fetch failed
+2026-07-09T04:13:40.526Z [INFO] google [3m] "3M industrial adhesive" (en) → 47건
+2026-07-09T04:13:41.257Z [INFO] google [arkema] "아르케마" (ko) → 50건
+2026-07-09T04:13:51.847Z [ERROR] gdelt [arkema] "Arkema adhesive" 실패: fetch failed
+2026-07-09T04:13:52.498Z [INFO] google [arkema] "Arkema adhesive" (en) → 56건
+2026-07-09T04:13:53.082Z [INFO] google [okong] "오공 접착제" (ko) → 9건
+2026-07-09T04:13:53.689Z [INFO] google [okong] "오공본드" (ko) → 12건
+2026-07-09T04:13:54.261Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 1건
+2026-07-09T04:14:04.849Z [ERROR] gdelt [texyear] "Tex Year hot melt" 실패: fetch failed
+2026-07-09T04:14:05.540Z [INFO] google [texyear] "Tex Year hot melt" (en) → 5건
+2026-07-09T04:14:16.146Z [ERROR] gdelt [moresco] "Moresco hot melt" 실패: fetch failed
+2026-07-09T04:14:16.610Z [INFO] google [moresco] "Moresco hot melt" (en) → 1건
+2026-07-09T04:14:36.088Z [INFO] gdelt [beardow] "Beardow Adams adhesive" → 0건
+2026-07-09T04:14:36.524Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 10건
+2026-07-09T04:14:37.261Z [INFO] google [evonik] "에보닉" (ko) → 51건
+2026-07-09T04:14:45.812Z [ERROR] gdelt [evonik] "Evonik polyamide" 실패: gdelt 429
+2026-07-09T04:14:46.506Z [INFO] google [evonik] "Evonik polyamide" (en) → 39건
+2026-07-09T04:14:56.657Z [ERROR] gdelt [dow] "Dow adhesive" 실패: gdelt 429
+2026-07-09T04:14:57.335Z [INFO] google [dow] "Dow adhesive" (en) → 55건
+2026-07-09T04:15:09.451Z [INFO] gdelt [eastman] "Eastman adhesive resin" → 0건
+2026-07-09T04:15:09.975Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 24건
+2026-07-09T04:15:20.552Z [ERROR] gdelt [kraton] "Kraton polymer adhesive" 실패: fetch failed
+2026-07-09T04:15:21.056Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 28건
+2026-07-09T04:15:33.834Z [ERROR] gdelt [dic] "DIC Corporation adhesive" 실패: gdelt 429
+2026-07-09T04:15:34.418Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 29건
+2026-07-09T04:15:46.058Z [ERROR] gdelt [toyobo] "Toyobo polyamide" 실패: gdelt 429
+2026-07-09T04:15:46.524Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 2건
+2026-07-09T04:15:46.834Z [INFO] 수집 합계 931건
+2026-07-09T04:15:46.839Z [INFO] 차단(콘텐츠팜): [henkel] Henkel balances consumer brands and industrial adhesives as a global player - Ad — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel focuses on consumer brands as investors weigh long-term strategy - Ad-hoc — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel navigates global demand shifts as consumer brands evolve - Ad-hoc-news.de — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel charts long-term growth as a global consumer and industrial supplier - Ad — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel focuses on consumer brands as investors weigh long-term growth - Ad-hoc-n — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel focuses on consumer brands as investors watch global peers - Ad-hoc-news. — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel steady in consumer and industrial markets. Long-term strategy focuses on  — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel stock and its global consumer brands. Long-term business model remains di — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [henkel] Henkel outlines long-term strategy as consumer brands support growth - Ad-hoc-ne — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [hbfuller] H.B. Fuller Company balances adhesives growth with earnings outlook - Ad-hoc-new — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [sika] SikaBond Construction Adhesive from Sika - a quiet staple in US building sites - — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [3m] 3M Company outlines path forward as diversified industrial portfolio supports it — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [3m] 3M Company highlights diversified industrial strength as investors watch long-te — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [3m] Electronic Adhesives Market Revenue to Hit US$13.13 Billion by 2032 | 3M, Henkel — openPR.com
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [arkema] Arkema balances specialty chemicals growth with global demand shifts - Ad-hoc-ne — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [arkema] Arkema strengthens specialty materials strategy as global demand evolves - Ad-ho — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [arkema] Arkema holds steady as investors await fresh catalysts. - Ad-hoc-news.de — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [evonik] The Availom from Evonik - high-load additives quietly shape US plastics - Ad-hoc — Ad-hoc-news.de
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [eastman] World Super Tackifier Resin - Market Analysis, Forecast, Size, Trends and Insigh — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Substrate Film Adhesive Market Forecast Points Higher Toward 2035, Driven by Fle — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Hydrogenated Rosin Ester Market Forecast Points Higher Toward 2035, Driven by Ba — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Packaging Adhesive Film Market to Reach New Heights by 2035, Driven by Flexible  — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Rosin Modified Phenolic Resin Market to Reach New Heights by 2035, Driven by Pac — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Rheology Modifier for Adhesives Market Forecast to 2035: Growth Driven by Electr — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Synthetic Latex Adhesive Market Forecast Points Higher Toward 2035 Amid Electron — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Rubber Band Adhesive Market Growth Outlook to 2035: Precision Bonding Demand Acc — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] Asia-Pacific Tire Tread Label Adhesives - Market Analysis, Forecast, Size, Trend — IndexBox
+2026-07-09T04:15:46.840Z [INFO] 차단(콘텐츠팜): [dic] World Radiation Curable Adhesives - Market Analysis, Forecast, Size, Trends and  — IndexBox
+2026-07-09T04:15:46.841Z [INFO] 기간·중복 필터 후 5건 (콘텐츠팜 차단 28건)
+2026-07-09T04:15:59.377Z [INFO] 분류 배치 1: 5건 → 응답 5건 (in 1525tok / out 942tok)
+2026-07-09T04:15:59.378Z [INFO] 제외(무관): [Henkel] Henkel Adhesive Technologies: integrating the supply chain - Supply Chain Digital — 시장조사 성격의 일반적 기고문으로 구체적 발표·수치·제품명 등 사실 근거 부재.
+2026-07-09T04:15:59.378Z [INFO] 제외(무관): [Henkel] Henkel Adhesive Technologies: Integrating the Supply Chain - Technology Magazine — 시장조사 성격의 일반적 기고문으로 구체적 발표·수치·제품명 등 사실 근거 부재.
+2026-07-09T04:15:59.378Z [INFO] 제외(무관): [3M] 3M Advances AI Procurement with AWS Partnership - Procurement Magazine — 3M의 AI 조달 시스템 도입으로 접착제 제품 개발·시장 전략과 무관.
+2026-07-09T04:15:59.378Z [INFO] 제외(무관): [Evonik] 獨 에보닉, 美서 원료의약품 위탁 개발‧제조 강화 - 약업신문 — 에보닉의 의약품 CDMO 사업 강화로 폴리아마이드 접착제 시장과 직접 관계 없음.
+2026-07-09T04:15:59.378Z [INFO] 신규 이벤트 1건 (무관 제외 4건)
+2026-07-09T04:15:59.385Z [INFO] events.json 누적 1건 저장
+2026-07-09T04:15:59.736Z [INFO] Slack 발송 성공
