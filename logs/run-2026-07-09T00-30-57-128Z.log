@@ -1,0 +1,40 @@
+2026-07-09T00:30:34.614Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-09T00:30:34.622Z [INFO] 감시 기업 18곳
+2026-07-09T00:30:34.623Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-09T00:30:35.224Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-09T00:30:36.122Z [INFO] google [bostik] "Bostik adhesive" (en) → 58건
+2026-07-09T00:30:36.810Z [INFO] google [bostik] "Bostik hot melt" (en) → 14건
+2026-07-09T00:30:37.466Z [INFO] google [henkel] "헨켈 접착제" (ko) → 63건
+2026-07-09T00:30:38.668Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-07-09T00:30:39.356Z [INFO] google [henkel] "Henkel Technomelt" (en) → 24건
+2026-07-09T00:30:40.040Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 20건
+2026-07-09T00:30:41.236Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 100건
+2026-07-09T00:30:41.776Z [INFO] google [jowat] "요바트 접착제" (ko) → 0건
+2026-07-09T00:30:42.360Z [INFO] google [jowat] "Jowat adhesive" (en) → 12건
+2026-07-09T00:30:42.922Z [INFO] google [sika] "시카 접착제" (ko) → 9건
+2026-07-09T00:30:43.603Z [INFO] google [sika] "Sika adhesive" (en) → 47건
+2026-07-09T00:30:44.377Z [INFO] google [3m] "3M 접착제" (ko) → 54건
+2026-07-09T00:30:45.104Z [INFO] google [3m] "3M industrial adhesive" (en) → 48건
+2026-07-09T00:30:45.814Z [INFO] google [arkema] "아르케마" (ko) → 50건
+2026-07-09T00:30:46.518Z [INFO] google [arkema] "Arkema adhesive" (en) → 56건
+2026-07-09T00:30:47.286Z [INFO] google [okong] "오공 접착제" (ko) → 9건
+2026-07-09T00:30:47.880Z [INFO] google [okong] "오공본드" (ko) → 12건
+2026-07-09T00:30:48.443Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 1건
+2026-07-09T00:30:49.080Z [INFO] google [texyear] "Tex Year hot melt" (en) → 5건
+2026-07-09T00:30:49.694Z [INFO] google [moresco] "Moresco hot melt" (en) → 1건
+2026-07-09T00:30:50.280Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 10건
+2026-07-09T00:30:50.972Z [INFO] google [evonik] "에보닉" (ko) → 50건
+2026-07-09T00:30:51.841Z [INFO] google [evonik] "Evonik polyamide" (en) → 39건
+2026-07-09T00:30:52.600Z [INFO] google [dow] "Dow adhesive" (en) → 55건
+2026-07-09T00:30:53.225Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 23건
+2026-07-09T00:30:53.852Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 28건
+2026-07-09T00:30:54.522Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 29건
+2026-07-09T00:30:55.113Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 2건
+2026-07-09T00:30:55.414Z [INFO] 수집 합계 929건
+2026-07-09T00:30:55.414Z [INFO] 기간·중복 필터 후 32건
+2026-07-09T00:30:55.952Z [ERROR] 분류 배치 실패 (401 {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CcqYJ4dWasDKeGPXogJfJ"}) — 해당 배치 '미분류' 처리
+2026-07-09T00:30:56.387Z [ERROR] 분류 배치 실패 (401 {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CcqYJ5x8SU8Q8rPnT7Mts"}) — 해당 배치 '미분류' 처리
+2026-07-09T00:30:56.666Z [ERROR] 분류 배치 실패 (401 {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CcqYJ7iYRhsy5U9CJ2CUz"}) — 해당 배치 '미분류' 처리
+2026-07-09T00:30:56.667Z [INFO] 신규 이벤트 32건 (무관 제외 0건)
+2026-07-09T00:30:56.705Z [INFO] events.json 누적 32건 저장
+2026-07-09T00:30:57.128Z [INFO] Slack 발송 성공

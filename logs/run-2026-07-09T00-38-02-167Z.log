@@ -1,0 +1,49 @@
+2026-07-09T00:36:50.474Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-09T00:36:50.479Z [INFO] 감시 기업 18곳
+2026-07-09T00:36:50.479Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-09T00:36:51.139Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-09T00:36:51.826Z [INFO] google [bostik] "Bostik adhesive" (en) → 58건
+2026-07-09T00:36:52.495Z [INFO] google [bostik] "Bostik hot melt" (en) → 14건
+2026-07-09T00:36:53.251Z [INFO] google [henkel] "헨켈 접착제" (ko) → 63건
+2026-07-09T00:36:54.117Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-07-09T00:36:54.723Z [INFO] google [henkel] "Henkel Technomelt" (en) → 24건
+2026-07-09T00:36:55.349Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 20건
+2026-07-09T00:36:56.241Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 100건
+2026-07-09T00:36:56.797Z [INFO] google [jowat] "요바트 접착제" (ko) → 0건
+2026-07-09T00:36:57.430Z [INFO] google [jowat] "Jowat adhesive" (en) → 12건
+2026-07-09T00:36:58.043Z [INFO] google [sika] "시카 접착제" (ko) → 9건
+2026-07-09T00:36:58.743Z [INFO] google [sika] "Sika adhesive" (en) → 47건
+2026-07-09T00:36:59.520Z [INFO] google [3m] "3M 접착제" (ko) → 54건
+2026-07-09T00:37:00.269Z [INFO] google [3m] "3M industrial adhesive" (en) → 48건
+2026-07-09T00:37:00.977Z [INFO] google [arkema] "아르케마" (ko) → 50건
+2026-07-09T00:37:01.661Z [INFO] google [arkema] "Arkema adhesive" (en) → 56건
+2026-07-09T00:37:02.345Z [INFO] google [okong] "오공 접착제" (ko) → 9건
+2026-07-09T00:37:02.990Z [INFO] google [okong] "오공본드" (ko) → 12건
+2026-07-09T00:37:03.586Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 1건
+2026-07-09T00:37:04.195Z [INFO] google [texyear] "Tex Year hot melt" (en) → 5건
+2026-07-09T00:37:04.771Z [INFO] google [moresco] "Moresco hot melt" (en) → 1건
+2026-07-09T00:37:05.339Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 10건
+2026-07-09T00:37:06.096Z [INFO] google [evonik] "에보닉" (ko) → 50건
+2026-07-09T00:37:06.745Z [INFO] google [evonik] "Evonik polyamide" (en) → 39건
+2026-07-09T00:37:07.576Z [INFO] google [dow] "Dow adhesive" (en) → 55건
+2026-07-09T00:37:08.328Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 23건
+2026-07-09T00:37:09.013Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 28건
+2026-07-09T00:37:09.738Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 29건
+2026-07-09T00:37:10.372Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 2건
+2026-07-09T00:37:10.686Z [INFO] 수집 합계 929건
+2026-07-09T00:37:10.687Z [INFO] 기간·중복 필터 후 32건
+2026-07-09T00:37:36.415Z [INFO] 분류 배치 1: 15건 → 응답 15건 (in 2117tok / out 2707tok)
+2026-07-09T00:37:57.019Z [INFO] 분류 배치 2: 15건 → 응답 15건 (in 2219tok / out 2676tok)
+2026-07-09T00:38:01.741Z [INFO] 분류 배치 3: 2건 → 응답 2건 (in 1240tok / out 409tok)
+2026-07-09T00:38:01.741Z [INFO] 제외(무관): [3M] 3M Advances AI Procurement with AWS Partnership - Procurement Magazine — 3M의 조달 시스템 AI 도입으로 접착제 사업과 직접 연관 없어 관련성 없음.
+2026-07-09T00:38:01.741Z [INFO] 제외(무관): [3M] 3M Company outlines path forward as diversified industrial portfolio supports its next phase - AD HOC NEWS — 3M의 일반적 기업 전략 발표로 실버스타의 폴리아마이드 핫멜트 접착제 사업과 직접 관련성 부족
+2026-07-09T00:38:01.741Z [INFO] 제외(무관): [3M] 3M Company highlights diversified industrial strength as investors watch long-term restructuring - AD HOC NEWS — 기업 재구조화 발표일 뿐 접착제/폴리아마이드 관련 구체적 내용 미포함
+2026-07-09T00:38:01.741Z [INFO] 제외(무관): [아르케마] Arkema balances specialty chemicals growth with global demand shifts - AD HOC NEWS — Arkema의 일반 기업 전략 발표로 폴리아마이드 핫멜트 접착제와 직접 관련성 없음
+2026-07-09T00:38:01.741Z [INFO] 제외(무관): [아르케마] Arkema strengthens specialty materials strategy as global demand evolves - AD HOC NEWS — 접착제 또는 폴리아마이드 관련 구체적 내용 없는 기업 정책 발표
+2026-07-09T00:38:01.741Z [INFO] 제외(무관): [아르케마] Arkema holds steady as investors await fresh catalysts. - AD HOC NEWS — 특정 사업부 또는 제품 관련 뉴스 없는 투자 평가 기사
+2026-07-09T00:38:01.741Z [INFO] 제외(무관): [에보닉] The Availom from Evonik - high-load additives quietly shape US plastics - AD HOC NEWS — 플라스틱 첨가제 제품으로 접착제 사업과 무관
+2026-07-09T00:38:01.742Z [INFO] 제외(무관): [DIC] Asia-Pacific Tire Tread Label Adhesives - Market Analysis, Forecast, Size, Trends and Insights - IndexBox — DIC의 특정 시장 조사 리포트로 경쟁사 실적·전략이 아닌 산업 분석 자료이며 실버스타의 주력 사업과 명확한 연결고리 부족
+2026-07-09T00:38:01.742Z [INFO] 제외(무관): [DIC] World Radiation Curable Adhesives - Market Analysis, Forecast, Size, Trends and Insights - IndexBox — 산업 분석 자료로 경쟁사 직접 정보가 아니며, 기술 카테고리가 실버스타의 핫멜트 접착제 사업과 상이함
+2026-07-09T00:38:01.742Z [INFO] 신규 이벤트 23건 (무관 제외 9건)
+2026-07-09T00:38:01.788Z [INFO] events.json 누적 23건 저장
+2026-07-09T00:38:02.166Z [INFO] Slack 발송 성공
