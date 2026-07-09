@@ -1,0 +1,269 @@
+2026-07-09T04:30:17.394Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-09T04:30:17.412Z [INFO] 감시 기업 55곳
+2026-07-09T04:30:17.413Z [INFO] 백필 모드: 2026-06-01 ~ 2026-07-09
+2026-07-09T04:30:17.414Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-09T04:30:18.133Z [INFO] google [bostik] "보스틱 접착제" (ko) → 0건
+2026-07-09T04:30:28.802Z [ERROR] gdelt [bostik] "Bostik adhesive" 실패: fetch failed
+2026-07-09T04:30:29.304Z [INFO] google [bostik] "Bostik adhesive" (en) → 8건
+2026-07-09T04:30:40.320Z [ERROR] gdelt [bostik] "Bostik hot melt" 실패: fetch failed
+2026-07-09T04:30:40.783Z [INFO] google [bostik] "Bostik hot melt" (en) → 1건
+2026-07-09T04:30:41.392Z [INFO] google [henkel] "헨켈 접착제" (ko) → 5건
+2026-07-09T04:30:52.038Z [ERROR] gdelt [henkel] "Henkel Adhesive Technologies" 실패: fetch failed
+2026-07-09T04:30:52.785Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 19건
+2026-07-09T04:31:03.355Z [ERROR] gdelt [henkel] "Henkel Technomelt" 실패: fetch failed
+2026-07-09T04:31:03.856Z [INFO] google [henkel] "Henkel Technomelt" (en) → 3건
+2026-07-09T04:31:04.503Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 7건
+2026-07-09T04:31:15.165Z [ERROR] gdelt [hbfuller] "H.B. Fuller adhesive" 실패: fetch failed
+2026-07-09T04:31:15.670Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 14건
+2026-07-09T04:31:16.265Z [INFO] google [jowat] "요바트 접착제" (ko) → 0건
+2026-07-09T04:31:26.837Z [ERROR] gdelt [jowat] "Jowat adhesive" 실패: fetch failed
+2026-07-09T04:31:27.303Z [INFO] google [jowat] "Jowat adhesive" (en) → 1건
+2026-07-09T04:31:27.893Z [INFO] google [sika] "시카 접착제" (ko) → 0건
+2026-07-09T04:31:38.565Z [ERROR] gdelt [sika] "Sika adhesive" 실패: fetch failed
+2026-07-09T04:31:39.128Z [INFO] google [sika] "Sika adhesive" (en) → 13건
+2026-07-09T04:31:39.801Z [INFO] google [3m] "3M 접착제" (ko) → 4건
+2026-07-09T04:31:50.495Z [ERROR] gdelt [3m] "3M industrial adhesive" 실패: fetch failed
+2026-07-09T04:31:51.208Z [INFO] google [3m] "3M industrial adhesive" (en) → 32건
+2026-07-09T04:31:51.831Z [INFO] google [arkema] "아르케마" (ko) → 1건
+2026-07-09T04:32:02.471Z [ERROR] gdelt [arkema] "Arkema adhesive" 실패: fetch failed
+2026-07-09T04:32:02.935Z [INFO] google [arkema] "Arkema adhesive" (en) → 11건
+2026-07-09T04:32:03.530Z [INFO] google [okong] "오공 접착제" (ko) → 3건
+2026-07-09T04:32:04.104Z [INFO] google [okong] "오공본드" (ko) → 0건
+2026-07-09T04:32:04.745Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 0건
+2026-07-09T04:32:15.392Z [ERROR] gdelt [texyear] "Tex Year hot melt" 실패: fetch failed
+2026-07-09T04:32:15.833Z [INFO] google [texyear] "Tex Year hot melt" (en) → 1건
+2026-07-09T04:32:26.803Z [ERROR] gdelt [moresco] "Moresco hot melt" 실패: fetch failed
+2026-07-09T04:32:27.166Z [INFO] google [moresco] "Moresco hot melt" (en) → 0건
+2026-07-09T04:32:36.774Z [ERROR] gdelt [beardow] "Beardow Adams adhesive" 실패: gdelt 429
+2026-07-09T04:32:37.147Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 1건
+2026-07-09T04:32:37.780Z [INFO] google [evonik] "에보닉" (ko) → 10건
+2026-07-09T04:32:48.438Z [ERROR] gdelt [evonik] "Evonik polyamide" 실패: fetch failed
+2026-07-09T04:32:48.909Z [INFO] google [evonik] "Evonik polyamide" (en) → 1건
+2026-07-09T04:33:00.059Z [ERROR] gdelt [dow] "Dow adhesive" 실패: gdelt 429
+2026-07-09T04:33:00.902Z [INFO] google [dow] "Dow adhesive" (en) → 17건
+2026-07-09T04:33:11.550Z [ERROR] gdelt [eastman] "Eastman adhesive resin" 실패: fetch failed
+2026-07-09T04:33:12.013Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 2건
+2026-07-09T04:33:22.975Z [ERROR] gdelt [kraton] "Kraton polymer adhesive" 실패: fetch failed
+2026-07-09T04:33:23.395Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 1건
+2026-07-09T04:33:34.018Z [ERROR] gdelt [dic] "DIC Corporation adhesive" 실패: gdelt 429
+2026-07-09T04:33:34.464Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 14건
+2026-07-09T04:33:45.546Z [ERROR] gdelt [toyobo] "Toyobo polyamide" 실패: gdelt 429
+2026-07-09T04:33:46.126Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 1건
+2026-07-09T04:33:56.281Z [ERROR] gdelt [nanpao] "Nan Pao adhesive" 실패: gdelt 429
+2026-07-09T04:33:56.827Z [INFO] google [nanpao] "Nan Pao adhesive" (en) → 0건
+2026-07-09T04:34:07.338Z [ERROR] gdelt [toagosei] "Toagosei adhesive" 실패: gdelt 429
+2026-07-09T04:34:07.784Z [INFO] google [toagosei] "Toagosei adhesive" (en) → 2건
+2026-07-09T04:34:18.958Z [ERROR] gdelt [toagosei] "Aron Melt" 실패: gdelt 429
+2026-07-09T04:34:19.439Z [INFO] google [toagosei] "Aron Melt" (en) → 1건
+2026-07-09T04:34:33.327Z [INFO] gdelt [basf] "BASF adhesive" → 5건
+2026-07-09T04:34:33.881Z [INFO] google [basf] "BASF adhesive" (en) → 12건
+2026-07-09T04:34:44.471Z [ERROR] gdelt [covestro] "Covestro adhesive film" 실패: fetch failed
+2026-07-09T04:34:44.950Z [INFO] google [covestro] "Covestro adhesive film" (en) → 2건
+2026-07-09T04:34:55.118Z [ERROR] gdelt [dupont] "DuPont adhesive" 실패: gdelt 429
+2026-07-09T04:34:55.576Z [INFO] google [dupont] "DuPont adhesive" (en) → 3건
+2026-07-09T04:35:06.304Z [ERROR] gdelt [solvay] "Solvay polyamide adhesive" 실패: gdelt 429
+2026-07-09T04:35:06.799Z [INFO] google [solvay] "Solvay polyamide adhesive" (en) → 0건
+2026-07-09T04:35:18.962Z [ERROR] gdelt [kleiberit] "Kleiberit" 실패: gdelt 429
+2026-07-09T04:35:19.391Z [INFO] google [kleiberit] "Kleiberit" (en) → 0건
+2026-07-09T04:35:30.812Z [ERROR] gdelt [poweradhesives] "Power Adhesives Tecbond" 실패: gdelt 429
+2026-07-09T04:35:31.297Z [INFO] google [poweradhesives] "Power Adhesives Tecbond" (en) → 0건
+2026-07-09T04:35:43.063Z [ERROR] gdelt [spiderbond] "SpiderBond adhesive" 실패: gdelt 429
+2026-07-09T04:35:43.507Z [INFO] google [spiderbond] "SpiderBond adhesive" (en) → 0건
+2026-07-09T04:35:54.123Z [ERROR] gdelt [huitian] "Huitian adhesive" 실패: gdelt 429
+2026-07-09T04:35:54.602Z [INFO] google [huitian] "Huitian adhesive" (en) → 1건
+2026-07-09T04:36:07.621Z [INFO] gdelt [kangda] "Kangda adhesive" → 0건
+2026-07-09T04:36:08.074Z [INFO] google [kangda] "Kangda adhesive" (en) → 0건
+2026-07-09T04:36:19.674Z [ERROR] gdelt [infinitybond] "Infinity Bond adhesive" 실패: gdelt 429
+2026-07-09T04:36:20.140Z [INFO] google [infinitybond] "Infinity Bond adhesive" (en) → 1건
+2026-07-09T04:36:31.188Z [ERROR] gdelt [goodadhesive] "Zhejiang Good Adhesive" 실패: gdelt 429
+2026-07-09T04:36:31.828Z [INFO] google [goodadhesive] "Zhejiang Good Adhesive" (en) → 1건
+2026-07-09T04:36:45.985Z [INFO] gdelt [tianze] "Tianze hot melt" → 0건
+2026-07-09T04:36:46.435Z [INFO] google [tianze] "Tianze hot melt" (en) → 0건
+2026-07-09T04:36:57.105Z [ERROR] gdelt [hengning] "Hengning adhesive" 실패: gdelt 429
+2026-07-09T04:36:57.565Z [INFO] google [hengning] "Hengning adhesive" (en) → 0건
+2026-07-09T04:37:07.242Z [ERROR] gdelt [schem] "Schem adhesive" 실패: gdelt 429
+2026-07-09T04:37:07.811Z [INFO] google [schem] "Schem adhesive" (en) → 0건
+2026-07-09T04:37:20.009Z [ERROR] gdelt [cattie] "Cattie Adhesives" 실패: gdelt 429
+2026-07-09T04:37:20.489Z [INFO] google [cattie] "Cattie Adhesives" (en) → 1건
+2026-07-09T04:37:31.714Z [ERROR] gdelt [rextac] "Rextac APAO" 실패: gdelt 429
+2026-07-09T04:37:32.197Z [INFO] google [rextac] "Rextac APAO" (en) → 0건
+2026-07-09T04:37:42.948Z [ERROR] gdelt [kaisun] "Kaisun adhesive" 실패: gdelt 429
+2026-07-09T04:37:43.399Z [INFO] google [kaisun] "Kaisun adhesive" (en) → 0건
+2026-07-09T04:37:53.296Z [ERROR] gdelt [renhe] "Renhe adhesive" 실패: gdelt 429
+2026-07-09T04:37:53.769Z [INFO] google [renhe] "Renhe adhesive" (en) → 0건
+2026-07-09T04:38:03.281Z [ERROR] gdelt [rocky] "Shanghai Rocky Adhesives" 실패: gdelt 429
+2026-07-09T04:38:03.758Z [INFO] google [rocky] "Shanghai Rocky Adhesives" (en) → 0건
+2026-07-09T04:38:13.948Z [ERROR] gdelt [deepmaterial] "Deepmaterial adhesive" 실패: gdelt 429
+2026-07-09T04:38:14.437Z [INFO] google [deepmaterial] "Deepmaterial adhesive" (en) → 2건
+2026-07-09T04:38:23.134Z [ERROR] gdelt [wistar] "Wistar hot melt adhesive" 실패: gdelt 429
+2026-07-09T04:38:23.593Z [INFO] google [wistar] "Wistar hot melt adhesive" (en) → 0건
+2026-07-09T04:38:33.508Z [ERROR] gdelt [freebird] "Free Bird hot melt adhesive" 실패: gdelt 429
+2026-07-09T04:38:33.964Z [INFO] google [freebird] "Free Bird hot melt adhesive" (en) → 0건
+2026-07-09T04:38:43.412Z [ERROR] gdelt [weihexin] "Weihexin adhesive" 실패: gdelt 429
+2026-07-09T04:38:43.858Z [INFO] google [weihexin] "Weihexin adhesive" (en) → 0건
+2026-07-09T04:38:53.416Z [ERROR] gdelt [tongde] "Shenzhen Tongde adhesive" 실패: gdelt 429
+2026-07-09T04:38:53.890Z [INFO] google [tongde] "Shenzhen Tongde adhesive" (en) → 0건
+2026-07-09T04:39:03.550Z [ERROR] gdelt [devote] "Devote adhesive" 실패: gdelt 429
+2026-07-09T04:39:03.965Z [INFO] google [devote] "Devote adhesive" (en) → 0건
+2026-07-09T04:39:14.903Z [ERROR] gdelt [bluerhino] "Bluerhino adhesive" 실패: gdelt 429
+2026-07-09T04:39:15.277Z [INFO] google [bluerhino] "Bluerhino adhesive" (en) → 0건
+2026-07-09T04:39:25.333Z [ERROR] gdelt [megabond] "Megabond adhesive" 실패: gdelt 429
+2026-07-09T04:39:25.672Z [INFO] google [megabond] "Megabond adhesive" (en) → 0건
+2026-07-09T04:39:36.033Z [ERROR] gdelt [techbond] "Techbond adhesive" 실패: gdelt 429
+2026-07-09T04:39:36.371Z [INFO] google [techbond] "Techbond adhesive" (en) → 0건
+2026-07-09T04:39:48.135Z [INFO] gdelt [alster] "Alster Industry adhesive" → 0건
+2026-07-09T04:39:48.507Z [INFO] google [alster] "Alster Industry adhesive" (en) → 0건
+2026-07-09T04:40:12.911Z [INFO] gdelt [valona] "Valona adhesive Vietnam" → 0건
+2026-07-09T04:40:13.616Z [INFO] google [valona] "Valona adhesive Vietnam" (en) → 0건
+2026-07-09T04:40:25.262Z [ERROR] gdelt [imelt] "IMELT Kimya" 실패: gdelt 429
+2026-07-09T04:40:25.627Z [INFO] google [imelt] "IMELT Kimya" (en) → 0건
+2026-07-09T04:40:36.536Z [ERROR] gdelt [paramelt] "Paramelt" 실패: fetch failed
+2026-07-09T04:40:36.889Z [INFO] google [paramelt] "Paramelt" (en) → 0건
+2026-07-09T04:40:37.462Z [INFO] google [mcschem] "엠씨에스켐" (ko) → 0건
+2026-07-09T04:40:38.013Z [INFO] google [mcschem] "MCS 핫멜트" (ko) → 0건
+2026-07-09T04:40:48.594Z [ERROR] gdelt [mcschem] "MCS Chem hot melt" 실패: fetch failed
+2026-07-09T04:40:49.004Z [INFO] google [mcschem] "MCS Chem hot melt" (en) → 0건
+2026-07-09T04:40:49.556Z [INFO] google [shinkwang] "신광핫멜트" (ko) → 0건
+2026-07-09T04:40:50.142Z [INFO] google [hanyoung] "한영인더스트리 핫멜트" (ko) → 0건
+2026-07-09T04:40:50.723Z [INFO] google [hanyoung] "한영인더스트리 접착제" (ko) → 0건
+2026-07-09T04:40:51.027Z [INFO] 수집 합계 201건
+2026-07-09T04:40:51.029Z [INFO] 차단(콘텐츠팜): [bostik] Thermosetting Acrylic Adhesive Market Growth Forecast to 2035: Electronics and A — IndexBox
+2026-07-09T04:40:51.030Z [INFO] 차단(콘텐츠팜): [bostik] World Uae Adhesives Sealants - Market Analysis, Forecast, Size, Trends and Insig — IndexBox
+2026-07-09T04:40:51.030Z [INFO] 차단(콘텐츠팜): [bostik] Tile Fixing Adhesives Market Forecast Points Higher Toward 2035 Amid Constructio — IndexBox
+2026-07-09T04:40:51.030Z [INFO] 차단(콘텐츠팜): [bostik] Rail Adhesives Market Forecast to 2035: Growth Driven by High-Speed Rail and MRO — IndexBox
+2026-07-09T04:40:51.030Z [INFO] 차단(콘텐츠팜): [henkel] Fedrigoni SH6020-W PLUS Adhesive: Permanent and Wash-Off for Wine & Spirits Labe — IndexBox
+2026-07-09T04:40:51.031Z [INFO] 차단(콘텐츠팜): [hbfuller] H.B. Fuller Company stock (US3596941068): Investors react to latest earnings and — Ad-hoc-news.de
+2026-07-09T04:40:51.031Z [INFO] 차단(콘텐츠팜): [hbfuller] H.B. Fuller shares after earnings, adhesives peer group in focus for investors - — Ad-hoc-news.de
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] Lamination Adhesives for Flexible Packaging Market Demand to Accelerate by 2035, — IndexBox
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] Asia Pacific Sealants and Adhesives Market Size, Share, 2034 - Market Data Forec — Market Data Forecast
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] World Tile Backcoat Adhesive - Market Analysis, Forecast, Size, Trends and Insig — IndexBox
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] World Pure Epoxy Injection Adhesive - Market Analysis, Forecast, Size, Trends an — IndexBox
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] Sika AG focuses on global growth and construction demand - Ad-hoc-news.de — Ad-hoc-news.de
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] Pure Epoxy Injectable Anchor Adhesive Market Growth to Accelerate by 2035 Driven — IndexBox
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] Sika outlines long-term growth strategy, shares in SMI focus - Ad-hoc-news.de — Ad-hoc-news.de
+2026-07-09T04:40:51.032Z [INFO] 차단(콘텐츠팜): [sika] Wind Energy Adhesive Market Growth Forecast to 2035: Offshore Wind and Larger Bl — IndexBox
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] Adhesives Market Size, Share | CAGR of 6.8% - Market.us — Market.us
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] World Tpx High Temperature Resistant Adhesive Release Film - Market Analysis, Fo — IndexBox
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] 3M Company navigates restructuring and legal costs as it refocuses on core indus — Ad-hoc-news.de
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] Self Adhesive Release Paper Market To Reach New Heights by 2035 Amid Electronics — IndexBox
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] Thermoplastic Conductive Adhesives Market Forecast Points Higher Toward 2035 Ami — IndexBox
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] World Silicone Gel Adhesive - Market Analysis, Forecast, Size, Trends and Insigh — IndexBox
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] 3M Company extends aerospace push with Airbus deal, shares in focus on NYSE - Ad — Ad-hoc-news.de
+2026-07-09T04:40:51.033Z [INFO] 차단(콘텐츠팜): [3m] World PTFE Glass Adhesive Tapes - Market Analysis, Forecast, Size, Trends and In — IndexBox
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] World Epoxy Structural Sealants - Market Analysis, Forecast, Size, Trends and In — IndexBox
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Company steadies operations as diversified portfolio supports long-term outlo — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Company highlights diversified industrial portfolio as a global materials lea — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Company highlights diversified business and global reach - Ad-hoc-news.de — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Company stock (US88579Y1010): Spin-off hangover and legal risks keep investor — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Command Large Picture Hanging Strips - lightweight damage-free wall mounting  — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Company steadies its portfolio. Diversified industrial focus supports long-te — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Company focus on diversified industrial strength and long-term innovation - A — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M Company outlines strategy as diversified industrial portfolio supports long-t — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] 3M balances transformation and litigation costs as investors watch the next phas — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] Wearable Adhesives Market Is Booming Worldwide 2026-2033 | 3M - openPR.com — openPR.com
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] Methyl Methacrylate Adhesives Market Size, Status, Top Players, Trends and Forec — openPR.com
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [3m] Aerospace Adhesive and Sealants Market Surges as Aircraft - openPR.com — openPR.com
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [arkema] Specialty Chemicals Market Size & Share Report, 2034 - Fortune Business Insights — Fortune Business Insights
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [arkema] Sanitary Adhesive Market Growth Outlook to 2035: Demand Accelerates Amid Rising  — IndexBox
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [arkema] Sarmaflex adhesive tapes from Arkema S.A. - quiet sealing for demanding facades  — Ad-hoc-news.de
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [arkema] World Cementitious Adhesives - Market Analysis, Forecast, Size, Trends and Insig — IndexBox
+2026-07-09T04:40:51.034Z [INFO] 차단(콘텐츠팜): [arkema] Arkema Stock - long-term strategy and specialty materials focus - Ad-hoc-news.de — Ad-hoc-news.de
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [dow] Electronic Adhesives Market Size, Share | Growth Report [2034] - Fortune Busines — Fortune Business Insights
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [dow] Electric Vehicle Adhesives Market Size, Share | Growth [2034] - Fortune Business — Fortune Business Insights
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [dow] Dow Inc. highlights specialty materials strength as investors weigh long-term de — Ad-hoc-news.de
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [dow] High Strength Acrylic Adhesives Global Market Forecast Points Higher Toward 2035 — IndexBox
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [dow] United States Windshield Adhesives - Market Analysis, Forecast, Size, Trends and — IndexBox
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [dow] Bio Based Phenol Market Forecast Points Higher Toward 2035, Driven by Electronic — IndexBox
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [eastman] Aldehyde Market Size, Share, Growth, Analysis, Report, 2034 - Straits Research — Straits Research
+2026-07-09T04:40:51.035Z [INFO] 차단(콘텐츠팜): [kraton] Resins in Automotive Market To Reach New Heights by 2035 Amid EV Lightweighting  — IndexBox
+2026-07-09T04:40:51.036Z [INFO] 차단(콘텐츠팜): [dic] Phenolic Resin Market Size, Industry Share, Global Report, 2034 - Fortune Busine — Fortune Business Insights
+2026-07-09T04:40:51.036Z [INFO] 차단(콘텐츠팜): [dic] World Hydrogenated Hydrocarbon Resin - Market Analysis, Forecast, Size, Trends a — IndexBox
+2026-07-09T04:40:51.036Z [INFO] 차단(콘텐츠팜): [dic] World Solventborne UV Curable Resin - Market Analysis, Forecast, Size, Trends an — IndexBox
+2026-07-09T04:40:51.036Z [INFO] 차단(콘텐츠팜): [dic] Recycled Phenolic Resin Compounds Market Demand to Accelerate by 2035 Amid Regul — IndexBox
+2026-07-09T04:40:51.037Z [INFO] 차단(콘텐츠팜): [toyobo] Flexible packaging gets smarter with Toyobo’s ECOSYAR film - Ad-hoc-news.de — Ad-hoc-news.de
+2026-07-09T04:40:51.037Z [INFO] 차단(콘텐츠팜): [toagosei] Why Toagosei’s Aronix UV-curable resins quietly matter in everyday products - Ad — Ad-hoc-news.de
+2026-07-09T04:40:51.037Z [INFO] 차단(콘텐츠팜): [toagosei] Toagosei investors look at long-term growth as chemical demand evolves - Ad-hoc- — Ad-hoc-news.de
+2026-07-09T04:40:51.040Z [INFO] 차단(콘텐츠팜): [basf] Soy-Based Adhesive Market Growth to Accelerate by 2035 Amid Global Green Buildin — IndexBox
+2026-07-09T04:40:51.040Z [INFO] 차단(콘텐츠팜): [basf] Sustainable Adhesives Market Size, Share, Trends, Report, 2034 - Fortune Busines — Fortune Business Insights
+2026-07-09T04:40:51.040Z [INFO] 차단(콘텐츠팜): [basf] World Resin-Based Grouting Materials - Market Analysis, Forecast, Size, Trends a — IndexBox
+2026-07-09T04:40:51.040Z [INFO] 차단(콘텐츠팜): [basf] Mixed Xylene Market Size, Industry Share, & Forecast to 2034 - Fortune Business  — Fortune Business Insights
+2026-07-09T04:40:51.040Z [INFO] 차단(콘텐츠팜): [basf] Polyester Polyols Market Size, Share | Forecast Report [2034] - Fortune Business — Fortune Business Insights
+2026-07-09T04:40:51.040Z [INFO] 차단(콘텐츠팜): [covestro] Covestro Stock - EU-backed bio-based aniline project highlights strategy - Ad-ho — Ad-hoc-news.de
+2026-07-09T04:40:51.040Z [INFO] 차단(콘텐츠팜): [covestro] Covestro opens the week with earnings focus, shares on Xetra under Bayer bid ter — Ad-hoc-news.de
+2026-07-09T04:40:51.041Z [INFO] 차단(콘텐츠팜): [dupont] Super High Thermal Conductivity Adhesive for 5G Communication Market Growth Fore — IndexBox
+2026-07-09T04:40:51.041Z [INFO] 차단(콘텐츠팜): [dupont] Digital Printing Ink Market Size, Share | Industry Report [2034] - Fortune Busin — Fortune Business Insights
+2026-07-09T04:40:51.041Z [INFO] 차단(콘텐츠팜): [huitian] World Tobacco Packing Adhesive - Market Analysis, Forecast, Size, Trends and Ins — IndexBox
+2026-07-09T04:40:51.041Z [INFO] 차단(콘텐츠팜): [deepmaterial] Healthcare Adhesive Tapes Market Report Provides Insights Into Market Evolution  — openPR.com
+2026-07-09T04:40:51.041Z [INFO] 기간·중복 필터 후 83건 (콘텐츠팜 차단 67건)
+2026-07-09T04:41:11.630Z [INFO] 분류 배치 1: 15건 → 응답 15건 (in 2364tok / out 2483tok)
+2026-07-09T04:41:29.817Z [INFO] 분류 배치 2: 15건 → 응답 15건 (in 2318tok / out 2531tok)
+2026-07-09T04:41:44.368Z [INFO] 분류 배치 3: 15건 → 응답 15건 (in 2371tok / out 2089tok)
+2026-07-09T04:42:02.810Z [INFO] 분류 배치 4: 15건 → 응답 15건 (in 2353tok / out 2239tok)
+2026-07-09T04:42:16.673Z [INFO] 분류 배치 5: 15건 → 응답 15건 (in 2520tok / out 1826tok)
+2026-07-09T04:42:27.461Z [INFO] 분류 배치 6: 8건 → 응답 8건 (in 1815tok / out 1376tok)
+2026-07-09T04:42:27.471Z [INFO] 제외(무관): [Bostik] Glue It, Coat It, Seal It, and More in Voice Coil July 2026 - audioXpress — 스니펫 부재로 구체적 사실 확인 불가능하며 일반 제품 소개성 기사로 판단됨
+2026-07-09T04:42:27.472Z [INFO] 제외(무관): [Bostik] Back-to-School DIY: Fix school shoes, ace class projects safely with Rugby Brand Contact Cement Adhesive - BusinessMirror — 접착제는 다루나 소비자 DIY용 제품으로 실버스타의 폴리아마이드 핫멜트 접착제와 제품 범주가 다름
+2026-07-09T04:42:27.472Z [INFO] 제외(무관): [Bostik] People are only just realising real reason Blu Tack was given it's colour - Liverpool Echo — 제품 원리나 시장 정보가 아닌 순수 호기심 콘텐츠로 판단됨
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Carbon neutrality advanced with major emissions reduction at Henkel factory - Engineering News — 헨켈의 친환경 정책 소식이나 실버스타와의 직접 경쟁 제품군(접착제) 관련 구체적 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Henkel achieves carbon-neutral production in India and Türkiye - Manufacturing Today India — 헨켈의 ESG 활동 소식일 뿐 접착제 사업 관련 구체적 사실 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Henkel Achieves Carbon-Neutral Production at Kurkumbh Site in India - TheCSRUniverse — 탄소중립 인증 뉴스로 경영진 정책 성과이나 구체적 제품·매출 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Henkel Transitions to Full Electrification, Eliminates Fossil Fuel Footprint at Kurkumbh Facility - Autocar Professional — 탄소중립 달성 관련 ESG 뉴스로 구체적 제품·계약·투자 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Pradhyumna Ingle takes charge as Henkel's Country President for India - Exchange4Media — 단순 임원 인사 발표로 구체적 사업 변화 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Henkel SA advances carbon neutrality with major emissions reduction at Alrode factory - IOL — 탄소중립 인증 뉴스로 구체적 제품·매출·시장 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Henkel Achieves Carbon-Neutral Production in India, Türkiye - Construction World India — 헨켈의 ESG 성과 소식일 뿐 구체적 제품·시장·투자 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Pradhyumna Ingle appointed Country President of Henkel India - PitchOnnet — 단순 임원 발표로 접착제 사업 관련 구체적 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Henkel appoints Pradhyumna Ingle as Country President for India - Punekar News — 단순 인사 발표로 구체적 사업 정보 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Henkel to Locate New Consumer Brands Center of Research & Development in Trumbull - Connecticut by the Numbers — 소비자 브랜드 부문 R&D 센터 건립이 폴리아마이드 핫멜트 접착제 사업과 무관
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [Henkel] Pal Binding Works gets Blue Chip single-clamp perfect binder - Indian Printer & Publisher — 헨켈 관계 없이 인쇄 장비 관련 뉴스로 접착제 사업과 무관
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] HB 풀러, 영국 의료기기 기업 AMS 7억 1500만 파운드에 인수 제안 - 데이터투자 — H.B. Fuller의 의료기기 부문 인수로 폴리아마이드 핫멜트 접착제 사업과 직접 연관성 부족
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] UBS, HB 풀러 인수 우려에 목표주가 하향 조정 - Investing.com 한국어 — 투자 분석 의견성 기사로 구체적 사실 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] H.B. 풀러, 영국의 어드밴스드 메디컬 솔루션즈를 9억 4,200만 달러에 인수하기로 했다 - TradingView — 의료기기 회사 인수로 접착제·화학 사업과 무관
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] 아메리칸 타워, H.B. 풀러 컴퍼니, TD 신넥스 - TradingView — 뉘앙스 없는 기업 나열로 구체적 뉴스 가치 부족
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller Announces Offer to Acquire Advanced Medical Solutions - Business Wire — 의료기기 회사 인수로 접착제·화학 사업 영역과 무관
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller defies shareholder opposition, proceeding with $943M acquisition - Star Tribune — 의료기기 회사 인수로 폴리아마이드 접착제와 직접 연관성 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] Why H.B. Fuller Is Buying Advanced Medical Solutions For £715 Million - Pulse 2.0 — 의료기기 회사 인수 분석으로 폴리아마이드 접착제와 무관
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller Q2 Earnings Call Flags Pricing, AMS Ambitions - TradingView — 의료기기 인수 관련 실적 논의로 핫멜트 접착제와 직접 연관성 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] UK: HB Fuller seals acquisition of AMS for £715m - Investors in Healthcare — 의료기기 회사 인수 완료로 접착제·화학 사업과 직접 연관성 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] List of 15 Acquisitions by HB Fuller (Jul 2026) - Tracxn — 인수 현황 애그리게이션으로 구체적 사실 없음
+2026-07-09T04:42:27.474Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller posts record Q2 operating cash flow, lifts outlook - Stock Titan — 전사 실적 발표로 접착제 부문 구체적 내용 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [H.B. Fuller] HB Fuller moves to acquire advanced medical solutions in strategic deal - Indian Chemical News — 의료기기 회사 인수 뉴스로 접착제·화학 사업과 직접 연관성 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [H.B. Fuller] Major shareholder wants to block H.B. Fuller’s ‘reckless’ $800M acquisition - Star Tribune — 의료기기 인수 반대 의견으로 접착제 사업 영역과 무관
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [H.B. Fuller] Why Is H.B. Fuller (NYSE:FUL) Drawing Interest Across Russell 1000 Stocks? - Kalkine Media — 투자 분석 의견성 기사로 구체적 사실 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller Sees $55M Synergy Potential From AMS Deal – But Investors Are Still Selling FUL Stock - Asianet Newsable — 의료기기 인수 관련 투자 반응으로 접착제 사업과 직접 연관성 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Jowat] FILTECH 2026: Where innovation meets industry - Filtration and Separation — 여과·분리 기술 전시회로 폴리아마이드 핫멜트 접착제 사업과 무관
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Sika] Sika Launches Rapid PMMA Roofing Resin System - Roofing Contractor — 시카의 지붕용 수지 시스템으로 폴리아마이드 핫멜트 접착제와 다른 제품군
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Sika] Borey Peng Huoth Unveils Major New Residential Project Linked to Upcoming Prek Pra Bridge - Construction & Property News — 부동산 개발 프로젝트로 시카 관련 구체적 제품·계약 정보 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Sika] Premium Luxury Showrooms Completed and Available for Rent at TIA CITY on the 60 Meter Boulevard Near the New Techo International Airport - Construction & Property News — 건설·임대 프로젝트로 접착제 수요 및 계약 정보 부재
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [3M] 3M(MMM), AI·항공 협력으로 체질 개선 속도…7월 21일 실적 발표 주목 - tokenpost.kr — 일반 실적 발표 안내로 접착제 사업의 구체적 수치·정책 부재
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [3M] 건축용 접착제 시장 규모, 점유율, 성장률, 분석 (2034년) - Straits Research — Straits Research의 시장 분석 리포트로 특정 기업 뉴스나 구체적 제품 정보 부재
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [3M] 접착 필름 시장 규모, 점유율, 성장, 분석, 보고서, 2034년 - Straits Research — Straits Research의 애그리게이터 시장 분석 리포트로 실제 사건·발표 정보 부재
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [3M] Real-Time Monitoring Brings Process Control to Two-Part Adhesive Dispensing - Assembly Magazine — 기술 리뷰 형식의 일반 정보로 실버스타의 경쟁 상황이나 시장 변화를 나타내지 않음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [3M] 3M’s new AI assistant helps customers solve material problems faster - Stock Titan — 3M의 기술 혁신이나 마케팅 활동으로 접착제 제품 구체사항이나 실버스타 관련 정보 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [3M] 3M launches Ask 3M, an AI-powered tool for faster access to technical expertise - Yahoo Finance — 3M의 AI 도구 출시로 접착제 구체 제품이나 시장 변화 정보 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [3M] 3M launches AI assistant for industrial product queries By Investing.com - Investing.com Canada — 3M의 마케팅·서비스 도구 출시로 접착제 제품 구체 정보나 실버스타 관련 뉴스 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [오공] 오공 투자분석 2026. 06. 23 - 주달 — 투자분석 자료로 실제 사건·발표·계약 정보 없고 관련성 불명확
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [오공] 오공 투자분석 2026. 06. 30 - 주달 — 오공은 실버스타와 다른 회사이며 구체적 사실 없는 투자분석 보고서
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [오공] 오공 투자분석 2026. 06. 16 - 주달 — 오공은 실버스타와 다른 회사이며 구체적 사실 없는 투자분석 보고서
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Evonik] [에보닉 수소 시장 공략] 상하이에 음이온 교환막 애플리케이션 기술 센터 개소 - 2news.co.kr — 에보닉의 음이온 교환막은 폴리아마이드 핫멜트 접착제와 무관한 기술 분야
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Evonik] 녹색전환, 공급망 전체의 노력이 필요하다 - 한국경제 — 특정 기업 활동이 아닌 일반 칼럼성 기사로 구체적 사실 부재
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Evonik] 세균 셀룰로스 복합재 시장 규모 및 점유율 | 2035년까지 보고서 - Global Market Insights Inc. — 시장조사 리포트로 구체적 기업 활동이나 수치 없음
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Evonik] 하나증권 "CJ제일제당 바이오 회복 예상보다 빨라, 하반기 영업이익 유의미하게 증가할 것" - 비즈니스포스트 — CJ제일제당의 바이오 사업 분석으로 접착제 업체와 무관
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Evonik] 코르테바, 2026년 분할 신설 법인 이사회 명단 발표…의장에 그렉 페이지 - 데이터투자 — 코르테바는 농화학 기업으로 폴리아마이드 핫멜트 접착제와 무관
+2026-07-09T04:42:27.475Z [INFO] 제외(무관): [Evonik] 과황산염 시장 규모, 동향, 성장, 분석, 2034년 - Fortune Business Insights — 시장조사 리포트로 구체적 기업 활동이나 수치 없음
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [Evonik] KGCCI, 1200명 가이드 워커 참여…한독 공동 CSR 확대 - 포춘코리아 — 기업의 CSR 활동으로 폴리아마이드 핫멜트 접착제 사업과 무관
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [Evonik] ‘4년 만에 4배’ 시각장애인 손잡은 독일 기업들... 한국서 ‘역대 최대’ CSR 이정표 - 산업인뉴스 — 기업의 CSR 활동으로 접착제 사업과 무관
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [Evonik] 주한독일상공회의소, 1,200명 '가이드 워커' 참여…공동 CSR프로젝트 성료 - 한경매거진&북 — 기업의 CSR 활동으로 접착제 사업과 무관
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [Dow] Geocel “powers up its packaging” to support merchant sales - Professional Builders Merchant — 건축 실링제 관련이나 구체적 사실 부재하고 접착제 관련성 불명확
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [Toagosei] What was De'Aaron Fox thinking? Guard explains layup blunder in Spurs' Game 4 meltdown vs. Knicks - CBS Sports — 스포츠 기사로 실버스타케미칼과 완전 무관
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] 2026瓷砖胶怎么选品牌 ？ 从执行标准等级 、 环保认证 、 质保年限3个维度看 _ 中华网 — 소비자 정보 기사로 특정 기업의 구체적 활동이나 수치 없음
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] 纸尿裤风波引发消费退潮 ： 有家长跨省  买放心货 ， 涉事品牌销量承压 — 기저귀 소비 트렌드 기사로 폴리아마이드 핫멜트 접착제 사업과 무관
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] Japan Acrylic Emulsions Market to Reach USD 1 , 128 . 15 Million by 2032 Amid Rising Demand for Low - VOC Coatings — 시장조사 리포트성 기사로 구체적 사실 없고 폴리아마이드 핫멜트 접착제와 무관한 아크릴 에멀션 시장 분석
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] Credence Research Inc .: Japan Acrylic Emulsions Market to Reach USD 1 , 128 . 15 Million by 2032 Amid Rising Demand for Low - VOC Coatings — 애그리게이터 자동생성 시장조사 리포트로 구체적 발표·수치·계약 사실 없음
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] 甲酰胺纸尿裤 ， 暴露了被价格战卷疯的产业链 — 기저귀 산업의 포름아마이드 문제로 실버스타의 접착제 사업 영역과 관계 없음
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] THE BATTERY SHOW: BASF brings polyisobutene binder to next-generation battery production - Electric & Hybrid Vehicle Technology International — BASF의 배터리용 폴리이소부틸렌 제품 소식으로 폴리아마이드 핫멜트 접착제와 상이한 제품군
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] Why recycling struggles with mixed materials — and how design and better sorting can help - BBC — 재활용 정책 일반론 논의로 실버스타의 폴리아마이드 핫멜트 제품과 직접 연관 없음
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [BASF] The Tire Cologne 2026 – Updates & Preview - European Rubber Journal — 타이어 업계 전시회 공지사항으로 실버스타의 접착제 사업 관련성 없음
+2026-07-09T04:42:27.476Z [INFO] 제외(무관): [Cattie Adhesives] Fabric Glue Market to Reach $19.9 Billion by 2031, Driven by Infrastructure Development and Rising Automotive - EIN News — 섬유용 접착제 시장 리포트로 구체적 사실 없는 시장조사 예측 자료
+2026-07-09T04:42:27.476Z [INFO] 신규 이벤트 20건 (무관 제외 63건)
+2026-07-09T04:42:27.552Z [INFO] events.json 누적 21건 저장
+2026-07-09T04:42:27.973Z [INFO] Slack 발송 성공

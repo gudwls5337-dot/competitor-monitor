@@ -123,7 +123,7 @@
 
   <div class="kpis" id="kpis"></div>
 
-  <h2 class="sec">이슈 발생 지역 — 최근 30일</h2>
+  <h2 class="sec">이슈 발생 지역 — 최근 45일</h2>
   <div class="mapbox">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1008.3 651" role="img" aria-label="세계 지도 — 국가별 이슈 현황">
 	
@@ -330,7 +330,8 @@
 <script>
 const COUNTRY_KO = {KR:'대한민국',US:'미국',DE:'독일',CN:'중국',FR:'프랑스',VN:'베트남',IN:'인도',
   ID:'인도네시아',TW:'대만',JP:'일본',GB:'영국',CH:'스위스',SG:'싱가포르',BR:'브라질',TH:'태국',
-  MY:'말레이시아',MX:'멕시코',TR:'튀르키예',PL:'폴란드',IT:'이탈리아',ES:'스페인',NL:'네덜란드'};
+  MY:'말레이시아',MX:'멕시코',TR:'튀르키예',PL:'폴란드',IT:'이탈리아',ES:'스페인',NL:'네덜란드',BE:'벨기에'};
+const WINDOW_DAYS=45; // 대시보드 표시 기간
 const impName={3:'높음',2:'보통',1:'낮음'};
 const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
 
@@ -393,12 +394,12 @@ async function loadJson(path){
   const companies=cdata.companies;
   if(sample) document.getElementById('sampleBanner').classList.add('show');
 
-  /* 최근 30일 필터 */
+  /* 최근 45일 필터 */
   const now=new Date(Math.max(...events.map(e=>+new Date(e.d))));
-  const cutoff=new Date(+now-30*864e5).toISOString().slice(0,10);
+  const cutoff=new Date(+now-WINDOW_DAYS*864e5).toISOString().slice(0,10);
   const recent=events.filter(e=>e.d>=cutoff).sort((a,b)=>b.d.localeCompare(a.d));
   document.getElementById('meta').textContent=
-    `${now.toISOString().slice(0,10)} 기준 · 최근 30일 · 감시기업 ${companies.length}곳`;
+    `${now.toISOString().slice(0,10)} 기준 · 최근 ${WINDOW_DAYS}일 · 감시기업 ${companies.length}곳`;
 
   /* KPI */
   const wk=new Date(+now-7*864e5).toISOString().slice(0,10);
@@ -481,7 +482,7 @@ async function loadJson(path){
       <div class="sparklbl"><span>8주 전</span><span>주간 이슈 수</span><span>이번 주</span></div>
       <div class="recent">${evs.length?evs.map(e=>`
         <div class="r"><span class="dot" style="background:${e.imp===3?'#fbbf24':e.imp===2?'#38bdf8':'#5b6b93'}"></span>
-        <span>${esc(e.t)}</span><span class="dt">${esc(e.d.slice(5))}</span></div>`).join(''):'<div class="r"><span></span><span style="color:var(--dim)">최근 30일 이슈 없음</span></div>'}</div>
+        <span>${esc(e.t)}</span><span class="dt">${esc(e.d.slice(5))}</span></div>`).join(''):'<div class="r"><span></span><span style="color:var(--dim)">최근 45일 이슈 없음</span></div>'}</div>
       <div class="links">
         ${c.linkedin?`<a href="${esc(c.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a>`:''}
         ${(c.owned_media||[]).map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">뉴스룸 ↗</a>`).join('')}
@@ -511,7 +512,7 @@ async function loadJson(path){
       return `<div class="tile${n?'':' quiet'}">
         ${n?`<span class="cnt">${n}</span>`:''}
         <div class="nm">${esc(c.name)}</div><div class="cc">${esc(c.hq||'')}</div>
-        <div class="last">${l?`<b>${esc(l.cat)}</b> · ${esc(l.d.slice(5))}`:'최근 30일 조용'}</div>
+        <div class="last">${l?`<b>${esc(l.cat)}</b> · ${esc(l.d.slice(5))}`:'최근 45일 조용'}</div>
       </div>`;
     }).join('');
   }

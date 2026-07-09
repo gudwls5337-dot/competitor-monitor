@@ -1,0 +1,59 @@
+{
+  "fetched_at": "2026-07-09T04:34:33.325Z",
+  "source": "gdelt",
+  "companyId": "basf-basfadhesive",
+  "payload": {
+    "articles": [
+      {
+        "url": "https://hea.china.com/articles/20260607/202606071887852.html",
+        "url_mobile": "",
+        "title": "2026瓷砖胶怎么选品牌 ？ 从执行标准等级 、 环保认证 、 质保年限3个维度看 _ 中华网",
+        "seendate": "20260607T080000Z",
+        "socialimage": "",
+        "domain": "hea.china.com",
+        "language": "Chinese",
+        "sourcecountry": "China"
+      },
+      {
+        "url": "https://www.yicai.com/news/103240002.html",
+        "url_mobile": "",
+        "title": "纸尿裤风波引发消费退潮 ： 有家长跨省  买放心货 ， 涉事品牌销量承压",
+        "seendate": "20260622T090000Z",
+        "socialimage": "",
+        "domain": "yicai.com",
+        "language": "Chinese",
+        "sourcecountry": "China"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/japan-acrylic-emulsions-market-to-reach-usd-1-128-15-million-by-2032-amid-rising-demand-for-low-voc-coatings--credence-research-302801045.html",
+        "url_mobile": "",
+        "title": "Japan Acrylic Emulsions Market to Reach USD 1 , 128 . 15 Million by 2032 Amid Rising Demand for Low - VOC Coatings",
+        "seendate": "20260616T041500Z",
+        "socialimage": "",
+        "domain": "prnewswire.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      },
+      {
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-06/68774335-credence-research-inc-japan-acrylic-emulsions-market-to-reach-usd-1-128-15-million-by-2032-amid-rising-demand-for-low-voc-coatings-credence-resear-008.htm",
+        "url_mobile": "",
+        "title": "Credence Research Inc .: Japan Acrylic Emulsions Market to Reach USD 1 , 128 . 15 Million by 2032 Amid Rising Demand for Low - VOC Coatings",
+        "seendate": "20260616T044500Z",
+        "socialimage": "",
+        "domain": "finanznachrichten.de",
+        "language": "English",
+        "sourcecountry": "Germany"
+      },
+      {
+        "url": "https://finance.ifeng.com/c/8uI7xHUh8cm",
+        "url_mobile": "",
+        "title": "甲酰胺纸尿裤 ， 暴露了被价格战卷疯的产业链",
+        "seendate": "20260627T030000Z",
+        "socialimage": "https://x0.ifengimg.com/ucms/2026_26/F22200F17362A62337A6698929E17729B35EA1C3_size227_w975_h549.jpg",
+        "domain": "finance.ifeng.com",
+        "language": "Chinese",
+        "sourcecountry": "China"
+      }
+    ]
+  }
+}

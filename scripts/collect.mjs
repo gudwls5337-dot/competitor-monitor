@@ -15,6 +15,7 @@
  *   ANTHROPIC_API_KEY                      LLM 분류
  *   SLACK_WEBHOOK_URL                      Slack 리포트
  *   COLLECT_LIMIT                          (테스트용) 앞에서 N개 회사만 수집
+ *   BACKFILL_FROM / BACKFILL_TO            (1회성) 과거 기간 수집. YYYY-MM-DD
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -32,7 +33,13 @@ const CATEGORIES = ["신제품","투자·증설","M&A","가격","마케팅·유�
 
 /* 콘텐츠팜/자동생성 매체 차단 — 신뢰성 확보용 (신규 스팸 매체 발견 시 여기 추가) */
 const BLOCK_SOURCES = [/indexbox/i, /ad[\s-]?hoc[\s-]?news/i, /marketsandmarkets/i, /openpr\.com/i];
-const BLOCK_TITLES = [/market\s+(analysis|forecast|size|report|outlook|share|research)/i, /\bforecast\s+(to\s+)?20\d{2}/i];
+const BLOCK_TITLES = [
+  /market\s+(analysis|forecast|size|report|outlook|share|research)/i,
+  /market\s+to\s+(surge|soar|reach|hit|grow)/i,
+  /projected\s+at\s+(usd|us\$)/i,
+  /\bcagr\b/i,
+  /\bforecast\s+(to\s+)?20\d{2}/i,
+];
 const isBlocked = (it) =>
   BLOCK_SOURCES.some((p) => p.test(it.source || "") || p.test(it.url || "")) ||
   BLOCK_TITLES.some((p) => p.test(it.title || ""));
@@ -114,8 +121,14 @@ async function fetchGoogleRss(query, lang) {
 }
 
 /* GDELT — 원문 URL·출처 도메인을 직접 제공 (무료, 키 불필요). Google News보다 우선 수집 */
+const BF_FROM = process.env.BACKFILL_FROM || null;
+const BF_TO = process.env.BACKFILL_TO || null;
+
 async function fetchGdelt(query) {
-  const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${encodeURIComponent(query)}&mode=artlist&maxrecords=30&format=json&timespan=1w`;
+  const range = BF_FROM
+    ? `&startdatetime=${BF_FROM.replace(/-/g, "")}000000&enddatetime=${(BF_TO || new Date().toISOString().slice(0, 10)).replace(/-/g, "")}235959&maxrecords=100`
+    : `&timespan=1w&maxrecords=30`;
+  const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${encodeURIComponent(query)}&mode=artlist&format=json${range}`;
   const r = await fetch(url, { headers: { "User-Agent": "competitor-monitor" } });
   if (!r.ok) throw new Error(`gdelt ${r.status}`);
   const text = await r.text();
@@ -135,7 +148,9 @@ async function fetchGdelt(query) {
 
 const stripTags = (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;|&apos;/g, "'").trim();
 const decodeXml = (s) => String(s || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").trim();
-const normTitle = (s) => stripTags(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+// 중복 판정용 정규화: 구글뉴스가 제목 뒤에 붙이는 " - 매체명" 꼬리를 제거해
+// 같은 기사가 소스별 표기 차이로 중복 등록되는 것을 방지
+const normTitle = (s) => stripTags(s).replace(/\s+[-–|]\s+[^-–|]{2,40}$/, "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 
 /* ───────── LLM 분류 ───────── */
 async function classify(items, companiesById) {
@@ -251,7 +266,8 @@ async function main() {
   const companiesById = Object.fromEntries(companies.map((c) => [c.id, c]));
   log("INFO", `감시 기업 ${companies.length}곳`);
 
-  const cutoff = new Date(Date.now() - CONFIG.LOOKBACK_DAYS * 864e5).toISOString().slice(0, 10);
+  const cutoff = BF_FROM || new Date(Date.now() - CONFIG.LOOKBACK_DAYS * 864e5).toISOString().slice(0, 10);
+  if (BF_FROM) log("INFO", `백필 모드: ${BF_FROM} ~ ${BF_TO || "현재"}`);
   const seen = readJson(path.join(ROOT, "data", "seen.json"), { urls: [], titles: [] });
   const seenUrls = new Set(seen.urls);
   const seenTitles = new Set(seen.titles);
@@ -283,10 +299,12 @@ async function main() {
           items.forEach((it) => collected.push({ ...it, companyId: c.id }));
           log("INFO", `gdelt [${c.id}] "${q}" → ${items.length}건`);
         } catch (e) { log("ERROR", `gdelt [${c.id}] "${q}" 실패: ${e.message}`); }
+        await new Promise((r) => setTimeout(r, 1500)); // GDELT 무료 API 속도제한(429) 예방
       }
-      // Google News RSS
+      // Google News RSS (백필 시 날짜 연산자 추가)
       try {
-        const { raw, items } = await fetchGoogleRss(q, lang);
+        const gq = BF_FROM ? `${q} after:${BF_FROM}${BF_TO ? ` before:${BF_TO}` : ""}` : q;
+        const { raw, items } = await fetchGoogleRss(gq, lang);
         saveRaw("google", `${c.id}-${lang}-${normTitle(q).slice(0, 20)}`, raw);
         items.forEach((it) => collected.push({ ...it, companyId: c.id }));
         log("INFO", `google [${c.id}] "${q}" (${lang}) → ${items.length}건`);
@@ -303,6 +321,7 @@ async function main() {
   for (const it of collected) {
     if (!it.url || !it.title) continue;
     if (it.date && it.date < cutoff) continue;
+    if (BF_TO && it.date && it.date > BF_TO) continue;
     const tkey = normTitle(it.title);
     if (seenUrls.has(it.url) || seenTitles.has(tkey) || batchTitles.has(tkey)) continue;
     if (isBlocked(it)) {
