@@ -1,0 +1,38 @@
+2026-07-09T00:39:50.647Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-09T00:39:50.652Z [INFO] 감시 기업 18곳
+2026-07-09T00:39:50.652Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-09T00:39:51.255Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-09T00:39:51.988Z [INFO] google [bostik] "Bostik adhesive" (en) → 59건
+2026-07-09T00:39:52.657Z [INFO] google [bostik] "Bostik hot melt" (en) → 14건
+2026-07-09T00:39:53.481Z [INFO] google [henkel] "헨켈 접착제" (ko) → 63건
+2026-07-09T00:39:54.391Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-07-09T00:39:55.135Z [INFO] google [henkel] "Henkel Technomelt" (en) → 24건
+2026-07-09T00:39:55.841Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 20건
+2026-07-09T00:39:56.709Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 100건
+2026-07-09T00:39:57.217Z [INFO] google [jowat] "요바트 접착제" (ko) → 0건
+2026-07-09T00:39:57.728Z [INFO] google [jowat] "Jowat adhesive" (en) → 12건
+2026-07-09T00:39:58.402Z [INFO] google [sika] "시카 접착제" (ko) → 9건
+2026-07-09T00:39:58.973Z [INFO] google [sika] "Sika adhesive" (en) → 51건
+2026-07-09T00:39:59.745Z [INFO] google [3m] "3M 접착제" (ko) → 54건
+2026-07-09T00:40:00.372Z [INFO] google [3m] "3M industrial adhesive" (en) → 48건
+2026-07-09T00:40:01.170Z [INFO] google [arkema] "아르케마" (ko) → 50건
+2026-07-09T00:40:01.749Z [INFO] google [arkema] "Arkema adhesive" (en) → 56건
+2026-07-09T00:40:02.222Z [INFO] google [okong] "오공 접착제" (ko) → 8건
+2026-07-09T00:40:02.909Z [INFO] google [okong] "오공본드" (ko) → 12건
+2026-07-09T00:40:03.391Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 1건
+2026-07-09T00:40:04.128Z [INFO] google [texyear] "Tex Year hot melt" (en) → 7건
+2026-07-09T00:40:04.636Z [INFO] google [moresco] "Moresco hot melt" (en) → 1건
+2026-07-09T00:40:05.335Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 10건
+2026-07-09T00:40:05.939Z [INFO] google [evonik] "에보닉" (ko) → 51건
+2026-07-09T00:40:06.729Z [INFO] google [evonik] "Evonik polyamide" (en) → 39건
+2026-07-09T00:40:07.422Z [INFO] google [dow] "Dow adhesive" (en) → 56건
+2026-07-09T00:40:08.165Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 22건
+2026-07-09T00:40:08.975Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 28건
+2026-07-09T00:40:09.540Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 31건
+2026-07-09T00:40:10.197Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 2건
+2026-07-09T00:40:10.498Z [INFO] 수집 합계 938건
+2026-07-09T00:40:10.500Z [INFO] 기간·중복 필터 후 1건
+2026-07-09T00:40:13.653Z [INFO] 분류 배치 1: 1건 → 응답 1건 (in 1167tok / out 244tok)
+2026-07-09T00:40:13.653Z [INFO] 신규 이벤트 1건 (무관 제외 0건)
+2026-07-09T00:40:13.662Z [INFO] events.json 누적 24건 저장
+2026-07-09T00:40:13.788Z [INFO] Slack 발송 성공
