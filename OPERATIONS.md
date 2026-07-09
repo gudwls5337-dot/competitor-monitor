@@ -30,6 +30,11 @@ GitHub Actions가 매주 월 09:00 KST에 `scripts/collect.mjs` 실행 →
 조치: `keywords_ko`/`keywords_en`에 업종 보조어 추가. 예: `"오공"` → `"오공 접착제"`.
 LLM이 무관 판정한 사유는 로그의 rationale에 남아 있으니 그걸 근거로 판단.
 
+### 콘텐츠팜(스팸 매체) 차단
+증상: 대시보드/Slack에 시장조사 리포트·자동생성 기사가 등록됨.
+조치: `scripts/collect.mjs` 상단 `BLOCK_SOURCES`(매체명/도메인 정규식) 또는 `BLOCK_TITLES`(제목 패턴)에 추가.
+현재 차단: IndexBox, AD HOC NEWS, MarketsandMarkets, openPR + "Market Analysis/Forecast/Size" 류 제목.
+
 ### 분류 기준 조정
 `scripts/collect.mjs`의 `classify()` system 프롬프트에 기준이 명시돼 있음.
 중요도 기준을 바꾸려면 그 목록만 수정 (스키마는 건드리지 말 것).
