@@ -109,6 +109,9 @@
     background:var(--amber);color:#452c04;border-radius:99px;padding:2px 8px;font-variant-numeric:tabular-nums}
   .tile .last{font-size:11px;color:var(--mut)}
   .tile .last b{color:var(--ink);font-weight:600}
+  .tile{cursor:pointer;transition:border-color .15s}
+  .tile:hover{border-color:#3b82c4}
+  .plinks{font-size:12.5px;padding:12px 18px;border-bottom:1px solid #17233d;color:var(--mut);line-height:1.7}
   footer{margin-top:40px;font-size:11px;color:var(--dim)}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -309,10 +312,10 @@
     <div class="legend" id="legend"></div>
   </div>
 
-  <h2 class="sec">핵심 감시 — Bostik · Henkel</h2>
+  <h2 class="sec">핵심 기업 — Bostik · Henkel</h2>
   <div class="heroes" id="heroes"></div>
 
-  <h2 class="sec">전체 감시 기업</h2>
+  <h2 class="sec">전체 기업</h2>
   <div class="filters" id="filters"></div>
   <div class="grid" id="grid"></div>
 
@@ -399,7 +402,7 @@ async function loadJson(path){
   const cutoff=new Date(+now-WINDOW_DAYS*864e5).toISOString().slice(0,10);
   const recent=events.filter(e=>e.d>=cutoff).sort((a,b)=>b.d.localeCompare(a.d));
   document.getElementById('meta').textContent=
-    `${now.toISOString().slice(0,10)} 기준 · 최근 ${WINDOW_DAYS}일 · 감시기업 ${companies.length}곳`;
+    `${now.toISOString().slice(0,10)} 기준 · 최근 ${WINDOW_DAYS}일 · 기업 ${companies.length}곳`;
 
   /* KPI */
   const wk=new Date(+now-7*864e5).toISOString().slice(0,10);
@@ -482,7 +485,7 @@ async function loadJson(path){
       <div class="sparklbl"><span>8주 전</span><span>주간 이슈 수</span><span>이번 주</span></div>
       <div class="recent">${evs.length?evs.map(e=>`
         <div class="r"><span class="dot" style="background:${e.imp===3?'#fbbf24':e.imp===2?'#38bdf8':'#5b6b93'}"></span>
-        <span>${esc(e.t)}</span><span class="dt">${esc(e.d.slice(5))}</span></div>`).join(''):'<div class="r"><span></span><span style="color:var(--dim)">최근 45일 이슈 없음</span></div>'}</div>
+        <span>${e.url&&e.url!=='#'?`<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.t)}</a>`:esc(e.t)}</span><span class="dt">${esc(e.d.slice(5))}</span></div>`).join(''):'<div class="r"><span></span><span style="color:var(--dim)">최근 45일 이슈 없음</span></div>'}</div>
       <div class="links">
         ${c.linkedin?`<a href="${esc(c.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a>`:''}
         ${(c.owned_media||[]).map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">뉴스룸 ↗</a>`).join('')}
@@ -509,7 +512,7 @@ async function loadJson(path){
       return true;
     }).map(c=>{
       const n=cnt[c.id]||0,l=last[c.id];
-      return `<div class="tile${n?'':' quiet'}">
+      return `<div class="tile${n?'':' quiet'}" data-id="${esc(c.id)}" title="클릭하면 상세 보기">
         ${n?`<span class="cnt">${n}</span>`:''}
         <div class="nm">${esc(c.name)}</div><div class="cc">${esc(c.hq||'')}</div>
         <div class="last">${l?`<b>${esc(l.cat)}</b> · ${esc(l.d.slice(5))}`:'최근 45일 조용'}</div>
@@ -517,6 +520,31 @@ async function loadJson(path){
     }).join('');
   }
   render('all');
+  /* 기업 타일 클릭 → 우측 패널에 링크·이슈 목록 */
+  function openCompanyPanel(id){
+    const c=companies.find(x=>x.id===id); if(!c)return;
+    const evs=events.filter(e=>e.company_id===c.id||e.co===c.name||e.co===c.name_en)
+      .sort((a,b)=>b.d.localeCompare(a.d)).slice(0,20);
+    document.getElementById('panelTitle').textContent=`${c.name}`;
+    const links=[
+      c.homepage?`<a href="${esc(c.homepage)}" target="_blank" rel="noopener">홈페이지 ↗</a>`:'',
+      ...(c.owned_media||[]).map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">뉴스룸 ↗</a>`),
+      c.linkedin?`<a href="${esc(c.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a>`:'',
+    ].filter(Boolean).join(' &nbsp;·&nbsp; ');
+    document.getElementById('panelBody').innerHTML=
+      `<div class="plinks">${esc(c.hq||'')}${links?`<div style="margin-top:6px">${links}</div>`:''}</div>`+
+      (evs.length?evs.map(e=>`
+      <div class="ev">
+        <div class="m"><span class="imp i${e.imp}">${impName[e.imp]||'?'}</span>
+          <span>${esc(e.d)}</span><span>${esc(e.cat)}</span></div>
+        <h3>${e.url&&e.url!=='#'?`<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.t)}</a>`:esc(e.t)}</h3>
+        <p>${esc(e.s)} <span style="color:var(--dim)">— ${esc(e.src)}</span></p>
+      </div>`).join(''):'<div class="ev"><p>수집된 이슈가 아직 없습니다.</p></div>');
+    panel.classList.add('open');
+  }
+  grid.addEventListener('click',e=>{
+    const t=e.target.closest('.tile'); if(t&&t.dataset.id)openCompanyPanel(t.dataset.id);
+  });
   document.getElementById('filters').addEventListener('click',e=>{
     const b=e.target.closest('.chip'); if(!b)return;
     document.querySelectorAll('#filters .chip').forEach(x=>x.classList.toggle('on',x===b));

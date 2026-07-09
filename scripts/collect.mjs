@@ -24,6 +24,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONFIG = {
   MODEL: "claude-haiku-4-5", // 분류 품질이 부족하면 "claude-sonnet-5"로 교체
+  DEDUPE_MODEL: "claude-sonnet-5", // 중복 판정은 품질 우선 (호출량 작아 비용 미미: 주 ~$0.02)
   LOOKBACK_DAYS: 8,          // 주간 실행 + 1일 겹침(누락 방지)
   NAVER_DISPLAY: 30,
   CLASSIFY_BATCH: 15,
@@ -32,7 +33,7 @@ const CONFIG = {
 const CATEGORIES = ["신제품","투자·증설","M&A","가격","마케팅·유통","전시·행사","실적·공시","온드미디어","인사·조직","기타"];
 
 /* 콘텐츠팜/자동생성 매체 차단 — 신뢰성 확보용 (신규 스팸 매체 발견 시 여기 추가) */
-const BLOCK_SOURCES = [/indexbox/i, /ad[\s-]?hoc[\s-]?news/i, /marketsandmarkets/i, /openpr\.com/i];
+const BLOCK_SOURCES = [/indexbox/i, /ad[\s-]?hoc[\s-]?news/i, /marketsandmarkets/i, /openpr\.com/i, /menafn/i, /wallstreet-online/i, /finanznachrichten/i];
 const BLOCK_TITLES = [
   /market\s+(analysis|forecast|size|report|outlook|share|research)/i,
   /market\s+to\s+(surge|soar|reach|hit|grow)/i,
@@ -96,7 +97,13 @@ async function fetchNaver(query) {
 }
 
 async function fetchGoogleRss(query, lang) {
-  const loc = lang === "ko" ? "hl=ko&gl=KR&ceid=KR:ko" : "hl=en-US&gl=US&ceid=US:en";
+  const LOC = {
+    ko: "hl=ko&gl=KR&ceid=KR:ko",
+    en: "hl=en-US&gl=US&ceid=US:en",
+    zh: "hl=zh-CN&gl=CN&ceid=CN:zh-Hans",  // 중국 간체판
+    tw: "hl=zh-TW&gl=TW&ceid=TW:zh-Hant",  // 대만 번체판
+  };
+  const loc = LOC[lang] || LOC.en;
   const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&${loc}`;
   const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 (competitor-monitor)" } });
   if (!r.ok) throw new Error(`google rss ${r.status}`);
@@ -231,6 +238,62 @@ async function classify(items, companiesById) {
   return out;
 }
 
+/* ───────── 스토리 단위 중복 제거 (LLM) ─────────
+ * 같은 근본 사건(투자 발표, 인수, 신제품 등)을 다룬 기사는 매체가 달라도 1건만 남긴다.
+ * 사용자 방침: 애매하면 중복으로 처리 (놓치는 것보다 중복 등록이 더 나쁨) */
+async function dedupeStories(newEvents, existingRecent) {
+  if (!process.env.ANTHROPIC_API_KEY || newEvents.length === 0) return newEvents;
+  const { default: Anthropic } = await import("@anthropic-ai/sdk");
+  const client = new Anthropic();
+  const payload = {
+    existing: existingRecent.slice(0, 40).map((e) => ({ id: e.id, company: e.co, date: e.d, title: e.t })),
+    new: newEvents.map((e, i) => ({ index: i, company: e.co, date: e.d, title: e.t, summary: (e.s || "").slice(0, 120) })),
+  };
+  try {
+    const resp = await client.messages.create({
+      model: CONFIG.DEDUPE_MODEL,
+      max_tokens: 2048,
+      system: [
+        "뉴스 이벤트 중복 판정기. 같은 근본 사건(같은 투자 발표, 같은 인수, 같은 신제품, 같은 실적, 같은 ESG 발표)을 다룬 기사는 매체·표현·언어가 달라도 중복이다.",
+        "판정 기준은 공격적으로: 같은 회사의 비슷한 시기(±7일) 겹치는 주제면 전부 중복으로 간주하라. 애매하면 중복이다.",
+        "예: 한 회사의 투자 발표를 여러 매체가 각자 다른 제목으로 보도(설비 투자/R&D 강화/시장 공략/공급망 구축 등)해도 전부 같은 사건 → 가장 정보량 많은 1건만 남기고 drop.",
+        "new 배열의 각 항목에 대해, existing에 이미 같은 사건이 있거나 new 내 더 앞선 index와 같은 사건이면 그 index를 drop에 담아라.",
+        "완전히 다른 사건(다른 발표, 다른 지역의 별개 사업)만 남긴다.",
+      ].join("\n"),
+      messages: [{ role: "user", content: JSON.stringify(payload) }],
+      output_config: {
+        format: {
+          type: "json_schema",
+          schema: {
+            type: "object", additionalProperties: false, required: ["drop"],
+            properties: {
+              drop: {
+                type: "array",
+                items: {
+                  type: "object", additionalProperties: false, required: ["index", "reason"],
+                  properties: { index: { type: "integer" }, reason: { type: "string" } },
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+    const drops = JSON.parse(resp.content.find((b) => b.type === "text")?.text || "{}").drop || [];
+    const dropSet = new Set();
+    drops.forEach((d) => {
+      if (newEvents[d.index]) {
+        dropSet.add(d.index);
+        log("INFO", `중복(스토리) 제거: ${newEvents[d.index].t.slice(0, 70)} — ${d.reason}`);
+      }
+    });
+    return newEvents.filter((_, i) => !dropSet.has(i));
+  } catch (e) {
+    log("ERROR", `스토리 중복제거 실패(${e.message}) — 이번 실행은 생략`);
+    return newEvents;
+  }
+}
+
 /* ───────── Slack ───────── */
 async function sendSlack(newEvents, stats) {
   if (!process.env.SLACK_WEBHOOK_URL) {
@@ -280,6 +343,7 @@ async function main() {
     const queries = [
       ...(c.keywords_ko || []).map((q) => ({ q, lang: "ko" })),
       ...(c.keywords_en || []).map((q) => ({ q, lang: "en" })),
+      ...(c.keywords_zh || []).map((q) => ({ q, lang: c.hq_cc === "TW" ? "tw" : "zh" })),
     ];
     for (const { q, lang } of queries) {
       // 네이버 (한국어 쿼리만)
@@ -365,10 +429,14 @@ async function main() {
   });
   log("INFO", `신규 이벤트 ${newEvents.length}건 (무관 제외 ${fresh.length - newEvents.length}건)`);
 
-  /* 4. 저장 (append-only) */
+  /* 4. 스토리 단위 중복 제거 후 저장 (append-only) */
   const eventsPath = path.join(ROOT, "docs", "data", "events.json");
   const events = readJson(eventsPath, []);
-  events.push(...newEvents);
+  const recentCut = new Date(Date.now() - 21 * 864e5).toISOString().slice(0, 10);
+  const finalNew = await dedupeStories(newEvents, events.filter((e) => e.d >= recentCut));
+  if (finalNew.length !== newEvents.length)
+    log("INFO", `스토리 중복 ${newEvents.length - finalNew.length}건 제거 → 최종 ${finalNew.length}건`);
+  events.push(...finalNew);
   events.sort((a, b) => b.d.localeCompare(a.d));
   writeJson(eventsPath, events);
   // file:// 로 열어도 동작하도록 JS 사본도 생성 (fetch가 CORS로 막히는 환경 대비)
@@ -381,8 +449,7 @@ async function main() {
   log("INFO", `events.json 누적 ${events.length}건 저장`);
 
   /* 5. Slack */
-  const relevant = newEvents.length;
-  await sendSlack(newEvents, { collected: collected.length, relevant, dashboardUrl: process.env.DASHBOARD_URL });
+  await sendSlack(finalNew, { collected: collected.length, relevant: finalNew.length, dashboardUrl: process.env.DASHBOARD_URL });
 
   saveLog();
 }

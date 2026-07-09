@@ -192,7 +192,10 @@
       "keywords_en": [
         "Tex Year hot melt"
       ],
-      "name_ko": "텍스이어"
+      "name_ko": "텍스이어",
+      "keywords_zh": [
+        "德謙 熱熔膠"
+      ]
     },
     {
       "id": "moresco",
@@ -345,7 +348,10 @@
         "대만",
         "신발"
       ],
-      "homepage": "https://www.nanpaoglue.com"
+      "homepage": "https://www.nanpaoglue.com",
+      "keywords_zh": [
+        "南寶樹脂"
+      ]
     },
     {
       "tier": 2,
@@ -487,7 +493,10 @@
       "tags": [
         "중국"
       ],
-      "homepage": "https://www.industryglue.com"
+      "homepage": "https://www.industryglue.com",
+      "keywords_zh": [
+        "汇天 胶粘剂"
+      ]
     },
     {
       "tier": 2,
@@ -502,7 +511,10 @@
       "tags": [
         "중국"
       ],
-      "homepage": "https://www.kdadhesive.com"
+      "homepage": "https://www.kdadhesive.com",
+      "keywords_zh": [
+        "康达新材"
+      ]
     },
     {
       "tier": 2,
@@ -549,7 +561,10 @@
         "중국",
         "자동차"
       ],
-      "homepage": "https://www.tzglue.com"
+      "homepage": "https://www.tzglue.com",
+      "keywords_zh": [
+        "天泽 热熔胶"
+      ]
     },
     {
       "tier": 2,
@@ -564,7 +579,10 @@
       "tags": [
         "중국"
       ],
-      "homepage": "https://www.hengningfilm.com"
+      "homepage": "https://www.hengningfilm.com",
+      "keywords_zh": [
+        "恒宁 热熔胶"
+      ]
     },
     {
       "tier": 2,
@@ -579,7 +597,10 @@
       "tags": [
         "대만"
       ],
-      "homepage": "https://www.schem.net"
+      "homepage": "https://www.schem.net",
+      "keywords_zh": [
+        "台聚 熱熔膠"
+      ]
     },
     {
       "tier": 2,
@@ -625,7 +646,10 @@
       "tags": [
         "중국"
       ],
-      "homepage": "https://www.kaisun-adhesives.com"
+      "homepage": "https://www.kaisun-adhesives.com",
+      "keywords_zh": [
+        "凯盛 热熔胶"
+      ]
     },
     {
       "tier": 2,
@@ -640,7 +664,10 @@
       "tags": [
         "중국"
       ],
-      "homepage": "https://www.rhadhesive.com"
+      "homepage": "https://www.rhadhesive.com",
+      "keywords_zh": [
+        "仁和 热熔胶"
+      ]
     },
     {
       "tier": 2,
@@ -702,7 +729,10 @@
       "tags": [
         "중국"
       ],
-      "homepage": "https://www.swhotmeltglue.com"
+      "homepage": "https://www.swhotmeltglue.com",
+      "keywords_zh": [
+        "自由鸟 热熔胶"
+      ]
     },
     {
       "tier": 2,
@@ -908,6 +938,67 @@
         "신발"
       ],
       "homepage": "https://www.hychem.kr"
+    },
+    {
+      "tier": 2,
+      "keywords_ko": [
+        "JCC코리아",
+        "JCC 핫멜트"
+      ],
+      "keywords_en": [],
+      "id": "jcckorea",
+      "name": "JCC코리아",
+      "hq_cc": "KR",
+      "hq": "한국 (외국계 지사)",
+      "tags": [
+        "국내"
+      ]
+    },
+    {
+      "tier": 2,
+      "keywords_ko": [],
+      "keywords_en": [
+        "ATG Direct adhesive"
+      ],
+      "id": "atgdirect",
+      "name": "ATG Direct",
+      "hq_cc": "US",
+      "hq": "북미",
+      "tags": [
+        "미국"
+      ]
+    },
+    {
+      "tier": 2,
+      "keywords_ko": [],
+      "keywords_en": [
+        "EMS-Chemie",
+        "EMS Griltex"
+      ],
+      "id": "ems",
+      "name": "EMS-Chemie",
+      "hq_cc": "CH",
+      "hq": "스위스 (Griltex — 코폴리아마이드 핫멜트)",
+      "tags": [
+        "유럽",
+        "핫멜트",
+        "PA"
+      ],
+      "homepage": "https://www.ems-group.com"
+    },
+    {
+      "tier": 2,
+      "keywords_ko": [
+        "더존케미칼"
+      ],
+      "keywords_en": [],
+      "id": "duzon",
+      "name": "더존케미칼",
+      "hq_cc": "KR",
+      "hq": "한국",
+      "tags": [
+        "국내"
+      ]
     }
   ]
 }
