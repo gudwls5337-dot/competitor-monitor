@@ -1,0 +1,19 @@
+2026-07-09T06:55:23.605Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-09T06:55:23.621Z [INFO] 감시 기업 2곳
+2026-07-09T06:55:23.623Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-09T06:55:24.398Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-09T06:55:36.381Z [ERROR] gdelt [bostik] "Bostik adhesive" 실패: gdelt 429
+2026-07-09T06:55:38.625Z [INFO] google [bostik] "Bostik adhesive" (en) → 58건
+2026-07-09T06:55:49.888Z [ERROR] gdelt [bostik] "Bostik hot melt" 실패: gdelt 429
+2026-07-09T06:55:52.013Z [INFO] google [bostik] "Bostik hot melt" (en) → 14건
+2026-07-09T06:55:52.808Z [INFO] google [henkel] "헨켈 접착제" (ko) → 62건
+2026-07-09T06:56:04.617Z [ERROR] gdelt [henkel] "Henkel Adhesive Technologies" 실패: gdelt 429
+2026-07-09T06:56:07.107Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-07-09T06:56:18.906Z [ERROR] gdelt [henkel] "Henkel Technomelt" 실패: gdelt 429
+2026-07-09T06:56:20.918Z [INFO] google [henkel] "Henkel Technomelt" (en) → 24건
+2026-07-09T06:56:21.798Z [INFO] trade [adhesivesmag.com] → 100건
+2026-07-09T06:56:21.799Z [INFO] 수집 합계 368건
+2026-07-09T06:56:21.799Z [INFO] 기간·중복 필터 후 0건 (콘텐츠팜 차단 0건)
+2026-07-09T06:56:21.985Z [INFO] 신규 이벤트 0건 (무관 제외 0건)
+2026-07-09T06:56:22.032Z [INFO] events.json 누적 9건 저장
+2026-07-09T06:56:22.432Z [INFO] Slack 발송 성공

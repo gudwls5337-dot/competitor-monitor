@@ -35,6 +35,12 @@ LLM이 무관 판정한 사유는 로그의 rationale에 남아 있으니 그걸
 조치: `scripts/collect.mjs` 상단 `BLOCK_SOURCES`(매체명/도메인 정규식) 또는 `BLOCK_TITLES`(제목 패턴)에 추가.
 현재 차단: IndexBox, AD HOC NEWS, MarketsandMarkets, openPR + "Market Analysis/Forecast/Size" 류 제목.
 
+### 수집 소스 구성 (scripts/collect.mjs의 CONFIG)
+- 기업별: 구글뉴스 한국어/영어/중국어(간체·번체)/일본어판 — companies.json의 keywords_ko/en/zh/ja
+- 산업 주제 구독: `CONFIG.TOPIC_QUERIES` — 회사 무관 업계 신호("hot melt adhesive" 등). 주제 추가는 여기
+- GDELT: 원문 URL 소스 (영문 쿼리만, 5초 간격 필수 — 무료 API 속도제한)
+- 중복: URL/제목(출처 꼬리 제거) 1차 + LLM 스토리 판정 2차(`DEDUPE_MODEL`, 애매하면 중복 처리)
+
 ### 분류 기준 조정
 `scripts/collect.mjs`의 `classify()` system 프롬프트에 기준이 명시돼 있음.
 중요도 기준을 바꾸려면 그 목록만 수정 (스키마는 건드리지 말 것).

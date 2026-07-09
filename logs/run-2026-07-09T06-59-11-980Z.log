@@ -1,0 +1,22 @@
+2026-07-09T06:58:26.228Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-09T06:58:26.251Z [INFO] 감시 기업 1곳
+2026-07-09T06:58:26.253Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-09T06:58:26.876Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-09T06:58:40.361Z [INFO] gdelt [bostik] "Bostik adhesive" → 1건
+2026-07-09T06:58:45.992Z [INFO] google [bostik] "Bostik adhesive" (en) → 58건
+2026-07-09T06:58:55.676Z [ERROR] gdelt [bostik] "Bostik hot melt" 실패: gdelt 429
+2026-07-09T06:59:01.127Z [INFO] google [bostik] "Bostik hot melt" (en) → 14건
+2026-07-09T06:59:01.804Z [INFO] topic ""hot melt adhesive"" (en) → 52건
+2026-07-09T06:59:02.072Z [INFO] topic ""polyamide adhesive"" (en) → 4건
+2026-07-09T06:59:04.320Z [INFO] topic "핫멜트 접착제" (ko) → 38건
+2026-07-09T06:59:04.320Z [INFO] 수집 합계 177건
+2026-07-09T06:59:04.321Z [INFO] 차단(콘텐츠팜): [bostik] World Psa Hot Melt Adhesive - Market Analysis, Forecast, Size, Trends and Insigh — IndexBox
+2026-07-09T06:59:04.321Z [INFO] 차단(콘텐츠팜): [_trade] Asia-Pacific Tpu Hot Melt Adhesive Powder - Market Analysis, Forecast, Size, Tre — IndexBox
+2026-07-09T06:59:04.322Z [INFO] 차단(콘텐츠팜): [_trade] ProBlue Fulfill from Nordson Corp - Hot melt system keeps classic packaging line — Ad-hoc-news.de
+2026-07-09T06:59:04.322Z [INFO] 차단(콘텐츠팜): [_trade] Middle East Solar Cell Backsheet Adhesive - Market Analysis, Forecast, Size, Tre — IndexBox
+2026-07-09T06:59:04.322Z [INFO] 기간·중복 필터 후 1건 (콘텐츠팜 차단 4건)
+2026-07-09T06:59:11.610Z [INFO] 분류 배치 1: 1건 → 응답 1건 (in 1407tok / out 182tok)
+2026-07-09T06:59:11.610Z [INFO] 제외(무관): [Bostik] It the season for back - to - school DIY — 광고성 콘텐츠로 실버스타케미칼의 접착제 사업과 직접적 경쟁 정보 부재.
+2026-07-09T06:59:11.610Z [INFO] 신규 이벤트 0건 (무관 제외 1건)
+2026-07-09T06:59:11.642Z [INFO] events.json 누적 9건 저장
+2026-07-09T06:59:11.980Z [INFO] Slack 발송 성공

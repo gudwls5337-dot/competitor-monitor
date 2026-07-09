@@ -1,0 +1,19 @@
+{
+  "fetched_at": "2026-07-09T06:58:40.359Z",
+  "source": "gdelt",
+  "companyId": "bostik-bostikadhesive",
+  "payload": {
+    "articles": [
+      {
+        "url": "https://www.philstar.com/lifestyle/lifestyle-features/2026/07/05/2540025/its-season-back-school-diy",
+        "url_mobile": "https://www.philstar.com/lifestyle/lifestyle-features/2026/07/05/2540025/its-season-back-school-diy/amp/",
+        "title": "It the season for back - to - school DIY",
+        "seendate": "20260705T114500Z",
+        "socialimage": "https://media.philstar.com/photos/2026/07/05/diy-rugby_2026-07-05_18-34-28.jpg",
+        "domain": "philstar.com",
+        "language": "English",
+        "sourcecountry": "Philippines"
+      }
+    ]
+  }
+}

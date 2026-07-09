@@ -29,6 +29,12 @@ const CONFIG = {
   NAVER_DISPLAY: 30,
   CLASSIFY_BATCH: 15,
   SLACK_MAX_ITEMS: 8,
+  // 산업 주제 구독: 특정 회사가 아닌 업계 전체 신호(신기술·전시·업계지 기사)를 잡는 그물
+  TOPIC_QUERIES: [
+    { q: '"hot melt adhesive"', lang: "en" },
+    { q: '"polyamide adhesive"', lang: "en" },
+    { q: "핫멜트 접착제", lang: "ko" },
+  ],
 };
 const CATEGORIES = ["신제품","투자·증설","M&A","가격","마케팅·유통","전시·행사","실적·공시","온드미디어","인사·조직","기타"];
 
@@ -102,6 +108,7 @@ async function fetchGoogleRss(query, lang) {
     en: "hl=en-US&gl=US&ceid=US:en",
     zh: "hl=zh-CN&gl=CN&ceid=CN:zh-Hans",  // 중국 간체판
     tw: "hl=zh-TW&gl=TW&ceid=TW:zh-Hant",  // 대만 번체판
+    ja: "hl=ja&gl=JP&ceid=JP:ja",          // 일본판
   };
   const loc = LOC[lang] || LOC.en;
   const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&${loc}`;
@@ -172,7 +179,9 @@ async function classify(items, companiesById) {
     const batch = items.slice(i, i + CONFIG.CLASSIFY_BATCH);
     const payload = batch.map((it, idx) => ({
       index: idx,
-      company: companiesById[it.companyId]?.name_en || it.companyId,
+      company: it.companyId === "_trade"
+        ? "(업계 전문지 기사 — 주체 기업을 판단할 것)"
+        : companiesById[it.companyId]?.name_en || it.companyId,
       title: it.title,
       snippet: it.snippet?.slice(0, 300) || "",
       source: it.source,
@@ -192,6 +201,8 @@ async function classify(items, companiesById) {
           `- category: ${CATEGORIES.join(", ")} 중 하나`,
           "- country_iso2: 이슈가 발생한 지역(공장 위치, 진출 시장 등)의 ISO 3166-1 alpha-2 코드. 불명확하면 본사 국가.",
           "- summary_ko: 한 문장 요약(한국어), implication_ko: 실버스타 관점 시사점 한 문장, rationale: 분류 근거 한 문장",
+          "- company_name: 기사의 주체 기업명(제시된 company를 그대로 쓰되, '(업계 전문지…)'인 항목은 기사에서 판단해 기입, 특정 불가면 '업계')",
+          "- 업계 전문지 기사는 핫멜트/PA/접착제 산업의 구체적 사건(신제품, 인수, 증설, 인물)일 때만 relevant=true. 일반 기고/광고는 false.",
         ].join("\n"),
         messages: [{ role: "user", content: JSON.stringify(payload, null, 1) }],
         output_config: {
@@ -207,9 +218,10 @@ async function classify(items, companiesById) {
                   items: {
                     type: "object",
                     additionalProperties: false,
-                    required: ["index","relevant","importance","category","country_iso2","summary_ko","implication_ko","rationale"],
+                    required: ["index","relevant","importance","category","country_iso2","summary_ko","implication_ko","rationale","company_name"],
                     properties: {
                       index: { type: "integer" },
+                      company_name: { type: "string" },
                       relevant: { type: "boolean" },
                       importance: { type: "integer", enum: [1, 2, 3] },
                       category: { type: "string", enum: CATEGORIES },
@@ -344,6 +356,7 @@ async function main() {
       ...(c.keywords_ko || []).map((q) => ({ q, lang: "ko" })),
       ...(c.keywords_en || []).map((q) => ({ q, lang: "en" })),
       ...(c.keywords_zh || []).map((q) => ({ q, lang: c.hq_cc === "TW" ? "tw" : "zh" })),
+      ...(c.keywords_ja || []).map((q) => ({ q, lang: "ja" })),
     ];
     for (const { q, lang } of queries) {
       // 네이버 (한국어 쿼리만)
@@ -363,7 +376,7 @@ async function main() {
           items.forEach((it) => collected.push({ ...it, companyId: c.id }));
           log("INFO", `gdelt [${c.id}] "${q}" → ${items.length}건`);
         } catch (e) { log("ERROR", `gdelt [${c.id}] "${q}" 실패: ${e.message}`); }
-        await new Promise((r) => setTimeout(r, 1500)); // GDELT 무료 API 속도제한(429) 예방
+        await new Promise((r) => setTimeout(r, 5000)); // GDELT 무료 API 속도제한(429) 예방 — 5초 간격 필요
       }
       // Google News RSS (백필 시 날짜 연산자 추가)
       try {
@@ -375,6 +388,16 @@ async function main() {
       } catch (e) { log("ERROR", `google [${c.id}] "${q}" 실패: ${e.message}`); }
       await new Promise((r) => setTimeout(r, 300)); // rate limit 예방
     }
+  }
+  /* 1b. 산업 주제 구독 (회사 무관 업계 전체 신호) */
+  for (const { q, lang } of CONFIG.TOPIC_QUERIES) {
+    try {
+      const gq = BF_FROM ? `${q} after:${BF_FROM}${BF_TO ? ` before:${BF_TO}` : ""}` : q;
+      const { raw, items } = await fetchGoogleRss(gq, lang);
+      saveRaw("topic", normTitle(q).slice(0, 24), raw);
+      items.forEach((it) => collected.push({ ...it, companyId: "_trade" }));
+      log("INFO", `topic "${q}" (${lang}) → ${items.length}건`);
+    } catch (e) { log("ERROR", `topic "${q}" 실패: ${e.message}`); }
   }
   log("INFO", `수집 합계 ${collected.length}건`);
 
@@ -402,9 +425,16 @@ async function main() {
   /* 3. LLM 분류 */
   const results = await classify(fresh, companiesById);
   const newEvents = [];
+  const byName = new Map();
+  companies.forEach((cc) => {
+    byName.set(cc.name.toLowerCase(), cc);
+    if (cc.name_en) byName.set(cc.name_en.toLowerCase(), cc);
+  });
   fresh.forEach((it, i) => {
     const r = results[i];
-    const c = companiesById[it.companyId];
+    const c = companiesById[it.companyId]
+      || byName.get((r?.company_name || "").toLowerCase())          // 업계지 기사가 감시 기업 건이면 연결
+      || { id: "_trade", name: r?.company_name || "업계", hq_cc: "US" };
     if (r && !r.relevant) {
       log("INFO", `제외(무관): [${c.name}] ${it.title} — ${r.rationale}`);
       return;

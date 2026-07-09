@@ -212,7 +212,10 @@
       "keywords_en": [
         "Moresco hot melt"
       ],
-      "name_ko": "모레스코"
+      "name_ko": "모레스코",
+      "keywords_ja": [
+        "モレスコ ホットメルト"
+      ]
     },
     {
       "id": "beardow",
@@ -315,7 +318,10 @@
       "keywords_en": [
         "DIC Corporation adhesive"
       ],
-      "name_ko": "DIC"
+      "name_ko": "DIC",
+      "keywords_ja": [
+        "DIC 接着剤"
+      ]
     },
     {
       "id": "toyobo",
@@ -332,7 +338,10 @@
       "keywords_en": [
         "Toyobo polyamide"
       ],
-      "name_ko": "도요보"
+      "name_ko": "도요보",
+      "keywords_ja": [
+        "東洋紡 ポリアミド"
+      ]
     },
     {
       "tier": 2,
@@ -368,7 +377,11 @@
         "일본",
         "핫멜트"
       ],
-      "homepage": "https://www.toagosei.co.jp"
+      "homepage": "https://www.toagosei.co.jp",
+      "keywords_ja": [
+        "東亞合成 接着剤",
+        "アロンメルト"
+      ]
     },
     {
       "tier": 2,
