@@ -1,0 +1,136 @@
+2026-07-13T04:06:15.589Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-07-13T04:06:15.593Z [INFO] 감시 기업 59곳
+2026-07-13T04:06:15.594Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-07-13T04:06:15.888Z [INFO] google [bostik] "보스틱 접착제" (ko) → 10건
+2026-07-13T04:06:16.482Z [INFO] google [bostik] "Bostik adhesive" (en) → 58건
+2026-07-13T04:06:16.997Z [INFO] google [bostik] "Bostik hot melt" (en) → 12건
+2026-07-13T04:06:17.753Z [INFO] google [henkel] "헨켈 접착제" (ko) → 55건
+2026-07-13T04:06:18.636Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-07-13T04:06:19.189Z [INFO] google [henkel] "Henkel Technomelt" (en) → 23건
+2026-07-13T04:06:19.714Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 25건
+2026-07-13T04:06:20.350Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 100건
+2026-07-13T04:06:20.814Z [INFO] google [jowat] "요바트 접착제" (ko) → 0건
+2026-07-13T04:06:21.319Z [INFO] google [jowat] "Jowat adhesive" (en) → 13건
+2026-07-13T04:06:21.832Z [INFO] google [sika] "시카 접착제" (ko) → 9건
+2026-07-13T04:06:22.363Z [INFO] google [sika] "Sika adhesive" (en) → 48건
+2026-07-13T04:06:22.920Z [INFO] google [3m] "3M 접착제" (ko) → 54건
+2026-07-13T04:06:23.504Z [INFO] google [3m] "3M industrial adhesive" (en) → 44건
+2026-07-13T04:06:24.099Z [INFO] google [arkema] "아르케마" (ko) → 49건
+2026-07-13T04:06:24.706Z [INFO] google [arkema] "Arkema adhesive" (en) → 56건
+2026-07-13T04:06:25.183Z [INFO] google [okong] "오공 접착제" (ko) → 8건
+2026-07-13T04:06:25.732Z [INFO] google [okong] "오공본드" (ko) → 10건
+2026-07-13T04:06:26.233Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 1건
+2026-07-13T04:06:26.775Z [INFO] google [texyear] "Tex Year hot melt" (en) → 6건
+2026-07-13T04:06:27.269Z [INFO] google [texyear] "德謙 熱熔膠" (tw) → 0건
+2026-07-13T04:06:27.769Z [INFO] google [moresco] "Moresco hot melt" (en) → 1건
+2026-07-13T04:06:28.273Z [INFO] google [moresco] "モレスコ ホットメルト" (ja) → 11건
+2026-07-13T04:06:28.764Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 10건
+2026-07-13T04:06:29.363Z [INFO] google [evonik] "에보닉" (ko) → 56건
+2026-07-13T04:06:29.914Z [INFO] google [evonik] "Evonik polyamide" (en) → 44건
+2026-07-13T04:06:30.507Z [INFO] google [dow] "Dow adhesive" (en) → 55건
+2026-07-13T04:06:31.069Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 27건
+2026-07-13T04:06:31.584Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 23건
+2026-07-13T04:06:32.133Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 22건
+2026-07-13T04:06:32.645Z [INFO] google [dic] "DIC 接着剤" (ja) → 36건
+2026-07-13T04:06:33.187Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 0건
+2026-07-13T04:06:33.698Z [INFO] google [toyobo] "東洋紡 ポリアミド" (ja) → 10건
+2026-07-13T04:06:34.228Z [INFO] google [nanpao] "Nan Pao adhesive" (en) → 3건
+2026-07-13T04:06:34.905Z [INFO] google [nanpao] "南寶樹脂" (tw) → 100건
+2026-07-13T04:06:35.372Z [INFO] google [toagosei] "Toagosei adhesive" (en) → 7건
+2026-07-13T04:06:35.955Z [INFO] google [toagosei] "Aron Melt" (en) → 10건
+2026-07-13T04:06:36.606Z [INFO] google [toagosei] "東亞合成 接着剤" (ja) → 90건
+2026-07-13T04:06:37.091Z [INFO] google [toagosei] "アロンメルト" (ja) → 1건
+2026-07-13T04:06:37.625Z [INFO] google [basf] "BASF adhesive" (en) → 50건
+2026-07-13T04:06:38.177Z [INFO] google [covestro] "Covestro adhesive film" (en) → 40건
+2026-07-13T04:06:38.740Z [INFO] google [dupont] "DuPont adhesive" (en) → 49건
+2026-07-13T04:06:39.213Z [INFO] google [solvay] "Solvay polyamide adhesive" (en) → 0건
+2026-07-13T04:06:39.722Z [INFO] google [kleiberit] "Kleiberit" (en) → 2건
+2026-07-13T04:06:40.205Z [INFO] google [poweradhesives] "Power Adhesives Tecbond" (en) → 4건
+2026-07-13T04:06:40.690Z [INFO] google [spiderbond] "SpiderBond adhesive" (en) → 0건
+2026-07-13T04:06:41.218Z [INFO] google [huitian] "Huitian adhesive" (en) → 1건
+2026-07-13T04:06:41.687Z [INFO] google [huitian] "汇天 胶粘剂" (zh) → 0건
+2026-07-13T04:06:42.179Z [INFO] google [kangda] "Kangda adhesive" (en) → 0건
+2026-07-13T04:06:42.734Z [INFO] google [kangda] "康达新材" (zh) → 42건
+2026-07-13T04:06:43.272Z [INFO] google [infinitybond] "Infinity Bond adhesive" (en) → 2건
+2026-07-13T04:06:43.806Z [INFO] google [goodadhesive] "Zhejiang Good Adhesive" (en) → 11건
+2026-07-13T04:06:44.311Z [INFO] google [tianze] "Tianze hot melt" (en) → 0건
+2026-07-13T04:06:44.800Z [INFO] google [tianze] "天泽 热熔胶" (zh) → 0건
+2026-07-13T04:06:45.291Z [INFO] google [hengning] "Hengning adhesive" (en) → 0건
+2026-07-13T04:06:45.793Z [INFO] google [hengning] "恒宁 热熔胶" (zh) → 0건
+2026-07-13T04:06:46.363Z [INFO] google [schem] "Schem adhesive" (en) → 12건
+2026-07-13T04:06:46.952Z [INFO] google [schem] "台聚 熱熔膠" (tw) → 45건
+2026-07-13T04:06:47.432Z [INFO] google [cattie] "Cattie Adhesives" (en) → 3건
+2026-07-13T04:06:47.927Z [INFO] google [rextac] "Rextac APAO" (en) → 4건
+2026-07-13T04:06:48.424Z [INFO] google [kaisun] "Kaisun adhesive" (en) → 1건
+2026-07-13T04:06:48.909Z [INFO] google [kaisun] "凯盛 热熔胶" (zh) → 1건
+2026-07-13T04:06:49.390Z [INFO] google [renhe] "Renhe adhesive" (en) → 0건
+2026-07-13T04:06:49.885Z [INFO] google [renhe] "仁和 热熔胶" (zh) → 0건
+2026-07-13T04:06:50.384Z [INFO] google [rocky] "Shanghai Rocky Adhesives" (en) → 1건
+2026-07-13T04:06:50.858Z [INFO] google [deepmaterial] "Deepmaterial adhesive" (en) → 7건
+2026-07-13T04:06:51.373Z [INFO] google [wistar] "Wistar hot melt adhesive" (en) → 0건
+2026-07-13T04:06:51.854Z [INFO] google [freebird] "Free Bird hot melt adhesive" (en) → 0건
+2026-07-13T04:06:52.346Z [INFO] google [freebird] "自由鸟 热熔胶" (zh) → 0건
+2026-07-13T04:06:52.822Z [INFO] google [weihexin] "Weihexin adhesive" (en) → 0건
+2026-07-13T04:06:53.309Z [INFO] google [tongde] "Shenzhen Tongde adhesive" (en) → 0건
+2026-07-13T04:06:53.857Z [INFO] google [devote] "Devote adhesive" (en) → 4건
+2026-07-13T04:06:54.369Z [INFO] google [bluerhino] "Bluerhino adhesive" (en) → 0건
+2026-07-13T04:06:54.862Z [INFO] google [megabond] "Megabond adhesive" (en) → 3건
+2026-07-13T04:06:55.369Z [INFO] google [techbond] "Techbond adhesive" (en) → 10건
+2026-07-13T04:06:55.831Z [INFO] google [alster] "Alster Industry adhesive" (en) → 0건
+2026-07-13T04:06:56.336Z [INFO] google [valona] "Valona adhesive Vietnam" (en) → 0건
+2026-07-13T04:06:56.825Z [INFO] google [imelt] "IMELT Kimya" (en) → 0건
+2026-07-13T04:06:57.375Z [INFO] google [paramelt] "Paramelt" (en) → 13건
+2026-07-13T04:06:57.853Z [INFO] google [mcschem] "엠씨에스켐" (ko) → 1건
+2026-07-13T04:06:58.316Z [INFO] google [mcschem] "MCS 핫멜트" (ko) → 0건
+2026-07-13T04:06:58.875Z [INFO] google [mcschem] "MCS Chem hot melt" (en) → 0건
+2026-07-13T04:06:59.391Z [INFO] google [shinkwang] "신광핫멜트" (ko) → 1건
+2026-07-13T04:06:59.883Z [INFO] google [hanyoung] "한영인더스트리 핫멜트" (ko) → 0건
+2026-07-13T04:07:00.359Z [INFO] google [hanyoung] "한영인더스트리 접착제" (ko) → 0건
+2026-07-13T04:07:00.905Z [INFO] google [jcckorea] "JCC코리아" (ko) → 15건
+2026-07-13T04:07:01.402Z [INFO] google [jcckorea] "JCC 핫멜트" (ko) → 2건
+2026-07-13T04:07:01.890Z [INFO] google [atgdirect] "ATG Direct adhesive" (en) → 0건
+2026-07-13T04:07:02.482Z [INFO] google [ems] "EMS-Chemie" (en) → 47건
+2026-07-13T04:07:02.971Z [INFO] google [ems] "EMS Griltex" (en) → 0건
+2026-07-13T04:07:03.453Z [INFO] google [duzon] "더존케미칼" (ko) → 6건
+2026-07-13T04:07:13.946Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-07-13T04:07:43.348Z [ERROR] gdelt [batch1] 실패: gdelt 429
+2026-07-13T04:07:59.844Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-07-13T04:08:30.338Z [ERROR] gdelt [batch2] 실패: fetch failed
+2026-07-13T04:08:46.839Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-07-13T04:09:18.160Z [ERROR] gdelt [batch3] 실패: gdelt 429
+2026-07-13T04:09:35.247Z [WARN] gdelt 429 — 20초 후 재시도
+2026-07-13T04:10:05.742Z [ERROR] gdelt [batch4] 실패: fetch failed
+2026-07-13T04:10:26.447Z [INFO] gdelt [batch5] 8개 구문 → 0건
+2026-07-13T04:10:46.130Z [INFO] gdelt [batch6] 8개 구문 → 0건
+2026-07-13T04:11:02.629Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-07-13T04:11:33.724Z [ERROR] gdelt [batch7] 실패: gdelt 429
+2026-07-13T04:11:49.382Z [WARN] gdelt 429 — 20초 후 재시도
+2026-07-13T04:12:20.458Z [ERROR] gdelt [batch8] 실패: gdelt 429
+2026-07-13T04:12:26.691Z [INFO] owned [bostik] 베이스라인 등록: 링크 56건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:27.442Z [INFO] owned [henkel] 베이스라인 등록: 링크 136건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:27.799Z [INFO] owned [hbfuller] 베이스라인 등록: 링크 31건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:29.032Z [INFO] owned [jowat] 베이스라인 등록: 링크 4건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:29.158Z [INFO] owned [arkema] 베이스라인 등록: 링크 102건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:30.665Z [INFO] owned [moresco] 베이스라인 등록: 링크 30건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:32.243Z [INFO] owned [toagosei] 베이스라인 등록: 링크 51건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:33.311Z [INFO] owned [kleiberit] 베이스라인 등록: 링크 67건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:33.846Z [INFO] owned [poweradhesives] 베이스라인 등록: 링크 69건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:35.871Z [INFO] owned [paramelt] 베이스라인 등록: 링크 47건 (다음 실행부터 신규분 수집)
+2026-07-13T04:12:35.871Z [INFO] owned 신규 후보 0건
+2026-07-13T04:12:36.138Z [INFO] topic ""hot melt adhesive"" (en) → 50건
+2026-07-13T04:12:36.316Z [INFO] topic ""polyamide adhesive"" (en) → 3건
+2026-07-13T04:12:36.645Z [INFO] topic "핫멜트 접착제" (ko) → 40건
+2026-07-13T04:12:36.845Z [INFO] topic ""China Adhesive"" (en) → 7건
+2026-07-13T04:12:37.061Z [INFO] topic "FEICA adhesive" (en) → 10건
+2026-07-13T04:12:37.599Z [INFO] topic ""dimer acid"" (en) → 41건
+2026-07-13T04:12:37.874Z [INFO] topic "polyamide resin price" (en) → 43건
+2026-07-13T04:12:38.146Z [INFO] topic ""hot melt" (Vietnam OR Indonesia OR Thailand)" (en) → 30건
+2026-07-13T04:12:38.146Z [INFO] 수집 합계 1788건
+2026-07-13T04:12:38.146Z [INFO] 차단(콘텐츠팜): [sika] SikaCeram-252 StarTile from Sika - polymer-modified tile adhesive targets demand — ad-hoc-news.de
+2026-07-13T04:12:38.148Z [INFO] 기간·중복 필터 후 2건 (콘텐츠팜 차단 1건)
+2026-07-13T04:12:43.195Z [INFO] 분류 배치 1: 2건 → 응답 2건 (in 1579tok / out 492tok)
+2026-07-13T04:12:43.196Z [INFO] 제외(무관): [EMS-Chemie] Why is Ems Chemie stock rallying today? - Investing.com — 주가 움직임만 언급하고 사업 실체(신제품, 계약, 시장 진출 등)에 대한 구체적 정보가 없는 투자 뉴스성 기사다.
+2026-07-13T04:12:43.196Z [INFO] 신규 이벤트 1건 (무관 제외 1건)
+2026-07-13T04:12:47.035Z [INFO] events.json 누적 10건 저장
+2026-07-13T04:12:47.173Z [INFO] Slack 발송 성공
+2026-07-13T04:13:00.489Z [INFO] 월간 요약 완료 (7건 기반, in 1655tok / out 691tok) → data/digests/2026-07.md
