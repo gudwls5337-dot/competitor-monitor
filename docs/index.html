@@ -391,6 +391,7 @@ async function loadJson(path){
 (async function main(){
   let events=window.__EVENTS__||await loadJson('data/events.json');
   let cdata=window.__COMPANIES__||await loadJson('data/companies.json');
+  if(Array.isArray(events)) events=events.filter(e=>!e.dup_of); /* 중복 마킹(보존)분은 표시 제외 */
   let sample=false;
   if(!Array.isArray(events)||events.length===0){ events=SAMPLE_EVENTS; sample=true; }
   if(!cdata||!Array.isArray(cdata.companies)||cdata.companies.length===0){ cdata=SAMPLE_COMPANIES; }

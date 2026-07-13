@@ -21,7 +21,7 @@
         "Bostik hot melt"
       ],
       "owned_media": [
-        "https://www.bostik.com/global/en/about-bostik/news-events/"
+        "https://www.bostik.com/global/en/newslist/"
       ],
       "linkedin": "https://www.linkedin.com/company/bostik/posts/",
       "name_ko": "보스틱"
@@ -68,7 +68,10 @@
       "keywords_en": [
         "H.B. Fuller adhesive"
       ],
-      "name_ko": "H.B. Fuller"
+      "name_ko": "H.B. Fuller",
+      "owned_media": [
+        "https://www.hbfuller.com/en/north-america/news-and-events"
+      ]
     },
     {
       "id": "jowat",
@@ -87,7 +90,10 @@
       "keywords_en": [
         "Jowat adhesive"
       ],
-      "name_ko": "요바트"
+      "name_ko": "요바트",
+      "owned_media": [
+        "https://www.jowat.com/en-DE/news/"
+      ]
     },
     {
       "id": "sika",
@@ -143,7 +149,10 @@
       "keywords_en": [
         "Arkema adhesive"
       ],
-      "name_ko": "아르케마"
+      "name_ko": "아르케마",
+      "owned_media": [
+        "https://www.arkema.com/global/en/media/newslist/"
+      ]
     },
     {
       "id": "okong",
@@ -215,6 +224,9 @@
       "name_ko": "모레스코",
       "keywords_ja": [
         "モレスコ ホットメルト"
+      ],
+      "owned_media": [
+        "https://www.moresco.co.jp/news/"
       ]
     },
     {
@@ -381,6 +393,9 @@
       "keywords_ja": [
         "東亞合成 接着剤",
         "アロンメルト"
+      ],
+      "owned_media": [
+        "https://www.toagosei.co.jp/news/"
       ]
     },
     {
@@ -459,7 +474,10 @@
         "유럽",
         "핫멜트"
       ],
-      "homepage": "https://www.kleiberit.com"
+      "homepage": "https://www.kleiberit.com",
+      "owned_media": [
+        "https://www.kleiberit.com/en/company/news/"
+      ]
     },
     {
       "tier": 2,
@@ -475,7 +493,10 @@
         "유럽",
         "핫멜트"
       ],
-      "homepage": "https://www.poweradhesives.com"
+      "homepage": "https://www.poweradhesives.com",
+      "owned_media": [
+        "https://www.poweradhesives.com/blog/"
+      ]
     },
     {
       "tier": 2,
@@ -897,7 +918,10 @@
         "유럽",
         "핫멜트"
       ],
-      "homepage": "https://www.paramelt.com"
+      "homepage": "https://www.paramelt.com",
+      "owned_media": [
+        "https://www.paramelt.com/news/"
+      ]
     },
     {
       "tier": 2,

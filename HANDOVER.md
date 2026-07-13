@@ -16,17 +16,22 @@
 ```
 수집: 구글뉴스 5개판(한/영/중간체/중번체/일) × 기업별 검색어
     + 산업 주제 구독("hot melt adhesive" 등 3개)
-    + GDELT(전세계 65개 언어, 원문 URL)
+    + GDELT(전세계 65개 언어, 원문 URL — 영문 키워드 OR 배치 호출)
+    + 자사 뉴스룸 변경감지(owned_media 10개사 — 뉴스에 안 잡히는 업체용)
 → 필터: 기간(8일) → URL/제목 중복 → 콘텐츠팜 차단(IndexBox·AD HOC NEWS 등)
 → 분류: Claude Haiku 4.5 — 관련성/중요도/카테고리/국가/시사점 (근거 로그 보존)
-→ 중복: Claude Sonnet 5 — 같은 사건 다중 보도 통합 (애매하면 중복 처리)
+→ 중복: Claude Sonnet 5 — 같은 사건 다중 보도는 dup_of 마킹 후 보존(대시보드·Slack만 제외)
 → 저장: docs/data/events.json (append-only) → 대시보드 자동 반영
 → 발송: Slack 핵심 변화 Top 8
+→ 월 1회: 최근 31일 동향 요약(Sonnet) Slack 발송 + data/digests/ 보존
 ```
+
+산업 주제 구독은 8개로 확장(2026-07-13): 기존 3개 + 전시회(China Adhesive·FEICA)
+· 원료(dimer acid·polyamide resin price) · 동남아 수출시장(Vietnam·Indonesia·Thailand)
 
 ## 비용 (실측)
 
-- Claude API: **주 $0.1~0.3** (분류 Haiku + 중복판정 Sonnet) — 그 외 전부 무료
+- Claude API: **주 $0.1~0.3** (분류 Haiku + 중복판정 Sonnet) + 월간 요약 Sonnet ~$0.05/월 — 그 외 전부 무료
 - Anthropic 콘솔 크레딧 $5면 수개월. 모니터링: console.anthropic.com → Usage
 
 ## 키/비밀값 위치
@@ -38,8 +43,12 @@
 ## 남은 선택지 (필요할 때)
 
 1. **접근 제한**: 지금은 링크 공개. 특정인만 → Cloudflare Access 전환 (무료)
-2. **네이버 뉴스 API**: 국내 중소 경쟁사(오공·MCS 등) 커버리지 강화
-3. **홈페이지 변경감지**: 중국 업체들의 진짜 신호 (뉴스가 안 나오는 곳)
+2. **네이버 뉴스 API**: 국내 중소 경쟁사(오공·MCS 등) 커버리지 강화 — **사용자 액션 필요**:
+   developers.naver.com에서 앱 등록(검색 API) → Client ID/Secret 발급 → GitHub Secrets(NAVER_CLIENT_ID,
+   NAVER_CLIENT_SECRET)와 로컬 .env에 입력. 코드는 준비 완료, 키만 넣으면 자동 활성화 (현재 .env는 빈 값)
+3. **홈페이지 변경감지**: ✅ 2026-07-13 구현 완료 (owned_media 10개사: Bostik·Henkel·Arkema·H.B.Fuller·
+   Jowat·Kleiberit·Moresco·Toagosei·Paramelt·Power Adhesives). 남은 일: 중국·국내 업체 뉴스룸 URL 발굴
+   (curl 200 확인 후 companies.json의 owned_media에 추가만 하면 자동 활성화 — OPERATIONS.md 참조)
 4. **TDS/MSDS 아카이브**: 기업 타일에 문서 연결 (msds-translator와 id 체계 공유)
 5. EMS-Chemie는 스위스 Griltex(PA 핫멜트)로 등록 — 다른 EMS면 수정 필요
 

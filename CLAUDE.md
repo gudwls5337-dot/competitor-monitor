@@ -13,6 +13,7 @@
 ## 구성
 
 - 분류 모델: `scripts/collect.mjs`의 `CONFIG.MODEL` (기본 claude-haiku-4-5, 비용 사유)
+- 중복판정·월간요약 모델: `CONFIG.DEDUPE_MODEL` / `CONFIG.DIGEST_MODEL` (claude-sonnet-5, 호출량 적어 비용 미미)
 - 지도: docs/index.html에 amCharts worldLow SVG 인라인 (path id = ISO2)
 - 스케줄: .github/workflows/monitor.yml — 월요일 09:00 KST
 
