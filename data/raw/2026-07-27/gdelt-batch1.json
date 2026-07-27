@@ -1,0 +1,29 @@
+{
+  "fetched_at": "2026-07-27T01:49:36.823Z",
+  "source": "gdelt",
+  "companyId": "batch1",
+  "payload": {
+    "articles": [
+      {
+        "url": "https://www.investegate.co.uk/announcement/rns/mitie-group--mto/disclosure-table/9679245",
+        "url_mobile": "",
+        "title": "Disclosure Table | Company Announcement",
+        "seendate": "20260721T080000Z",
+        "socialimage": "",
+        "domain": "investegate.co.uk",
+        "language": "English",
+        "sourcecountry": "United Kingdom"
+      },
+      {
+        "url": "https://www.investegate.co.uk/announcement/rns/advanced-medical-solutions-group--ams/publication-of-scheme-document/9676045",
+        "url_mobile": "",
+        "title": "Publication of Scheme Document | Company Announcement",
+        "seendate": "20260720T063000Z",
+        "socialimage": "",
+        "domain": "investegate.co.uk",
+        "language": "English",
+        "sourcecountry": "United Kingdom"
+      }
+    ]
+  }
+}
