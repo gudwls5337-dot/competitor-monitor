@@ -1,0 +1,145 @@
+2026-08-24T00:34:55.684Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-08-24T00:34:55.687Z [INFO] 감시 기업 59곳
+2026-08-24T00:34:55.689Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-08-24T00:35:05.322Z [ERROR] google [bostik] "보스틱 접착제" 실패: google rss 503
+2026-08-24T00:35:12.715Z [ERROR] google [bostik] "Bostik adhesive" 실패: google rss 503
+2026-08-24T00:35:18.044Z [ERROR] google [bostik] "Bostik hot melt" 실패: google rss 503
+2026-08-24T00:35:24.349Z [ERROR] google [henkel] "헨켈 접착제" 실패: google rss 503
+2026-08-24T00:35:34.236Z [ERROR] google [henkel] "Henkel Adhesive Technologies" 실패: google rss 503
+2026-08-24T00:35:42.174Z [ERROR] google [henkel] "Henkel Technomelt" 실패: google rss 503
+2026-08-24T00:35:49.530Z [ERROR] google [hbfuller] "에이치비풀러" 실패: google rss 503
+2026-08-24T00:35:57.299Z [ERROR] google [hbfuller] "H.B. Fuller adhesive" 실패: google rss 503
+2026-08-24T00:36:04.220Z [ERROR] google [jowat] "요바트 접착제" 실패: google rss 503
+2026-08-24T00:36:13.302Z [ERROR] google [jowat] "Jowat adhesive" 실패: google rss 503
+2026-08-24T00:36:22.569Z [ERROR] google [sika] "시카 접착제" 실패: google rss 503
+2026-08-24T00:36:30.051Z [ERROR] google [sika] "Sika adhesive" 실패: google rss 503
+2026-08-24T00:36:35.383Z [ERROR] google [3m] "3M 접착제" 실패: google rss 503
+2026-08-24T00:36:43.792Z [ERROR] google [3m] "3M industrial adhesive" 실패: google rss 503
+2026-08-24T00:36:50.236Z [ERROR] google [arkema] "아르케마" 실패: google rss 503
+2026-08-24T00:36:57.233Z [ERROR] google [arkema] "Arkema adhesive" 실패: google rss 503
+2026-08-24T00:37:06.525Z [ERROR] google [okong] "오공 접착제" 실패: google rss 503
+2026-08-24T00:37:14.036Z [ERROR] google [okong] "오공본드" 실패: google rss 503
+2026-08-24T00:37:24.264Z [ERROR] google [daehung] "대흥화학 접착제" 실패: google rss 503
+2026-08-24T00:37:30.071Z [ERROR] google [texyear] "Tex Year hot melt" 실패: google rss 503
+2026-08-24T00:37:35.508Z [ERROR] google [texyear] "德謙 熱熔膠" 실패: google rss 503
+2026-08-24T00:37:41.547Z [ERROR] google [moresco] "Moresco hot melt" 실패: google rss 503
+2026-08-24T00:37:49.420Z [ERROR] google [moresco] "モレスコ ホットメルト" 실패: google rss 503
+2026-08-24T00:37:58.504Z [ERROR] google [beardow] "Beardow Adams adhesive" 실패: google rss 503
+2026-08-24T00:38:07.206Z [ERROR] google [evonik] "에보닉" 실패: google rss 503
+2026-08-24T00:38:16.221Z [ERROR] google [evonik] "Evonik polyamide" 실패: google rss 503
+2026-08-24T00:38:24.443Z [ERROR] google [dow] "Dow adhesive" 실패: google rss 503
+2026-08-24T00:38:32.434Z [ERROR] google [eastman] "Eastman adhesive resin" 실패: google rss 503
+2026-08-24T00:38:38.692Z [ERROR] google [kraton] "Kraton polymer adhesive" 실패: google rss 503
+2026-08-24T00:38:47.370Z [ERROR] google [dic] "DIC Corporation adhesive" 실패: google rss 503
+2026-08-24T00:38:54.652Z [ERROR] google [dic] "DIC 接着剤" 실패: google rss 503
+2026-08-24T00:39:04.615Z [ERROR] google [toyobo] "Toyobo polyamide" 실패: google rss 503
+2026-08-24T00:39:12.827Z [ERROR] google [toyobo] "東洋紡 ポリアミド" 실패: google rss 503
+2026-08-24T00:39:21.761Z [ERROR] google [nanpao] "Nan Pao adhesive" 실패: google rss 503
+2026-08-24T00:39:31.201Z [ERROR] google [nanpao] "南寶樹脂" 실패: google rss 503
+2026-08-24T00:39:37.349Z [ERROR] google [toagosei] "Toagosei adhesive" 실패: google rss 503
+2026-08-24T00:39:46.138Z [ERROR] google [toagosei] "Aron Melt" 실패: google rss 503
+2026-08-24T00:39:52.484Z [ERROR] google [toagosei] "東亞合成 接着剤" 실패: google rss 503
+2026-08-24T00:40:02.172Z [ERROR] google [toagosei] "アロンメルト" 실패: google rss 503
+2026-08-24T00:40:10.462Z [ERROR] google [basf] "BASF adhesive" 실패: google rss 503
+2026-08-24T00:40:20.627Z [ERROR] google [covestro] "Covestro adhesive film" 실패: google rss 503
+2026-08-24T00:40:29.817Z [ERROR] google [dupont] "DuPont adhesive" 실패: google rss 503
+2026-08-24T00:40:36.664Z [ERROR] google [solvay] "Solvay polyamide adhesive" 실패: google rss 503
+2026-08-24T00:40:42.596Z [ERROR] google [kleiberit] "Kleiberit" 실패: google rss 503
+2026-08-24T00:40:50.846Z [ERROR] google [poweradhesives] "Power Adhesives Tecbond" 실패: google rss 503
+2026-08-24T00:40:58.473Z [ERROR] google [spiderbond] "SpiderBond adhesive" 실패: google rss 503
+2026-08-24T00:41:04.086Z [ERROR] google [huitian] "Huitian adhesive" 실패: google rss 503
+2026-08-24T00:41:13.572Z [ERROR] google [huitian] "汇天 胶粘剂" 실패: google rss 503
+2026-08-24T00:41:19.830Z [ERROR] google [kangda] "Kangda adhesive" 실패: google rss 503
+2026-08-24T00:41:29.636Z [ERROR] google [kangda] "康达新材" 실패: google rss 503
+2026-08-24T00:41:38.279Z [ERROR] google [infinitybond] "Infinity Bond adhesive" 실패: google rss 503
+2026-08-24T00:41:45.625Z [ERROR] google [goodadhesive] "Zhejiang Good Adhesive" 실패: google rss 503
+2026-08-24T00:41:55.768Z [ERROR] google [tianze] "Tianze hot melt" 실패: google rss 503
+2026-08-24T00:42:03.907Z [ERROR] google [tianze] "天泽 热熔胶" 실패: google rss 503
+2026-08-24T00:42:11.371Z [ERROR] google [hengning] "Hengning adhesive" 실패: google rss 503
+2026-08-24T00:42:18.075Z [ERROR] google [hengning] "恒宁 热熔胶" 실패: google rss 503
+2026-08-24T00:42:25.685Z [ERROR] google [schem] "Schem adhesive" 실패: google rss 503
+2026-08-24T00:42:34.910Z [ERROR] google [schem] "台聚 熱熔膠" 실패: google rss 503
+2026-08-24T00:42:44.654Z [ERROR] google [cattie] "Cattie Adhesives" 실패: google rss 503
+2026-08-24T00:42:50.172Z [ERROR] google [rextac] "Rextac APAO" 실패: google rss 503
+2026-08-24T00:42:59.105Z [ERROR] google [kaisun] "Kaisun adhesive" 실패: google rss 503
+2026-08-24T00:43:07.635Z [ERROR] google [kaisun] "凯盛 热熔胶" 실패: google rss 503
+2026-08-24T00:43:15.840Z [ERROR] google [renhe] "Renhe adhesive" 실패: google rss 503
+2026-08-24T00:43:22.916Z [ERROR] google [renhe] "仁和 热熔胶" 실패: google rss 503
+2026-08-24T00:43:31.243Z [ERROR] google [rocky] "Shanghai Rocky Adhesives" 실패: google rss 503
+2026-08-24T00:43:40.872Z [ERROR] google [deepmaterial] "Deepmaterial adhesive" 실패: google rss 503
+2026-08-24T00:43:47.853Z [ERROR] google [wistar] "Wistar hot melt adhesive" 실패: google rss 503
+2026-08-24T00:43:56.270Z [ERROR] google [freebird] "Free Bird hot melt adhesive" 실패: google rss 503
+2026-08-24T00:44:02.483Z [ERROR] google [freebird] "自由鸟 热熔胶" 실패: google rss 503
+2026-08-24T00:44:09.253Z [ERROR] google [weihexin] "Weihexin adhesive" 실패: google rss 503
+2026-08-24T00:44:19.304Z [ERROR] google [tongde] "Shenzhen Tongde adhesive" 실패: google rss 503
+2026-08-24T00:44:28.698Z [ERROR] google [devote] "Devote adhesive" 실패: google rss 503
+2026-08-24T00:44:38.745Z [ERROR] google [bluerhino] "Bluerhino adhesive" 실패: google rss 503
+2026-08-24T00:44:44.298Z [ERROR] google [megabond] "Megabond adhesive" 실패: google rss 503
+2026-08-24T00:44:50.768Z [ERROR] google [techbond] "Techbond adhesive" 실패: google rss 503
+2026-08-24T00:44:57.223Z [ERROR] google [alster] "Alster Industry adhesive" 실패: google rss 503
+2026-08-24T00:45:05.486Z [ERROR] google [valona] "Valona adhesive Vietnam" 실패: google rss 503
+2026-08-24T00:45:10.857Z [ERROR] google [imelt] "IMELT Kimya" 실패: google rss 503
+2026-08-24T00:45:20.532Z [ERROR] google [paramelt] "Paramelt" 실패: google rss 503
+2026-08-24T00:45:29.693Z [ERROR] google [mcschem] "엠씨에스켐" 실패: google rss 503
+2026-08-24T00:45:39.678Z [ERROR] google [mcschem] "MCS 핫멜트" 실패: google rss 503
+2026-08-24T00:45:45.242Z [ERROR] google [mcschem] "MCS Chem hot melt" 실패: google rss 503
+2026-08-24T00:45:50.568Z [ERROR] google [shinkwang] "신광핫멜트" 실패: google rss 503
+2026-08-24T00:45:59.498Z [ERROR] google [hanyoung] "한영인더스트리 핫멜트" 실패: google rss 503
+2026-08-24T00:46:07.392Z [ERROR] google [hanyoung] "한영인더스트리 접착제" 실패: google rss 503
+2026-08-24T00:46:15.585Z [ERROR] google [jcckorea] "JCC코리아" 실패: google rss 503
+2026-08-24T00:46:25.235Z [ERROR] google [jcckorea] "JCC 핫멜트" 실패: google rss 503
+2026-08-24T00:46:30.864Z [ERROR] google [atgdirect] "ATG Direct adhesive" 실패: google rss 503
+2026-08-24T00:46:36.346Z [ERROR] google [ems] "EMS-Chemie" 실패: google rss 503
+2026-08-24T00:46:42.762Z [ERROR] google [ems] "EMS Griltex" 실패: google rss 503
+2026-08-24T00:46:52.846Z [ERROR] google [duzon] "더존케미칼" 실패: google rss 503
+2026-08-24T00:47:03.340Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-08-24T00:47:33.803Z [ERROR] gdelt [batch1] 실패: gdelt 429
+2026-08-24T00:47:53.739Z [INFO] gdelt [batch2] 8개 구문 → 0건
+2026-08-24T00:48:16.291Z [INFO] gdelt [batch3] 8개 구문 → 0건
+2026-08-24T00:48:32.906Z [WARN] gdelt 429 — 20초 후 재시도
+2026-08-24T00:49:04.611Z [ERROR] gdelt [batch4] 실패: gdelt 429
+2026-08-24T00:49:22.688Z [WARN] gdelt 429 — 20초 후 재시도
+2026-08-24T00:49:53.691Z [ERROR] gdelt [batch5] 실패: gdelt 429
+2026-08-24T00:50:11.196Z [WARN] gdelt 429 — 20초 후 재시도
+2026-08-24T00:50:42.078Z [ERROR] gdelt [batch6] 실패: gdelt 429
+2026-08-24T00:50:58.575Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-08-24T00:51:30.253Z [ERROR] gdelt [batch7] 실패: gdelt 429
+2026-08-24T00:51:47.098Z [WARN] gdelt 429 — 20초 후 재시도
+2026-08-24T00:52:18.683Z [ERROR] gdelt [batch8] 실패: gdelt 429
+2026-08-24T00:52:24.907Z [INFO] owned [bostik] 링크 56건 중 신규 0건
+2026-08-24T00:52:26.353Z [INFO] owned [henkel] 링크 134건 중 신규 3건
+2026-08-24T00:52:27.324Z [INFO] owned [hbfuller] 링크 31건 중 신규 0건
+2026-08-24T00:52:29.204Z [INFO] owned [jowat] 링크 4건 중 신규 0건
+2026-08-24T00:52:29.919Z [INFO] owned [arkema] 링크 102건 중 신규 0건
+2026-08-24T00:52:31.527Z [INFO] owned [moresco] 링크 30건 중 신규 0건
+2026-08-24T00:52:32.631Z [INFO] owned [toagosei] 링크 56건 중 신규 1건
+2026-08-24T00:52:34.277Z [INFO] owned [kleiberit] 링크 68건 중 신규 0건
+2026-08-24T00:52:35.415Z [INFO] owned [poweradhesives] 링크 69건 중 신규 18건 — 상한 10건만 채택
+2026-08-24T00:52:37.921Z [INFO] owned [paramelt] 링크 47건 중 신규 0건
+2026-08-24T00:52:38.422Z [INFO] owned 신규 후보 14건
+2026-08-24T00:52:45.376Z [ERROR] topic ""hot melt adhesive"" 실패: google rss 503
+2026-08-24T00:52:54.344Z [ERROR] topic ""polyamide adhesive"" 실패: google rss 503
+2026-08-24T00:53:03.270Z [ERROR] topic "핫멜트 접착제" 실패: google rss 503
+2026-08-24T00:53:12.490Z [ERROR] topic ""China Adhesive"" 실패: google rss 503
+2026-08-24T00:53:17.803Z [ERROR] topic "FEICA adhesive" 실패: google rss 503
+2026-08-24T00:53:23.785Z [ERROR] topic ""dimer acid"" 실패: google rss 503
+2026-08-24T00:53:32.924Z [ERROR] topic "polyamide resin price" 실패: google rss 503
+2026-08-24T00:53:40.353Z [ERROR] topic ""hot melt" (Vietnam OR Indonesia OR Thailand)" 실패: google rss 503
+2026-08-24T00:53:40.353Z [INFO] 수집 합계 14건
+2026-08-24T00:53:40.354Z [INFO] 기간·중복 필터 후 14건 (콘텐츠팜 차단 0건)
+2026-08-24T00:54:04.212Z [INFO] 분류 배치 1: 14건 → 응답 14건 (in 2878tok / out 2618tok)
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Henkel] The Sagrada Familia’s six central towers were realized with the support of Henkel adhesives FastFixTechnologies highlights Loctite’s key role in accelerating the construction of the Sagrada Familia’s towers while ensuring long-term structural durability. fastfixtechnology.com — 구체적 기술 정보나 신제품, 시장 진출 전략 없이 단순 홍보성 사용 사례 언급으로 경쟁정보로서의 가치 낮음.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] Press Release — 제목과 내용 스니펫 부재로 실제 사건 또는 기사 내용 파악 불가능하여 분류 불가.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] Technical Info — 기술 정보는 사건성 없는 정적 자료로 경쟁정보 분석 대상 아님.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] Business News — 제목만 있고 내용 없어 실제 뉴스 가치 판단 불가.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] Product News — 제목만 있고 내용 없어 실제 뉴스 가치 판단 불가.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] Business Advantage — 제목만 있고 내용 없어 실제 뉴스 가치 판단 불가.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] Ellis Fowler — 인물 이름만 있고 구체적 조직 변화나 전략 정보 부재.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] People of Power Adhesives &#8211; Francesco Lodeto &#8211; Account Manager – EMEA &#038; APAC — 단순 개별 직원 소개 기사로 경쟁정보 가치 미흡.
+2026-08-24T00:54:04.212Z [INFO] 제외(무관): [Power Adhesives] People of Power Adhesives &#8211; Carly Newman &#8211; Marketing Manager — 단순 개별 직원 소개 기사로 경쟁정보 가치 미흡.
+2026-08-24T00:54:04.213Z [INFO] 제외(무관): [Power Adhesives] 2 Comments on People of Power Adhesives &#8211; Charlotte Hills – Account Manager – USA &#038; Strategic Accounts — 단순 직원 소개 글의 댓글로 경쟁정보 가치 없음.
+2026-08-24T00:54:04.213Z [INFO] 신규 이벤트 4건 (무관 제외 10건)
+2026-08-24T00:54:19.483Z [INFO] 중복(스토리) 마킹: 2026年12月期 第2四半期（中間期）決算説明会 書き起こし記事公開のお知らせ — 토아고세이의 2026년 12월기 2분기(중간기) 실적 관련 자료로, 이미 보도된 동일 분기 결산 발표(2026-08-03)와 같은 근본 사건(동일 실적 발표)에 대한 후속 자료(설명회 스크립트)이므로 중복으로 판단.
+2026-08-24T00:54:19.483Z [INFO] 스토리 중복 1건 마킹(보존) → 노출 3건
+2026-08-24T00:54:19.493Z [INFO] events.json 누적 68건 저장
+2026-08-24T00:54:19.629Z [INFO] Slack 발송 성공
