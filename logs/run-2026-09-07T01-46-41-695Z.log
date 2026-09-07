@@ -1,0 +1,177 @@
+2026-09-07T01:37:47.346Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-09-07T01:37:47.348Z [INFO] 감시 기업 59곳
+2026-09-07T01:37:47.350Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-09-07T01:37:47.626Z [INFO] google [bostik] "보스틱 접착제" (ko) → 9건
+2026-09-07T01:37:48.278Z [INFO] google [bostik] "Bostik adhesive" (en) → 54건
+2026-09-07T01:37:48.795Z [INFO] google [bostik] "Bostik hot melt" (en) → 10건
+2026-09-07T01:37:49.417Z [INFO] google [henkel] "헨켈 접착제" (ko) → 55건
+2026-09-07T01:37:50.075Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-09-07T01:37:50.631Z [INFO] google [henkel] "Henkel Technomelt" (en) → 31건
+2026-09-07T01:37:51.169Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 14건
+2026-09-07T01:37:51.953Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 100건
+2026-09-07T01:37:52.447Z [INFO] google [jowat] "요바트 접착제" (ko) → 0건
+2026-09-07T01:37:52.978Z [INFO] google [jowat] "Jowat adhesive" (en) → 13건
+2026-09-07T01:37:53.466Z [INFO] google [sika] "시카 접착제" (ko) → 8건
+2026-09-07T01:37:54.072Z [INFO] google [sika] "Sika adhesive" (en) → 54건
+2026-09-07T01:37:54.675Z [INFO] google [3m] "3M 접착제" (ko) → 52건
+2026-09-07T01:37:55.324Z [INFO] google [3m] "3M industrial adhesive" (en) → 50건
+2026-09-07T01:37:55.986Z [INFO] google [arkema] "아르케마" (ko) → 48건
+2026-09-07T01:37:56.618Z [INFO] google [arkema] "Arkema adhesive" (en) → 53건
+2026-09-07T01:37:57.123Z [INFO] google [okong] "오공 접착제" (ko) → 9건
+2026-09-07T01:37:57.658Z [INFO] google [okong] "오공본드" (ko) → 16건
+2026-09-07T01:37:58.163Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 3건
+2026-09-07T01:37:58.782Z [INFO] google [texyear] "Tex Year hot melt" (en) → 7건
+2026-09-07T01:37:59.290Z [INFO] google [texyear] "德謙 熱熔膠" (tw) → 0건
+2026-09-07T01:37:59.821Z [INFO] google [moresco] "Moresco hot melt" (en) → 1건
+2026-09-07T01:38:00.377Z [INFO] google [moresco] "モレスコ ホットメルト" (ja) → 12건
+2026-09-07T01:38:00.936Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 10건
+2026-09-07T01:38:01.593Z [INFO] google [evonik] "에보닉" (ko) → 63건
+2026-09-07T01:38:02.160Z [INFO] google [evonik] "Evonik polyamide" (en) → 44건
+2026-09-07T01:38:02.784Z [INFO] google [dow] "Dow adhesive" (en) → 55건
+2026-09-07T01:38:03.340Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 22건
+2026-09-07T01:38:03.964Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 26건
+2026-09-07T01:38:04.524Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 28건
+2026-09-07T01:38:05.109Z [INFO] google [dic] "DIC 接着剤" (ja) → 47건
+2026-09-07T01:38:05.631Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 1건
+2026-09-07T01:38:06.186Z [INFO] google [toyobo] "東洋紡 ポリアミド" (ja) → 14건
+2026-09-07T01:38:06.687Z [INFO] google [nanpao] "Nan Pao adhesive" (en) → 7건
+2026-09-07T01:38:07.376Z [INFO] google [nanpao] "南寶樹脂" (tw) → 100건
+2026-09-07T01:38:07.867Z [INFO] google [toagosei] "Toagosei adhesive" (en) → 6건
+2026-09-07T01:38:08.427Z [INFO] google [toagosei] "Aron Melt" (en) → 10건
+2026-09-07T01:38:09.041Z [INFO] google [toagosei] "東亞合成 接着剤" (ja) → 91건
+2026-09-07T01:38:09.525Z [INFO] google [toagosei] "アロンメルト" (ja) → 1건
+2026-09-07T01:38:10.141Z [INFO] google [basf] "BASF adhesive" (en) → 50건
+2026-09-07T01:38:10.691Z [INFO] google [covestro] "Covestro adhesive film" (en) → 35건
+2026-09-07T01:38:11.327Z [INFO] google [dupont] "DuPont adhesive" (en) → 50건
+2026-09-07T01:38:11.860Z [INFO] google [solvay] "Solvay polyamide adhesive" (en) → 1건
+2026-09-07T01:38:12.386Z [INFO] google [kleiberit] "Kleiberit" (en) → 1건
+2026-09-07T01:38:12.905Z [INFO] google [poweradhesives] "Power Adhesives Tecbond" (en) → 5건
+2026-09-07T01:38:13.388Z [INFO] google [spiderbond] "SpiderBond adhesive" (en) → 0건
+2026-09-07T01:38:13.955Z [INFO] google [huitian] "Huitian adhesive" (en) → 0건
+2026-09-07T01:38:14.474Z [INFO] google [huitian] "汇天 胶粘剂" (zh) → 0건
+2026-09-07T01:38:14.946Z [INFO] google [kangda] "Kangda adhesive" (en) → 0건
+2026-09-07T01:38:15.499Z [INFO] google [kangda] "康达新材" (zh) → 31건
+2026-09-07T01:38:16.006Z [INFO] google [infinitybond] "Infinity Bond adhesive" (en) → 1건
+2026-09-07T01:38:16.585Z [INFO] google [goodadhesive] "Zhejiang Good Adhesive" (en) → 17건
+2026-09-07T01:38:17.100Z [INFO] google [tianze] "Tianze hot melt" (en) → 0건
+2026-09-07T01:38:17.603Z [INFO] google [tianze] "天泽 热熔胶" (zh) → 0건
+2026-09-07T01:38:18.114Z [INFO] google [hengning] "Hengning adhesive" (en) → 0건
+2026-09-07T01:38:18.634Z [INFO] google [hengning] "恒宁 热熔胶" (zh) → 0건
+2026-09-07T01:38:19.197Z [INFO] google [schem] "Schem adhesive" (en) → 12건
+2026-09-07T01:38:19.879Z [INFO] google [schem] "台聚 熱熔膠" (tw) → 42건
+2026-09-07T01:38:20.427Z [INFO] google [cattie] "Cattie Adhesives" (en) → 3건
+2026-09-07T01:38:20.970Z [INFO] google [rextac] "Rextac APAO" (en) → 4건
+2026-09-07T01:38:21.483Z [INFO] google [kaisun] "Kaisun adhesive" (en) → 1건
+2026-09-07T01:38:21.978Z [INFO] google [kaisun] "凯盛 热熔胶" (zh) → 1건
+2026-09-07T01:38:22.470Z [INFO] google [renhe] "Renhe adhesive" (en) → 0건
+2026-09-07T01:38:23.016Z [INFO] google [renhe] "仁和 热熔胶" (zh) → 0건
+2026-09-07T01:38:23.513Z [INFO] google [rocky] "Shanghai Rocky Adhesives" (en) → 1건
+2026-09-07T01:38:24.045Z [INFO] google [deepmaterial] "Deepmaterial adhesive" (en) → 9건
+2026-09-07T01:38:24.560Z [INFO] google [wistar] "Wistar hot melt adhesive" (en) → 0건
+2026-09-07T01:38:25.094Z [INFO] google [freebird] "Free Bird hot melt adhesive" (en) → 0건
+2026-09-07T01:38:25.589Z [INFO] google [freebird] "自由鸟 热熔胶" (zh) → 0건
+2026-09-07T01:38:26.072Z [INFO] google [weihexin] "Weihexin adhesive" (en) → 0건
+2026-09-07T01:38:26.577Z [INFO] google [tongde] "Shenzhen Tongde adhesive" (en) → 0건
+2026-09-07T01:38:27.125Z [INFO] google [devote] "Devote adhesive" (en) → 4건
+2026-09-07T01:38:27.634Z [INFO] google [bluerhino] "Bluerhino adhesive" (en) → 0건
+2026-09-07T01:38:28.170Z [INFO] google [megabond] "Megabond adhesive" (en) → 2건
+2026-09-07T01:38:28.685Z [INFO] google [techbond] "Techbond adhesive" (en) → 10건
+2026-09-07T01:38:29.171Z [INFO] google [alster] "Alster Industry adhesive" (en) → 0건
+2026-09-07T01:38:29.679Z [INFO] google [valona] "Valona adhesive Vietnam" (en) → 0건
+2026-09-07T01:38:30.213Z [INFO] google [imelt] "IMELT Kimya" (en) → 0건
+2026-09-07T01:38:30.772Z [INFO] google [paramelt] "Paramelt" (en) → 15건
+2026-09-07T01:38:31.287Z [INFO] google [mcschem] "엠씨에스켐" (ko) → 1건
+2026-09-07T01:38:31.801Z [INFO] google [mcschem] "MCS 핫멜트" (ko) → 0건
+2026-09-07T01:38:32.357Z [INFO] google [mcschem] "MCS Chem hot melt" (en) → 0건
+2026-09-07T01:38:32.880Z [INFO] google [shinkwang] "신광핫멜트" (ko) → 0건
+2026-09-07T01:38:33.377Z [INFO] google [hanyoung] "한영인더스트리 핫멜트" (ko) → 0건
+2026-09-07T01:38:33.860Z [INFO] google [hanyoung] "한영인더스트리 접착제" (ko) → 0건
+2026-09-07T01:38:34.415Z [INFO] google [jcckorea] "JCC코리아" (ko) → 18건
+2026-09-07T01:38:34.895Z [INFO] google [jcckorea] "JCC 핫멜트" (ko) → 2건
+2026-09-07T01:38:35.518Z [INFO] google [atgdirect] "ATG Direct adhesive" (en) → 0건
+2026-09-07T01:38:36.122Z [INFO] google [ems] "EMS-Chemie" (en) → 48건
+2026-09-07T01:38:36.634Z [INFO] google [ems] "EMS Griltex" (en) → 0건
+2026-09-07T01:38:37.163Z [INFO] google [duzon] "더존케미칼" (ko) → 5건
+2026-09-07T01:38:47.840Z [WARN] gdelt 429 — 20초 후 재시도
+2026-09-07T01:39:18.590Z [ERROR] gdelt [batch1] 실패: gdelt 429
+2026-09-07T01:39:35.150Z [WARN] gdelt 429 — 20초 후 재시도
+2026-09-07T01:40:04.826Z [ERROR] gdelt [batch2] 실패: gdelt 429
+2026-09-07T01:40:21.323Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-09-07T01:40:52.965Z [ERROR] gdelt [batch3] 실패: gdelt 429
+2026-09-07T01:41:10.180Z [WARN] gdelt 429 — 20초 후 재시도
+2026-09-07T01:41:41.061Z [ERROR] gdelt [batch4] 실패: gdelt 429
+2026-09-07T01:41:57.277Z [WARN] gdelt 429 — 20초 후 재시도
+2026-09-07T01:42:28.341Z [ERROR] gdelt [batch5] 실패: gdelt 429
+2026-09-07T01:42:45.320Z [WARN] gdelt 429 — 20초 후 재시도
+2026-09-07T01:43:16.118Z [ERROR] gdelt [batch6] 실패: gdelt 429
+2026-09-07T01:43:32.941Z [WARN] gdelt 429 — 20초 후 재시도
+2026-09-07T01:44:03.934Z [ERROR] gdelt [batch7] 실패: gdelt 429
+2026-09-07T01:44:20.680Z [WARN] gdelt 429 — 20초 후 재시도
+2026-09-07T01:44:50.173Z [ERROR] gdelt [batch8] 실패: gdelt 429
+2026-09-07T01:44:56.264Z [INFO] owned [bostik] 링크 56건 중 신규 0건
+2026-09-07T01:44:57.469Z [INFO] owned [henkel] 링크 133건 중 신규 2건
+2026-09-07T01:44:58.426Z [INFO] owned [hbfuller] 링크 31건 중 신규 0건
+2026-09-07T01:44:59.868Z [INFO] owned [jowat] 링크 4건 중 신규 0건
+2026-09-07T01:45:00.503Z [INFO] owned [arkema] 링크 102건 중 신규 0건
+2026-09-07T01:45:02.359Z [INFO] owned [moresco] 링크 30건 중 신규 1건
+2026-09-07T01:45:03.684Z [INFO] owned [toagosei] 링크 58건 중 신규 1건
+2026-09-07T01:45:05.207Z [INFO] owned [kleiberit] 링크 67건 중 신규 2건
+2026-09-07T01:45:06.232Z [INFO] owned [poweradhesives] 링크 69건 중 신규 0건
+2026-09-07T01:45:07.159Z [INFO] owned [paramelt] 링크 47건 중 신규 0건
+2026-09-07T01:45:07.660Z [INFO] owned 신규 후보 6건
+2026-09-07T01:45:08.006Z [INFO] topic ""hot melt adhesive"" (en) → 62건
+2026-09-07T01:45:08.202Z [INFO] topic ""polyamide adhesive"" (en) → 4건
+2026-09-07T01:45:08.485Z [INFO] topic "핫멜트 접착제" (ko) → 32건
+2026-09-07T01:45:08.766Z [INFO] topic ""China Adhesive"" (en) → 10건
+2026-09-07T01:45:09.006Z [INFO] topic "FEICA adhesive" (en) → 10건
+2026-09-07T01:45:09.357Z [INFO] topic ""dimer acid"" (en) → 39건
+2026-09-07T01:45:09.666Z [INFO] topic "polyamide resin price" (en) → 39건
+2026-09-07T01:45:09.988Z [INFO] topic ""hot melt" (Vietnam OR Indonesia OR Thailand)" (en) → 31건
+2026-09-07T01:45:09.988Z [INFO] 수집 합계 1826건
+2026-09-07T01:45:09.989Z [INFO] 차단(콘텐츠팜): [henkel] Henkel stock holds steady as Adhesive Technologies lifts guidance - AD HOC NEWS — AD HOC NEWS
+2026-09-07T01:45:09.989Z [INFO] 차단(콘텐츠팜): [sika] Sika stock gains after Akkim acquisition strengthens adhesives growth - AD HOC N — AD HOC NEWS
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [dic] Formaldehyde-Free Adhesive Market Outlook to 2035 - IndexBox — IndexBox
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [toagosei] Toagosei stock holds steady as latest results and Nikkei backdrop frame valuatio — AD HOC NEWS
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [goodadhesive] Exploring the Success Journey of China Premium Self Adhesive Sticker Leader SWLA — openPR.com
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [goodadhesive] Achieving Market Efficiency with SWLABEL as the Wholesale Premium Self Adhesive  — openPR.com
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [deepmaterial] Market Report on Debonding-on-Demand Adhesive Tapes - openPR.com — openPR.com
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [paramelt] Paper-Based Bakery Wraps Market to Reach USD 728.2 Million by 2036, Growing at 6 — openPR.com
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock trades steadily as investors watch margins and polymer demand - — AD HOC NEWS
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock holds firm as latest price data and recent margins guide invest — AD HOC NEWS
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock holds steady as investors eye latest margins and polymer demand — AD HOC NEWS
+2026-09-07T01:45:09.990Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock edges higher as investors digest recent earnings - AD HOC NEWS — AD HOC NEWS
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock holds firm as investors weigh mid-2026 earnings - AD HOC NEWS — AD HOC NEWS
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] China Leading Hot Melt Adhesive Coating Machine Manufacturer: NDC Showcases Sust — openPR.com
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Professional Hot Melt Slot Die Coating With 28 Years of Experience: The NDC Guid — openPR.com
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Future of Packaging: Analyzing NDC as a China Leading Hot Melt Adhesive Coating  — openPR.com
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Top-Rated Custom Hot Melt Roll Coater Solution Provider from - openPR.com — openPR.com
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Safety and Compliance: How NDC's China Premium Hot Melt - openPR.com — openPR.com
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Hot Melt Glue Labeler Market to Reach US$ 13.5 Billion by 2033, - openPR.com — openPR.com
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] NDC: A China Top Hot Melt Coating Equipment Supplier vs. International Brands at — openPR.com
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Mexico Bioadhesives Market Size, Share,Trends, Growth Analysis Report, 2029 - Ma — MarketsandMarkets
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Rest-Of-Asia-Pacific Bioadhesives Market Size, Share,Trends, Growth Analysis Rep — MarketsandMarkets
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Hydrophilic Thermoplastic Resins Market Size, Share & Forecast 2036 - Fact.MR — Fact.MR
+2026-09-07T01:45:09.991Z [INFO] 차단(콘텐츠팜): [_trade] Denture Base Resin Market Size & Share Report, 2026-2033 - Grand View Research — Grand View Research
+2026-09-07T01:45:09.991Z [INFO] 기간·중복 필터 후 19건 (콘텐츠팜 차단 24건)
+2026-09-07T01:45:53.327Z [INFO] 분류 배치 1: 15건 → 응답 15건 (in 3058tok / out 2235tok)
+2026-09-07T01:46:11.108Z [INFO] 분류 배치 2: 4건 → 응답 4건 (in 1770tok / out 762tok)
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [Moresco] 「MORESCOグループ統合報告書2026」を発行しました - ニコニコニュース — 구체적 사업 이슈 없이 정기 보고서 발행만 기재된 일반 공시
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [Toyobo] 前場に注目すべき3つのポイント〜半導体やAI関連株への買い戻しに向かわせる可能性〜 - ｄメニューニュース — 주식시장 분석 기사로 도요보 접착제·화학사업과 무관한 일반 투자 정보
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [Kangda New Materials] 股票行情快报：康达新材（002669）9月4日主力资金净卖出96.31万元_主力研究 - 证券之星 — 주식 시장 자금 흐름만 기재된 투자 데이터로 사업 뉴스 없음
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [EMS-Chemie] Funds from operations of EMS-CHEMIE HOLDING AG – BX:EMC1 - TradingView — 재무 데이터만 제시된 자동 생성 금융 정보로 구체적 사업 사실 없음
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [Henkel] Aug 31, 2026,&nbsp; Düsseldorf Pritt donates 100,000 Euro to UNICEF As part of the annual ‘We Craft for Children’ initiative of its leading consumer adhesives brand Pritt Henkel has again donated 100,000 Euro to UNICEF. Under its guiding principle “for every child”, UNICEF, the United Nations Children's Fund, works in over 190 countries and territories to save children's lives, to defend their rights, and to help them fulfil their potential, from early childhood through adolescence, so that they can grow up healthy and educated.&#xa0; Learn more — 소비자용 접착제 브랜드의 사회공헌 활동으로 실버스타 산업용 핫멜트 사업과 무관
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [Moresco] 2026年9月1日IR情報「MORESCOグループ統合報告書2026」を発行しました — 정기 보고서 발행 공지로 구체적 사업 뉴스나 수치 없음
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [Toagosei] 「SOMPOサステナビリティ・インデックス」構成銘柄に3年連続で選定 — Toagosei는 접착제 경쟁사이나 해당 뉴스는 지속가능성 지수 선정으로 제품/사업 성과와 무관한 평가 소식임.
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [Kleiberit] Go to Article — 기사 본문이나 구체적 사실(발표 내용, 제품명, 투자, 계약 등)이 제시되지 않음.
+2026-09-07T01:46:11.108Z [INFO] 제외(무관): [업계] ERJ Business Briefing - 2026 - European Rubber Journal — 일반 고무업계 브리핑 제목으로 구체적 사실이 없으며 폴리아마이드 접착제 사업과 직접 관련 없음.
+2026-09-07T01:46:11.108Z [INFO] 신규 이벤트 10건 (무관 제외 9건)
+2026-09-07T01:46:21.763Z [INFO] 중복(스토리) 마킹: Sika Acquires Turkish Adhesive and Sealant Manufacturer - Roofing Toda — 시카의 터키 아킴 접착제 제조사 인수 완료라는 동일 사건을 다른 매체가 보도한 중복 기사
+2026-09-07T01:46:21.763Z [INFO] 중복(스토리) 마킹: Sika completes acquisition of Turkey-based adhesive maker Akkim - VZ V — 시카의 터키 아킴 접착제 제조사 인수 완료라는 동일 사건을 다른 매체가 보도한 중복 기사
+2026-09-07T01:46:21.763Z [INFO] 중복(스토리) 마킹: PFASフリー…東洋紡エムシーが開発、ポリアミド樹脂新グレード製品の性能（ニュースイッチ） - Yahoo!ニュース — 도요보 엠씨의 PFAS 프리 고기능 폴리아미드 수지(그라마이드) 개발이라는 동일 사건을 다룬 중복 기사
+2026-09-07T01:46:21.763Z [INFO] 중복(스토리) 마킹: PFASフリー…東洋紡エムシーが開発、ポリアミド樹脂新グレード製品の性能 - ニュースイッチ by 日刊工業新聞社 — 도요보 엠씨의 PFAS 프리 고기능 폴리아미드 수지(그라마이드) 개발이라는 동일 사건을 다룬 중복 기사
+2026-09-07T01:46:21.763Z [INFO] 중복(스토리) 마킹: 東洋紡エムシーがグラマイドを開発 ＰＦＡＳフリーで高摺動性を実現 - ゴムタイムス — 도요보 엠씨의 PFAS 프리 고기능 폴리아미드 수지(그라마이드) 개발이라는 동일 사건을 다룬 중복 기사
+2026-09-07T01:46:21.763Z [INFO] 중복(스토리) 마킹: 【ポリアミド樹脂】東洋紡エムシー、PFASフリーで高摺動性を実現した「グラマイド」開発 - ctiweb.co.jp — 도요보 엠씨의 PFAS 프리 고기능 폴리아미드 수지(그라마이드) 개발이라는 동일 사건을 다룬 중복 기사
+2026-09-07T01:46:21.763Z [INFO] 스토리 중복 6건 마킹(보존) → 노출 4건
+2026-09-07T01:46:21.772Z [INFO] events.json 누적 101건 저장
+2026-09-07T01:46:21.873Z [INFO] Slack 발송 성공
+2026-09-07T01:46:41.694Z [INFO] 월간 요약 완료 (63건 기반, in 13367tok / out 1500tok) → data/digests/2026-09.md
