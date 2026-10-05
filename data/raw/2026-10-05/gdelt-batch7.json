@@ -1,0 +1,19 @@
+{
+  "fetched_at": "2026-10-05T02:52:26.142Z",
+  "source": "gdelt",
+  "companyId": "batch7",
+  "payload": {
+    "articles": [
+      {
+        "url": "http://www.prnewswire.com/news-releases/global-engineering-plastics-market-to-reach-usd-300-bn-by-2034-at-7-4-cagr-as-ev-lightweighting-advanced-electronics-and-high-performance-polymer-demand-accelerate-growth-maximize-market-research-302894531.html",
+        "url_mobile": "",
+        "title": "Global Engineering Plastics Market to Reach USD 300 Bn . by 2034 at 7 . 4 % CAGR as EV Lightweighting , Advanced Electronics and High - Performance Polymer Demand Accelerate Growth Maximize Market Research",
+        "seendate": "20260930T223000Z",
+        "socialimage": "",
+        "domain": "prnewswire.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      }
+    ]
+  }
+}

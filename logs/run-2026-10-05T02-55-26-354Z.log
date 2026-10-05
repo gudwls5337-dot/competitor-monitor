@@ -1,0 +1,220 @@
+2026-10-05T02:46:27.508Z [INFO] 수집 시작 (model=claude-haiku-4-5, lookback=8일)
+2026-10-05T02:46:27.512Z [INFO] 감시 기업 59곳
+2026-10-05T02:46:27.514Z [WARN] 네이버 API 키 없음 — 네이버 수집 생략 (Google News만 사용)
+2026-10-05T02:46:27.870Z [INFO] google [bostik] "보스틱 접착제" (ko) → 15건
+2026-10-05T02:46:28.723Z [INFO] google [bostik] "Bostik adhesive" (en) → 60건
+2026-10-05T02:46:29.281Z [INFO] google [bostik] "Bostik hot melt" (en) → 11건
+2026-10-05T02:46:29.894Z [INFO] google [henkel] "헨켈 접착제" (ko) → 52건
+2026-10-05T02:46:30.634Z [INFO] google [henkel] "Henkel Adhesive Technologies" (en) → 100건
+2026-10-05T02:46:31.193Z [INFO] google [henkel] "Henkel Technomelt" (en) → 33건
+2026-10-05T02:46:31.747Z [INFO] google [hbfuller] "에이치비풀러" (ko) → 23건
+2026-10-05T02:46:32.466Z [INFO] google [hbfuller] "H.B. Fuller adhesive" (en) → 100건
+2026-10-05T02:46:32.949Z [INFO] google [jowat] "요바트 접착제" (ko) → 1건
+2026-10-05T02:46:33.448Z [INFO] google [jowat] "Jowat adhesive" (en) → 13건
+2026-10-05T02:46:33.960Z [INFO] google [sika] "시카 접착제" (ko) → 11건
+2026-10-05T02:46:34.662Z [INFO] google [sika] "Sika adhesive" (en) → 82건
+2026-10-05T02:46:35.254Z [INFO] google [3m] "3M 접착제" (ko) → 51건
+2026-10-05T02:46:35.882Z [INFO] google [3m] "3M industrial adhesive" (en) → 47건
+2026-10-05T02:46:36.493Z [INFO] google [arkema] "아르케마" (ko) → 51건
+2026-10-05T02:46:37.088Z [INFO] google [arkema] "Arkema adhesive" (en) → 59건
+2026-10-05T02:46:37.598Z [INFO] google [okong] "오공 접착제" (ko) → 9건
+2026-10-05T02:46:38.163Z [INFO] google [okong] "오공본드" (ko) → 8건
+2026-10-05T02:46:38.662Z [INFO] google [daehung] "대흥화학 접착제" (ko) → 2건
+2026-10-05T02:46:39.287Z [INFO] google [texyear] "Tex Year hot melt" (en) → 9건
+2026-10-05T02:46:39.802Z [INFO] google [texyear] "德謙 熱熔膠" (tw) → 0건
+2026-10-05T02:46:40.301Z [INFO] google [moresco] "Moresco hot melt" (en) → 3건
+2026-10-05T02:46:40.830Z [INFO] google [moresco] "モレスコ ホットメルト" (ja) → 10건
+2026-10-05T02:46:41.348Z [INFO] google [beardow] "Beardow Adams adhesive" (en) → 10건
+2026-10-05T02:46:41.973Z [INFO] google [evonik] "에보닉" (ko) → 60건
+2026-10-05T02:46:42.614Z [INFO] google [evonik] "Evonik polyamide" (en) → 49건
+2026-10-05T02:46:43.225Z [INFO] google [dow] "Dow adhesive" (en) → 54건
+2026-10-05T02:46:43.811Z [INFO] google [eastman] "Eastman adhesive resin" (en) → 29건
+2026-10-05T02:46:44.343Z [INFO] google [kraton] "Kraton polymer adhesive" (en) → 23건
+2026-10-05T02:46:44.901Z [INFO] google [dic] "DIC Corporation adhesive" (en) → 27건
+2026-10-05T02:46:45.496Z [INFO] google [dic] "DIC 接着剤" (ja) → 52건
+2026-10-05T02:46:46.024Z [INFO] google [toyobo] "Toyobo polyamide" (en) → 3건
+2026-10-05T02:46:46.549Z [INFO] google [toyobo] "東洋紡 ポリアミド" (ja) → 10건
+2026-10-05T02:46:47.070Z [INFO] google [nanpao] "Nan Pao adhesive" (en) → 7건
+2026-10-05T02:46:47.795Z [INFO] google [nanpao] "南寶樹脂" (tw) → 100건
+2026-10-05T02:46:48.333Z [INFO] google [toagosei] "Toagosei adhesive" (en) → 7건
+2026-10-05T02:46:48.881Z [INFO] google [toagosei] "Aron Melt" (en) → 12건
+2026-10-05T02:46:49.537Z [INFO] google [toagosei] "東亞合成 接着剤" (ja) → 92건
+2026-10-05T02:46:50.019Z [INFO] google [toagosei] "アロンメルト" (ja) → 1건
+2026-10-05T02:46:50.626Z [INFO] google [basf] "BASF adhesive" (en) → 50건
+2026-10-05T02:46:51.219Z [INFO] google [covestro] "Covestro adhesive film" (en) → 37건
+2026-10-05T02:46:51.794Z [INFO] google [dupont] "DuPont adhesive" (en) → 48건
+2026-10-05T02:46:52.303Z [INFO] google [solvay] "Solvay polyamide adhesive" (en) → 0건
+2026-10-05T02:46:52.805Z [INFO] google [kleiberit] "Kleiberit" (en) → 2건
+2026-10-05T02:46:53.327Z [INFO] google [poweradhesives] "Power Adhesives Tecbond" (en) → 7건
+2026-10-05T02:46:53.816Z [INFO] google [spiderbond] "SpiderBond adhesive" (en) → 0건
+2026-10-05T02:46:54.312Z [INFO] google [huitian] "Huitian adhesive" (en) → 0건
+2026-10-05T02:46:54.813Z [INFO] google [huitian] "汇天 胶粘剂" (zh) → 0건
+2026-10-05T02:46:55.294Z [INFO] google [kangda] "Kangda adhesive" (en) → 0건
+2026-10-05T02:46:55.830Z [INFO] google [kangda] "康达新材" (zh) → 27건
+2026-10-05T02:46:56.585Z [INFO] google [infinitybond] "Infinity Bond adhesive" (en) → 3건
+2026-10-05T02:46:57.131Z [INFO] google [goodadhesive] "Zhejiang Good Adhesive" (en) → 12건
+2026-10-05T02:46:57.625Z [INFO] google [tianze] "Tianze hot melt" (en) → 0건
+2026-10-05T02:46:58.175Z [INFO] google [tianze] "天泽 热熔胶" (zh) → 0건
+2026-10-05T02:46:58.688Z [INFO] google [hengning] "Hengning adhesive" (en) → 0건
+2026-10-05T02:46:59.200Z [INFO] google [hengning] "恒宁 热熔胶" (zh) → 0건
+2026-10-05T02:46:59.800Z [INFO] google [schem] "Schem adhesive" (en) → 15건
+2026-10-05T02:47:00.437Z [INFO] google [schem] "台聚 熱熔膠" (tw) → 62건
+2026-10-05T02:47:00.967Z [INFO] google [cattie] "Cattie Adhesives" (en) → 4건
+2026-10-05T02:47:01.520Z [INFO] google [rextac] "Rextac APAO" (en) → 6건
+2026-10-05T02:47:02.097Z [INFO] google [kaisun] "Kaisun adhesive" (en) → 1건
+2026-10-05T02:47:02.592Z [INFO] google [kaisun] "凯盛 热熔胶" (zh) → 1건
+2026-10-05T02:47:03.099Z [INFO] google [renhe] "Renhe adhesive" (en) → 0건
+2026-10-05T02:47:03.610Z [INFO] google [renhe] "仁和 热熔胶" (zh) → 0건
+2026-10-05T02:47:04.112Z [INFO] google [rocky] "Shanghai Rocky Adhesives" (en) → 1건
+2026-10-05T02:47:04.732Z [INFO] google [deepmaterial] "Deepmaterial adhesive" (en) → 9건
+2026-10-05T02:47:05.351Z [INFO] google [wistar] "Wistar hot melt adhesive" (en) → 0건
+2026-10-05T02:47:06.069Z [INFO] google [freebird] "Free Bird hot melt adhesive" (en) → 0건
+2026-10-05T02:47:06.656Z [INFO] google [freebird] "自由鸟 热熔胶" (zh) → 0건
+2026-10-05T02:47:07.216Z [INFO] google [weihexin] "Weihexin adhesive" (en) → 0건
+2026-10-05T02:47:07.732Z [INFO] google [tongde] "Shenzhen Tongde adhesive" (en) → 0건
+2026-10-05T02:47:08.356Z [INFO] google [devote] "Devote adhesive" (en) → 3건
+2026-10-05T02:47:08.856Z [INFO] google [bluerhino] "Bluerhino adhesive" (en) → 0건
+2026-10-05T02:47:09.372Z [INFO] google [megabond] "Megabond adhesive" (en) → 3건
+2026-10-05T02:47:09.875Z [INFO] google [techbond] "Techbond adhesive" (en) → 9건
+2026-10-05T02:47:10.363Z [INFO] google [alster] "Alster Industry adhesive" (en) → 0건
+2026-10-05T02:47:10.869Z [INFO] google [valona] "Valona adhesive Vietnam" (en) → 0건
+2026-10-05T02:47:11.357Z [INFO] google [imelt] "IMELT Kimya" (en) → 0건
+2026-10-05T02:47:11.879Z [INFO] google [paramelt] "Paramelt" (en) → 9건
+2026-10-05T02:47:12.366Z [INFO] google [mcschem] "엠씨에스켐" (ko) → 0건
+2026-10-05T02:47:12.849Z [INFO] google [mcschem] "MCS 핫멜트" (ko) → 0건
+2026-10-05T02:47:13.403Z [INFO] google [mcschem] "MCS Chem hot melt" (en) → 0건
+2026-10-05T02:47:13.906Z [INFO] google [shinkwang] "신광핫멜트" (ko) → 0건
+2026-10-05T02:47:14.411Z [INFO] google [hanyoung] "한영인더스트리 핫멜트" (ko) → 0건
+2026-10-05T02:47:14.897Z [INFO] google [hanyoung] "한영인더스트리 접착제" (ko) → 0건
+2026-10-05T02:47:15.475Z [INFO] google [jcckorea] "JCC코리아" (ko) → 18건
+2026-10-05T02:47:15.997Z [INFO] google [jcckorea] "JCC 핫멜트" (ko) → 7건
+2026-10-05T02:47:16.539Z [INFO] google [atgdirect] "ATG Direct adhesive" (en) → 0건
+2026-10-05T02:47:17.175Z [INFO] google [ems] "EMS-Chemie" (en) → 47건
+2026-10-05T02:47:17.696Z [INFO] google [ems] "EMS Griltex" (en) → 0건
+2026-10-05T02:47:18.265Z [INFO] google [duzon] "더존케미칼" (ko) → 7건
+2026-10-05T02:47:28.889Z [WARN] gdelt 429 — 20초 후 재시도
+2026-10-05T02:47:59.231Z [ERROR] gdelt [batch1] 실패: gdelt 429
+2026-10-05T02:48:15.728Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-10-05T02:48:50.382Z [INFO] gdelt [batch2] 8개 구문 → 0건
+2026-10-05T02:49:06.880Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-10-05T02:49:37.241Z [ERROR] gdelt [batch3] 실패: gdelt 429
+2026-10-05T02:49:54.259Z [WARN] gdelt 429 — 20초 후 재시도
+2026-10-05T02:50:25.818Z [ERROR] gdelt [batch4] 실패: gdelt 429
+2026-10-05T02:50:43.248Z [WARN] gdelt 429 — 20초 후 재시도
+2026-10-05T02:51:13.743Z [ERROR] gdelt [batch5] 실패: fetch failed
+2026-10-05T02:51:30.244Z [WARN] gdelt fetch(fetch failed) — 20초 후 재시도
+2026-10-05T02:52:01.083Z [ERROR] gdelt [batch6] 실패: gdelt 429
+2026-10-05T02:52:26.142Z [INFO] gdelt [batch7] 8개 구문 → 1건
+2026-10-05T02:52:41.130Z [WARN] gdelt 429 — 20초 후 재시도
+2026-10-05T02:53:11.660Z [ERROR] gdelt [batch8] 실패: gdelt 429
+2026-10-05T02:53:17.766Z [INFO] owned [bostik] 링크 56건 중 신규 0건
+2026-10-05T02:53:19.101Z [INFO] owned [henkel] 링크 133건 중 신규 2건
+2026-10-05T02:53:20.152Z [INFO] owned [hbfuller] 링크 31건 중 신규 0건
+2026-10-05T02:53:22.309Z [INFO] owned [jowat] 링크 4건 중 신규 0건
+2026-10-05T02:53:23.233Z [INFO] owned [arkema] 링크 101건 중 신규 0건
+2026-10-05T02:53:24.801Z [INFO] owned [moresco] 링크 30건 중 신규 0건
+2026-10-05T02:53:25.786Z [INFO] owned [toagosei] 링크 59건 중 신규 1건
+2026-10-05T02:53:27.805Z [INFO] owned [kleiberit] 링크 68건 중 신규 2건
+2026-10-05T02:53:28.971Z [INFO] owned [poweradhesives] 링크 69건 중 신규 0건
+2026-10-05T02:53:31.123Z [INFO] owned [paramelt] 링크 47건 중 신규 0건
+2026-10-05T02:53:31.622Z [INFO] owned 신규 후보 5건
+2026-10-05T02:53:32.107Z [INFO] topic ""hot melt adhesive"" (en) → 72건
+2026-10-05T02:53:32.303Z [INFO] topic ""polyamide adhesive"" (en) → 2건
+2026-10-05T02:53:32.653Z [INFO] topic "핫멜트 접착제" (ko) → 46건
+2026-10-05T02:53:32.916Z [INFO] topic ""China Adhesive"" (en) → 3건
+2026-10-05T02:53:33.142Z [INFO] topic "FEICA adhesive" (en) → 10건
+2026-10-05T02:53:33.498Z [INFO] topic ""dimer acid"" (en) → 41건
+2026-10-05T02:53:33.776Z [INFO] topic "polyamide resin price" (en) → 51건
+2026-10-05T02:53:34.102Z [INFO] topic ""hot melt" (Vietnam OR Indonesia OR Thailand)" (en) → 31건
+2026-10-05T02:53:34.102Z [INFO] 수집 합계 1936건
+2026-10-05T02:53:34.102Z [INFO] 차단(콘텐츠팜): [bostik] 경량화 수요에 힘입어 우레탄 접착제 시장 가속…2035년 전망 상향 - IndexBox — IndexBox
+2026-10-05T02:53:34.103Z [INFO] 차단(콘텐츠팜): [henkel] Henkel completes Stahl acquisition: what it means for Henkel stock - AD HOC NEWS — AD HOC NEWS
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [sika] Sika stock gains 2.60 percent after Investor Day outlines adhesive plans - AD HO — AD HOC NEWS
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [sika] Sika hosts investor day; Sika stock sits at EUR 198.00 versus EUR 198.00 Xetra c — AD HOC NEWS
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [sika] Sika stock gains 2.60 percent as adhesives strategy takes shape - AD HOC NEWS — AD HOC NEWS
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [sika] Sika stock after-hours at EUR 197.28: plus 3.11 percent versus the prior close - — AD HOC NEWS
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [arkema] 폴리비닐리덴 플루오라이드(PVDF) 시장 2035년 전망: 배터리 바인더 수요가 성장 견인 - IndexBox — IndexBox
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [arkema] 2035년 불소화 가스 시장: 냉방 수요와 반도체 성장이 확대 견인 - 뉴스 및 통계 - IndexBox — IndexBox
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [arkema] UV/EB 올리고머 시장 2035년까지 가속화…전자·3D 프린팅이 성장 견인 - 뉴스 및 통계 - IndexBox — IndexBox
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [arkema] 분자체 펠릿 시장 2035년 전망: 산업용 탈수·가스 처리가 연평균 5~7% 성장 견인 - 뉴스 및 통계 - IndexBox — IndexBox
+2026-10-05T02:53:34.104Z [INFO] 차단(콘텐츠팜): [arkema] 냉매 R1234yf 시장 2035년 전망: 이동식 공조 수요가 성장 견인 - 뉴스 및 통계 - IndexBox — IndexBox
+2026-10-05T02:53:34.105Z [INFO] 차단(콘텐츠팜): [evonik] Polyamide Particles Market To 2035: Papermaking and 3D Printing Drive Growth - N — IndexBox
+2026-10-05T02:53:34.105Z [INFO] 차단(콘텐츠팜): [dow] Hot Melt Adhesive Market Size, Forecasts Report 2026-2035 - gminsights.com — gminsights.com
+2026-10-05T02:53:34.105Z [INFO] 차단(콘텐츠팜): [eastman] Petroleum Resins Market Is Going to Boom |Arakawa Chemical - openpr.com — openpr.com
+2026-10-05T02:53:34.105Z [INFO] 차단(콘텐츠팜): [dic] UV-Curable Resins/Oligomers Market to Accelerate on Low-VOC Coatings Demand, Rea — IndexBox
+2026-10-05T02:53:34.105Z [INFO] 차단(콘텐츠팜): [dic] Urethane Adhesives Market to Accelerate on Lightweighting Demand, Forecast Point — IndexBox
+2026-10-05T02:53:34.106Z [INFO] 차단(콘텐츠팜): [deepmaterial] Electric Vehicle Adhesives Market to Reach USD 9.5 Billion - openpr.com — openpr.com
+2026-10-05T02:53:34.106Z [INFO] 차단(콘텐츠팜): [deepmaterial] Adhesives and Sealants Market to Reach USD 138.1 Billion by 2035, - openpr.com — openpr.com
+2026-10-05T02:53:34.106Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock gained 1.5 percent as H1 profit rose - AD HOC NEWS — AD HOC NEWS
+2026-10-05T02:53:34.106Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock reports higher H1 profit as sales edge lower - AD HOC NEWS — AD HOC NEWS
+2026-10-05T02:53:34.106Z [INFO] 차단(콘텐츠팜): [ems] EMS-Chemie stock after-hours at EUR 861.50: minus 1.66 percent versus prior clos — AD HOC NEWS
+2026-10-05T02:53:34.106Z [INFO] 차단(콘텐츠팜): [_trade] Global Engineering Plastics Market to Reach USD 300 Bn . by 2034 at 7 . 4 % CAGR — prnewswire.com
+2026-10-05T02:53:34.107Z [INFO] 기간·중복 필터 후 62건 (콘텐츠팜 차단 22건)
+2026-10-05T02:53:55.590Z [INFO] 분류 배치 1: 15건 → 응답 15건 (in 2741tok / out 2833tok)
+2026-10-05T02:54:10.403Z [INFO] 분류 배치 2: 15건 → 응답 15건 (in 2678tok / out 2024tok)
+2026-10-05T02:54:30.971Z [INFO] 분류 배치 3: 15건 → 응답 15건 (in 2623tok / out 2131tok)
+2026-10-05T02:54:51.054Z [INFO] 분류 배치 4: 15건 → 응답 15건 (in 2915tok / out 2628tok)
+2026-10-05T02:54:55.091Z [INFO] 분류 배치 5: 2건 → 응답 2건 (in 1658tok / out 429tok)
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [Henkel] Henkel closes acquisition of Stahl - Labels & Labeling — 동일 사건의 애그리게이터 자동 재생성 기사로 구체적 신규 정보 부재
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [Henkel] Henkel completes acquisition of Stahl - Label and Narrow Web — 동일 사건의 애그리게이터 자동 재생성 기사로 구체적 신규 정보 부재
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [Henkel] Powering Next-Gen AI: Materials Enabling Advanced Packaging's Future - digitimes — 헨켈의 구체적 신제품, 투자, 전략 등 사실 기반 정보가 없는 일반 기술 논설
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. 풀러 이사 마이클 해피, 99,250달러 상당 주식 매입 - Investing.com 한국어 — 단순 임원 주식 거래로 사업 전략이나 시장 정보가 없는 금융 거래
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. 풀러, 주당 0.245달러 분기 배당 발표 - Investing.com 한국어 — 일반 배당금 공시로 접착제 사업, 제품, 시장 관련 구체적 정보 부재
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. 풀러 이사 토마스 핸들리, 98,820달러 상당 자사주 매입 - Investing.com 한국어 — 단순 임원 주식 거래로 사업 전략이나 시장 정보가 없는 금융 거래
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. 풀러 이사 스리라타 자히르, 10만 달러 규모 자사주 매입 - Investing.com 한국어 — 단순 임원 주식 거래로 사업 전략이나 시장 정보가 없는 금융 거래
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller 이사 찰스 라우버, 99,984달러 상당 주식 매입 - Investing.com 한국어 — 단순 임원 주식 거래로 사업 전략이나 시장 정보가 없는 금융 거래
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller 이사 Daniel L. Florness, 100,160달러 규모 자사주 매입 - Investing.com 한국어 — 단순 임원 주식 거래로 사업 전략이나 시장 정보가 없는 금융 거래
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller 이사 테레사 J. 라스무센 트랑스루드, 99,984달러 상당 자사주 매입 - Investing.com 한국어 — 개인 이사의 자사주 매입은 접착제 사업 실질 정보 부재
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. 풀러, R. 제프리 베일리를 이사회에 선임 - Investing.com 한국어 — 이사회 인사는 구체적 사업 전개 정보 없음
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] FULLER H B CO 이사 마틴, 보통주 22,997달러 매입 - Investing.com 한국어 — 개인 거래 공시로 구체적 사업 내용 없음
+2026-10-05T02:54:55.092Z [INFO] 제외(무관): [H.B. Fuller] H.B. Fuller (FUL) Brings Medical Technology Experience To Its Board - Simply Wall Street — 이사 선임은 구체적 제품·사업 정보 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Sika] Can Sika (SWX:SIKA) Trade Below Fair Value After Its Adhesives Update? - Yahoo Finance — 시장분석 성격의 기사로 구체적 사건 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Sika] DRIVING GROWTH THROUGH ADHESIVE SYSTEMS, INNOVATION, AND DIGITAL MARKET LEADERSHIP - GlobeNewswire — 시장 분석/전망성 기사로 구체적 사건이나 수치 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Sika] Sika puts adhesives at the centre of growth strategy at Investor Day - Indian Chemical News — 투자자 행사 공시로 구체적 신제품/투자/계약 내용 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Sika] Should Adhesives Expansion Require Action From Sika (SWX:SIKA) Investors? - Simply Wall Street — 애그리게이터 기사로 구체적 사실 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Sika] Sika : DRIVING GROWTH THROUGH ADHESIVE SYSTEMS, INNOVATION, AND DIGITAL MARKET LEADERSHIP - marketscreener.com — 일반 뉴스 배포로 구체적 사건 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Sika] Is Sika (SWX:SIKA) Cheap On Its Adhesives Growth Plans? - Yahoo Finance — 재무 분석 기사로 구체적 비즈니스 뉴스 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [3M] RoboTape Named an Industry Icon in AI & Robotics on The 2026 List - USA Today — 테이프 제품의 AI/로봇 기술 수상으로 폴리아마이드 접착제와 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Arkema] 아르케마, 프랑스 리옹 배터리 R&D 글로벌 센터에 1000만 유로 투자 - 2news.co.kr — 배터리 R&D 센터 투자는 실버스타의 접착제 사업과 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [오공] 오공 투자분석 2026. 09. 30 - 주달 — 투자분석 문서로 구체적 신제품/투자/계약 내용 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Evonik] 화장품신문 (Beautynury.com) :: BASF, 퍼스널케어 원료기업 에보닉 인수협상 - 뷰티누리 — 퍼스널케어 원료 인수로 핫멜트 접착제 사업과 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Evonik] BASF in talks to acquire Evonik; €10.3 billion bid rejected as chemical giant consolidation accelerates - finance.biggo.com — 퍼스널케어 원료 기업 인수 시도로 폴리아마이드 핫멜트와 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Nan Pao] 南臺科大化材系攜手1111人力銀行 鏈結產業助學生職涯接軌 - 中央社 CNA — 교육 기관의 인력 중개 활동으로 구체적 기업 뉴스 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [BASF] Henkel Completes Acquisition of Specialty Coatings Company Stahl - CHEManager — 코팅 회사 인수로 폴리아마이드 핫멜트 접착제와 직접 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [BASF] A celebration of manufacturing - Plastics News — 제목만으로 구체적 내용 파악 불가, 광고성 기사로 판단
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [DuPont] DD6516610 Bond Profile: Coupon and Redemption - TradingView — 채권 상품 정보로 접착제 사업과 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Kangda New Materials] 康达新材拟注销195.04万股回购股份 总股本降至3.01亿股 - 观点网 — 주식 소각은 자본 구조 변화이며 접착제/화학 사업 전개와 무관한 순수 재무공시
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Kangda New Materials] 康达新材: 北京植德律师事务所关于康达新材料（集团）股份有限公司延长向特定对象发行股票的股东会决议有效期及授权有效期的法律意见书内容摘要 - 证券之星 — 법률 절차 공시로 구체적 사업 진전(투자, 인수, 신제품)이 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Kangda New Materials] 康达新材：2026年第四次临时股东会决议公告 - zqrb.cn — 의제 내용 미제시로 구체적 사실에 기반한 경쟁정보로 가치 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Kangda New Materials] 股票行情快报：康达新材（002669）9月30日主力资金净卖出2324.83万元 - 搜狐网 — 일일 자금 흐름 통계이며 사업 활동과 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Kangda New Materials] 康达新材：拟注销195.04万股回购股份减少注册资本 - caiwennews.com — 주식 소각 공시로 사업 운영 변화 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Kangda New Materials] 康达新材: 北京植德（上海）律师事务所关于康达新材料（集团）股份有限公司2026年第四次临时股东会的法律意见书内容摘要 - 证券之星 — 주주총회 법률 의견서 공시로 구체적 사업 내용 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Kangda New Materials] 康达新材: 关于注销部分回购股份减少注册资本暨通知债权人的公告内容摘要 - 证券之星 — 주식 소각 절차 공시로 사업 활동 정보 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Schem] 中東衝突 塑化股油利可圖 - 中時新聞網 — 업계 일반 코멘트로 특정 기업의 구체적 행동이나 제품 정보 없음
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [EMS-Chemie] EBIT per share of EMS-CHEMIE HOLDING AG – HAN:EMC1 - TradingView — 재무 수치 집계만 있고 사업 전개나 제품 관련 정보 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [EMS-Chemie] EMS-CHEMIE HOLDING AG Cash Flow – HAN:EMC1 - TradingView — 재무 데이터 자동 수집으로 사업 활동 정보 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [EMS-Chemie] EMS-CHEMIE HOLDING AG Earnings and Revenue – HAN:EMC1 - TradingView — 재무 수치 자동 집계로 사업 운영 정보 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Henkel] Oct 1, 2026,&nbsp; Düsseldorf / Germany Adhesive Technologies expanding portfolio into attractive specialty coatings business &#xa0; Henkel successfully closes acquisition of specialty coatings company Stahl Henkel has successfully completed the acquisition of the Netherlands-based Stahl Group (“Stahl”), a global player in high-performance specialty coatings for flexible materials. Following the fulfillment of all closing conditions, including the required regulatory approvals, the company is now fully part of Henkel as of October 1st, 2026. Learn more — 헨켈의 코팅 사업 인수로 접착제 시장이 아닌 코팅 분야 확장
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Henkel] Sep 29, 2026,&nbsp; Shanghai Accelerating next-generation battery innovation for China and Asia-Pacific&#xa0; Henkel and CALB establish joint battery innovation center to bring next-generation batteries to market faster Strategic cooperation spanning advanced materials and next-generation battery technologiesJoint battery innovation center at CALB’s R&D facility in ChangzhouIntegrated development, simulation, testing and pilot-scale validation on one site to accelerate industrial application Learn more — 배터리 소재·기술 분야 협력으로 접착제 사업과 무관
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [Toagosei] 採用活動における基本方針 — 인사 절차 관련 공지로 사업 활동 정보 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [업계] 핫멜트 접착제 시장 규모 및 전망 보고서, 2026~2035년 - Global Market Insights Inc. — 시장조사 리포트로 구체적 사실에 기반한 경쟁정보 부재
+2026-10-05T02:54:55.093Z [INFO] 제외(무관): [업계] 석유 대신 ‘대장균’으로 ‘친환경 접착제’ 만든다! - v.daum.net — 구체적 사실(기업명, 상용화 일정, 제품 사양)이 없는 일반 개요성 기사로 판단됨
+2026-10-05T02:54:55.093Z [INFO] 신규 이벤트 18건 (무관 제외 44건)
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Henkel successfully closes acquisition of specialty coatings company S — 헨켈의 스탈(Stahl) 인수 완료 발표와 동일 사건으로, 보다 구체적 정보(인수 금액 $2.5B)를 포함한 기사가 존재함
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Henkel completes Stahl acquisition to expand specialty coatings push - — 헨켈의 스탈(Stahl) 인수 완료 발표와 동일 사건으로, 보다 구체적 정보(인수 금액 $2.5B)를 포함한 기사가 존재함
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: 블룸버그 뉴스에 따르면, 안코라(Ancora)가 H.B. 풀러(H.B. Fuller)의 접착제 사업부 인수 제안을 최대 14억 — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: 안코라, H.B. 풀러의 접착제 사업부 인수 제안가를 최대 14억 달러로 인상 - TradingView — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: 앙코라, H.B. 풀러 사업부 인수 제안가 최대 14억 달러로 상향 - Investing.com 한국어 — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Ancora, H.B. Fuller 건축용 접착제 부문 인수 제안가를 14억 달러로 상향 - Investing.com 한국어 — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Ancora raises offer for H.B. Fuller's adhesive unit to up to $1.4 bill — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Ancora Raises Offer for H.B. Fuller Building Adhesives Business to $1. — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Activist Ancora submits higher offer for H.B. Fuller building unit - S — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Update: H.B. Fuller Set for Higher Ancora Bid of Up to $1.4 Billion fo — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Market Chatter: H.B. Fuller Set for Higher Ancora Bid of Up to $1.4 Bi — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Activist Ancora Comes Back With Bigger Bid For H.B. Fuller Unit - Benz — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Ancora Lifts H.B. Fuller Unit Offer to $1.4 Billion With Fortress Back — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 중복(스토리) 마킹: Ancora raises HB Fuller bid to $1.4 billion in renewed push for adhesi — Ancora의 H.B. Fuller 접착제(건축용) 사업부 인수 제안가 14억 달러 상향이라는 동일 사건을 다룬 중복 보도
+2026-10-05T02:55:11.227Z [INFO] 스토리 중복 14건 마킹(보존) → 노출 4건
+2026-10-05T02:55:11.240Z [INFO] events.json 누적 185건 저장
+2026-10-05T02:55:11.475Z [INFO] Slack 발송 성공
+2026-10-05T02:55:26.354Z [ERROR] 월간 요약 실패(빈 응답) — 다음 실행에서 재시도
